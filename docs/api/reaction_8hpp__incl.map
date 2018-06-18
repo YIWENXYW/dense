@@ -1,5 +1,5 @@
 <map id="source/core/reaction.hpp" name="source/core/reaction.hpp">
-<area shape="rect" id="node2" href="$specie_8hpp.html" title="specie.hpp" alt="" coords="69,155,155,181"/>
-<area shape="rect" id="node6" href="$common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="127,80,289,107"/>
-<area shape="rect" id="node7" href="$_real_8hpp.html" title="Real.hpp" alt="" coords="179,155,252,181"/>
+<area shape="rect" id="node2" href="$specie_8hpp.html" title="specie.hpp" alt="" coords="99,80,184,107"/>
+<area shape="rect" id="node6" href="$cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="265,80,375,107"/>
+<area shape="rect" id="node9" href="$_real_8hpp.html" title="utility/Real.hpp" alt="" coords="400,80,509,107"/>
 </map>

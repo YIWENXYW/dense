@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dense',['dense',['../namespacedense.html',1,'']]]
+  ['cuda',['cuda',['../namespacecuda.html',1,'']]]
 ];

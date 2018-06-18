@@ -121,20 +121,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classcell__param_1_1cell.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classcell__param_1_1cell.html">cell</a>{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classcell__param_1_1cell.html#ae13246350567473425f3b41f2d9c7f65">   28</a></span>&#160;        <a class="code" href="classcell__param_1_1cell.html">cell</a>(T *row): <a class="code" href="classcell__param_1_1cell.html#a799ad7ad264daa52aef4e171a831fc7c">_array</a>(row) {}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classcell__param_1_1cell.html#adcbc48e1245ddcfb8421fb1088622177">   30</a></span>&#160;        T&amp; operator[](<span class="keywordtype">int</span> k){</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classcell__param_1_1cell.html#a799ad7ad264daa52aef4e171a831fc7c">_array</a>[k];</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classcell__param_1_1cell.html#a39bfa84313b90fea6c3a8a2e898a9c45">   34</a></span>&#160;        T const&amp; operator[](<span class="keywordtype">int</span> k)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classcell__param_1_1cell.html#a799ad7ad264daa52aef4e171a831fc7c">_array</a>[k];</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classcell__param_1_1cell.html#a799ad7ad264daa52aef4e171a831fc7c">   37</a></span>&#160;        T *<a class="code" href="classcell__param_1_1cell.html#a799ad7ad264daa52aef4e171a831fc7c">_array</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classcell__param.html#a07ef6a5f68a873521b2af916ceae0ea5">   41</a></span>&#160;    <a class="code" href="classcell__param.html">cell_param</a>(<a class="code" href="class_simulation.html">Simulation</a> const&amp; sim, <span class="keywordtype">int</span> ncells)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    :<a class="code" href="classcell__param.html#a753b9686e8a0902c07c6f6f369028f70">_sim</a>(sim),<a class="code" href="classcell__param.html#a070c1f428936540edde612f33a93ebe3">_height</a>(N),<a class="code" href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">_width</a>(ncells),<a class="code" href="classcell__param.html#a6b930a5a128b182eaa53ca20ec42a1d7">_cuda</a>(false){</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classcell__param.html#a61de601b0c27e7a01281b3605cdf87e4">allocate_array</a>();</div>
@@ -144,12 +144,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classcell__param.html#a5391841f9a26f6c716426ec7591a01b6">dealloc_array</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classcell__param.html#a8e233f8098c61cc95641c3b5b77e4d4b">   51</a></span>&#160;    cell operator[](<span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> cell(<a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a> + <a class="code" href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">_width</a> * i);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classcell__param.html#a0bf26343e398b61484eb83fe3e1d592c">   56</a></span>&#160;    const cell operator[](<span class="keywordtype">int</span> i)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> cell(<a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a> + <a class="code" href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">_width</a> * i);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcell__param.html#adbfaa21db2a408cde7c33bfc164baa21">initialize</a>();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//protected:</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classcell__param.html#a5391841f9a26f6c716426ec7591a01b6">   72</a></span>&#160;    void <a class="code" href="classcell__param.html#a5391841f9a26f6c716426ec7591a01b6">dealloc_array</a>(){</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a>){</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">delete</span>[] <a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a>;</div>
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classcell__param.html#a61de601b0c27e7a01281b3605cdf87e4">   80</a></span>&#160;    void <a class="code" href="classcell__param.html#a61de601b0c27e7a01281b3605cdf87e4">allocate_array</a>(){</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">_width</a> * <a class="code" href="classcell__param.html#a070c1f428936540edde612f33a93ebe3">_height</a> &gt;0){</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classcell__param.html#a2356e243c95742425d0270663c4f857d">_array</a> = <span class="keyword">new</span> T[<a class="code" href="classcell__param.html#a070c1f428936540edde612f33a93ebe3">_height</a> * <a class="code" href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">_width</a>];</div>
@@ -192,7 +192,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcell__param_html_a070c1f428936540edde612f33a93ebe3"><div class="ttname"><a href="classcell__param.html#a070c1f428936540edde612f33a93ebe3">cell_param::_height</a></div><div class="ttdeci">int _height</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:20</div></div>
 <div class="ttc" id="classcell__param_html_aa61a597b6e742b42e3e89aac99291582"><div class="ttname"><a href="classcell__param.html#aa61a597b6e742b42e3e89aac99291582">cell_param::_width</a></div><div class="ttdeci">int _width</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:20</div></div>
 <div class="ttc" id="reaction_8hpp_html"><div class="ttname"><a href="reaction_8hpp.html">reaction.hpp</a></div></div>
-<div class="ttc" id="common__utils_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> common_utils.hpp:8</div></div>
 <div class="ttc" id="classcell__param_html_a6b930a5a128b182eaa53ca20ec42a1d7"><div class="ttname"><a href="classcell__param.html#a6b930a5a128b182eaa53ca20ec42a1d7">cell_param::_cuda</a></div><div class="ttdeci">bool _cuda</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:22</div></div>
 <div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
 <div class="ttc" id="classcell__param_html_acabd90e08434cfb70d2acaf8bf3728bd"><div class="ttname"><a href="classcell__param.html#acabd90e08434cfb70d2acaf8bf3728bd">cell_param::~cell_param</a></div><div class="ttdeci">~cell_param()</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:46</div></div>
@@ -202,11 +201,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="parameter__set_8hpp_html"><div class="ttname"><a href="parameter__set_8hpp.html">parameter_set.hpp</a></div></div>
 <div class="ttc" id="classcell__param_html_ab3269cc14747b5051ae1f6ca6a432fce"><div class="ttname"><a href="classcell__param.html#ab3269cc14747b5051ae1f6ca6a432fce">cell_param::height</a></div><div class="ttdeci">int height() const </div><div class="ttdef"><b>Definition:</b> cell_param.hpp:61</div></div>
 <div class="ttc" id="classcell__param_html_aa3cfe67b580ac36eaf4bd9a15043fed3"><div class="ttname"><a href="classcell__param.html#aa3cfe67b580ac36eaf4bd9a15043fed3">cell_param::initialize_params</a></div><div class="ttdeci">void initialize_params(Parameter_Set const &amp;ps, Real normfactor=1.0)</div><div class="ttdef"><b>Definition:</b> cell_param.cpp:10</div></div>
+<div class="ttc" id="cuda_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:7</div></div>
 <div class="ttc" id="classcell__param_html_a2356e243c95742425d0270663c4f857d"><div class="ttname"><a href="classcell__param.html#a2356e243c95742425d0270663c4f857d">cell_param::_array</a></div><div class="ttdeci">T * _array</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:21</div></div>
 <div class="ttc" id="classcell__param_1_1cell_html"><div class="ttname"><a href="classcell__param_1_1cell.html">cell_param::cell</a></div><div class="ttdef"><b>Definition:</b> cell_param.hpp:25</div></div>
 <div class="ttc" id="classcell__param_html"><div class="ttname"><a href="classcell__param.html">cell_param</a></div><div class="ttdef"><b>Definition:</b> cell_param.hpp:16</div></div>
 <div class="ttc" id="common__utils_8hpp_html"><div class="ttname"><a href="common__utils_8hpp.html">common_utils.hpp</a></div></div>
-<div class="ttc" id="class_simulation_html"><div class="ttname"><a href="class_simulation.html">Simulation</a></div><div class="ttdef"><b>Definition:</b> base.hpp:37</div></div>
+<div class="ttc" id="class_simulation_html"><div class="ttname"><a href="class_simulation.html">Simulation</a></div><div class="ttdef"><b>Definition:</b> base.hpp:36</div></div>
 <div class="ttc" id="classcell__param_html_aa53ff5010794baaa22a1c2f6644ef6b1"><div class="ttname"><a href="classcell__param.html#aa53ff5010794baaa22a1c2f6644ef6b1">cell_param::width</a></div><div class="ttdeci">int width() const </div><div class="ttdef"><b>Definition:</b> cell_param.hpp:62</div></div>
 <div class="ttc" id="class_parameter___set_html"><div class="ttname"><a href="class_parameter___set.html">Parameter_Set</a></div><div class="ttdef"><b>Definition:</b> parameter_set.hpp:13</div></div>
 <div class="ttc" id="classcell__param_html_aee0a5a5a26d37b11b0ae38f49916fc22"><div class="ttname"><a href="classcell__param.html#aee0a5a5a26d37b11b0ae38f49916fc22">cell_param::random_rate</a></div><div class="ttdeci">T random_rate(std::pair&lt; T, T &gt; range)</div><div class="ttdef"><b>Definition:</b> cell_param.hpp:66</div></div>
@@ -216,7 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 17 2018 18:42:34 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

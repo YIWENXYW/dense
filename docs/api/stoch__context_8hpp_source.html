@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * arg &quot;delay&quot;: unused, but used in deterministic context. Kept for polymorphism</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * returns &quot;avg&quot;: average concentration of specie in current and neighboring cells</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_stochastic___simulation_1_1_context_stoch.html#a1d03057e1f02ba9f0fa70e77f51e8edf">   18</a></span>&#160;<a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_stochastic___simulation.html">Stochastic_Simulation</a>::<a class="code" href="class_stochastic___simulation_1_1_context_stoch.html">ContextStoch</a>::calculateNeighborAvg(<a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp, <span class="keywordtype">int</span> delay)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sum=0;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;_simulation._numNeighbors[_cell]; i++){</div>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * recalculates the propensities of reactions affected by the firing of &quot;rid&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * arg &quot;rid&quot;: the reaction that fired</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_stochastic___simulation_1_1_context_stoch.html#ac093e6970dfb59b813c2dfb86969616c">   33</a></span>&#160;void <a class="code" href="class_stochastic___simulation.html">Stochastic_Simulation</a>::<a class="code" href="class_stochastic___simulation_1_1_context_stoch.html">ContextStoch</a>::updatePropensities(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid){</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <a class="code" href="classmodel.html">model</a>&amp; _model = _simulation._model;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
@@ -156,11 +156,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * called by &quot;generateTau&quot; in simulation_stoch.cpp</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * return &quot;sum&quot;: the propensity sum</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_stochastic___simulation_1_1_context_stoch.html#a8c4ea9bfb700534d850a8e6a0a1c24c5">   63</a></span>&#160;<a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_stochastic___simulation.html">Stochastic_Simulation</a>::<a class="code" href="class_stochastic___simulation_1_1_context_stoch.html">ContextStoch</a>::getTotalPropensity(){</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sum = 0;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> c=0; c&lt;_simulation._cells_total; c++){</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>; r++){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> r=0; r&lt;<a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; r++){</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        sum+=_simulation.propensities[c][r];</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
@@ -173,43 +173,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * arg &quot;propensity_portion&quot;: the propensity sum times a random variable between 0.0 and 1.0</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * return &quot;j&quot;: the index of the reaction chosen.</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_stochastic___simulation_1_1_context_stoch.html#ab850f63109423d096b2788816f80d5e7">   80</a></span>&#160;int <a class="code" href="class_stochastic___simulation.html">Stochastic_Simulation</a>::<a class="code" href="class_stochastic___simulation_1_1_context_stoch.html">ContextStoch</a>::chooseReaction(<a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> propensity_portion) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sum = 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> c, s;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (c = 0; c &lt; _simulation._cells_total; c++) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (s = 0; s &lt; <a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>; s++) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (s = 0; s &lt; <a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; s++) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      sum += _simulation.propensities[c][s];</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (sum &gt; propensity_portion) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">int</span> j = (c * <a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>) + s;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">int</span> j = (c * <a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>) + s;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> j;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> j = ((c - 1) * <a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>) + (s - 1);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> j = ((c - 1) * <a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>) + (s - 1);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> j;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif // CONTEXT_STOCH</span></div>
+<div class="ttc" id="reaction_8hpp_html_a5b1d2ad0e683b91a06410c4e999bcbf0"><div class="ttname"><a href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a></div><div class="ttdeci">constexpr auto NUM_REACTIONS</div><div class="ttdef"><b>Definition:</b> reaction.hpp:19</div></div>
 <div class="ttc" id="reaction_8hpp_html"><div class="ttname"><a href="reaction_8hpp.html">reaction.hpp</a></div></div>
-<div class="ttc" id="common__utils_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> common_utils.hpp:8</div></div>
 <div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
-<div class="ttc" id="class_stochastic___simulation_1_1_context_stoch_html"><div class="ttname"><a href="class_stochastic___simulation_1_1_context_stoch.html">Stochastic_Simulation::ContextStoch</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:67</div></div>
+<div class="ttc" id="class_stochastic___simulation_1_1_context_stoch_html"><div class="ttname"><a href="class_stochastic___simulation_1_1_context_stoch.html">Stochastic_Simulation::ContextStoch</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:66</div></div>
 <div class="ttc" id="cell__param_8hpp_html"><div class="ttname"><a href="cell__param_8hpp.html">cell_param.hpp</a></div></div>
-<div class="ttc" id="class_stochastic___simulation_html"><div class="ttname"><a href="class_stochastic___simulation.html">Stochastic_Simulation</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:22</div></div>
-<div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:15</div></div>
-<div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">Reaction_ID</a></div><div class="ttdeci">Reaction_ID</div><div class="ttdef"><b>Definition:</b> reaction.hpp:11</div></div>
+<div class="ttc" id="cuda_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:7</div></div>
+<div class="ttc" id="class_stochastic___simulation_html"><div class="ttname"><a href="class_stochastic___simulation.html">Stochastic_Simulation</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:21</div></div>
+<div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">Reaction_ID</a></div><div class="ttdeci">Reaction_ID</div><div class="ttdef"><b>Definition:</b> reaction.hpp:12</div></div>
 <div class="ttc" id="classmodel_html"><div class="ttname"><a href="classmodel.html">model</a></div><div class="ttdef"><b>Definition:</b> model.hpp:10</div></div>
 <div class="ttc" id="stoch_8hpp_html"><div class="ttname"><a href="stoch_8hpp.html">stoch.hpp</a></div></div>
 <div class="ttc" id="specie_8hpp_html_a13c7f2b53faa23c03489d6e9f71d7cd4"><div class="ttname"><a href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a></div><div class="ttdeci">Species</div><div class="ttdef"><b>Definition:</b> specie.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 17 2018 18:42:34 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

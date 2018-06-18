@@ -1,9 +1,7 @@
 <map id="source/analysis/conccheck.hpp" name="source/analysis/conccheck.hpp">
-<area shape="rect" id="node2" href="$analysis_2base_8hpp.html" title="base.hpp" alt="" coords="195,155,268,181"/>
-<area shape="rect" id="node13" href="$context_8hpp.html" title="core/context.hpp" alt="" coords="270,80,388,107"/>
-<area shape="rect" id="node3" href="$observable_8hpp.html" title="core/observable.hpp" alt="" coords="99,229,237,256"/>
-<area shape="rect" id="node6" href="$specie_8hpp.html" title="core/specie.hpp" alt="" coords="261,229,376,256"/>
-<area shape="rect" id="node9" href="$csvw_8hpp.html" title="io/csvw.hpp" alt="" coords="411,229,503,256"/>
-<area shape="rect" id="node10" href="$_real_8hpp.html" title="utility/Real.hpp" alt="" coords="525,304,635,331"/>
-<area shape="rect" id="node14" href="$common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="356,155,519,181"/>
+<area shape="rect" id="node2" href="$analysis_2base_8hpp.html" title="base.hpp" alt="" coords="293,80,367,107"/>
+<area shape="rect" id="node3" href="$observable_8hpp.html" title="core/observable.hpp" alt="" coords="47,155,185,181"/>
+<area shape="rect" id="node6" href="$specie_8hpp.html" title="core/specie.hpp" alt="" coords="209,155,324,181"/>
+<area shape="rect" id="node9" href="$csvw_8hpp.html" title="io/csvw.hpp" alt="" coords="349,155,440,181"/>
+<area shape="rect" id="node10" href="$_real_8hpp.html" title="utility/Real.hpp" alt="" coords="404,229,513,256"/>
 </map>

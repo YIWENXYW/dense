@@ -154,11 +154,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <a class="code" href="classcsvr.html">csvr</a> perturbFile(pcfPertFileName, do_global_pert);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">if</span> (perturbFile.<a class="code" href="classcsvr.html#a2d2668940e16a910e4454b5eff10e7b5">is_open</a>() || do_global_pert)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <a class="code" href="class_simulation___set.html#a347b812a31867e08e690580e9038504b">factors_pert</a> = <span class="keyword">new</span> <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>[<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <a class="code" href="class_simulation___set.html#a347b812a31867e08e690580e9038504b">factors_pert</a> = <span class="keyword">new</span> <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>[<a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>];</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <span class="comment">// pert factor to be added to array</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> tPert = 0.0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>; i++)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; i++)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                            <span class="comment">// Perturb default (0.0 if argument was not a Real)</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                            <span class="comment">// Prevents crashes in case perturbation parsing fails</span></div>
@@ -190,13 +190,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    <a class="code" href="classcsvr.html">csvr</a> gradientFile(pcfGradFileName);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keywordflow">if</span> (gradientFile.<a class="code" href="classcsvr.html#a2d2668940e16a910e4454b5eff10e7b5">is_open</a>())</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <a class="code" href="class_simulation___set.html#a8e2518e05059087aa388b8e7cccf2e98">factors_grad</a> = <span class="keyword">new</span> <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>*[<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <a class="code" href="class_simulation___set.html#a8e2518e05059087aa388b8e7cccf2e98">factors_grad</a> = <span class="keyword">new</span> <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>*[<a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>];</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="comment">// gradient width index start, gradient width index end,</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <span class="comment">//   gradient low bound, gradient high bound,</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <span class="comment">//   gradient slope</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> tGradX1 = 0.0, tGradX2 = 0.0,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                 tGradY1 = 0.0, tGradY2 = 0.0, tGradM = 0.0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a>; i++)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; i++)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                            <span class="comment">// Gradient defaults</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            <span class="comment">// Helps prevent crashes in case gradient parsing fails</span></div>
@@ -296,6 +296,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iSetCount;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;};</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="reaction_8hpp_html_a5b1d2ad0e683b91a06410c4e999bcbf0"><div class="ttname"><a href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a></div><div class="ttdeci">constexpr auto NUM_REACTIONS</div><div class="ttdef"><b>Definition:</b> reaction.hpp:19</div></div>
 <div class="ttc" id="namespacestyle_html_a40f8bdf23ecb7a8c4ee022fb72cffb4e"><div class="ttname"><a href="namespacestyle.html#a40f8bdf23ecb7a8c4ee022fb72cffb4e">style::reset</a></div><div class="ttdeci">std::string reset()</div><div class="ttdef"><b>Definition:</b> color.cpp:22</div></div>
 <div class="ttc" id="reaction_8hpp_html"><div class="ttname"><a href="reaction_8hpp.html">reaction.hpp</a></div></div>
 <div class="ttc" id="classcsvr_html_a2d2668940e16a910e4454b5eff10e7b5"><div class="ttname"><a href="classcsvr.html#a2d2668940e16a910e4454b5eff10e7b5">csvr::is_open</a></div><div class="ttdeci">bool is_open() const </div><div class="ttdef"><b>Definition:</b> csvr.cpp:18</div></div>
@@ -304,14 +305,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="style_8hpp_html"><div class="ttname"><a href="style_8hpp.html">style.hpp</a></div></div>
 <div class="ttc" id="class_simulation___set_html_aa3d794989f2d118e80a3814ebae04230"><div class="ttname"><a href="class_simulation___set.html#aa3d794989f2d118e80a3814ebae04230">Simulation_Set::_sim_set</a></div><div class="ttdeci">std::vector&lt; Simulation * &gt; _sim_set</div><div class="ttdef"><b>Definition:</b> set.hpp:31</div></div>
 <div class="ttc" id="determ_8hpp_html"><div class="ttname"><a href="determ_8hpp.html">determ.hpp</a></div></div>
-<div class="ttc" id="reaction_8hpp_html_a70be864c17edf3583a16d0a0929c252e"><div class="ttname"><a href="reaction_8hpp.html#a70be864c17edf3583a16d0a0929c252e">reaction_str</a></div><div class="ttdeci">const std::string reaction_str[NUM_REACTIONS]</div><div class="ttdef"><b>Definition:</b> reaction.hpp:20</div></div>
+<div class="ttc" id="reaction_8hpp_html_a70be864c17edf3583a16d0a0929c252e"><div class="ttname"><a href="reaction_8hpp.html#a70be864c17edf3583a16d0a0929c252e">reaction_str</a></div><div class="ttdeci">const std::string reaction_str[NUM_REACTIONS]</div><div class="ttdef"><b>Definition:</b> reaction.hpp:23</div></div>
 <div class="ttc" id="class_simulation___set_html_a347b812a31867e08e690580e9038504b"><div class="ttname"><a href="class_simulation___set.html#a347b812a31867e08e690580e9038504b">Simulation_Set::factors_pert</a></div><div class="ttdeci">Real * factors_pert</div><div class="ttdef"><b>Definition:</b> set.hpp:35</div></div>
 <div class="ttc" id="parameter__set_8hpp_html"><div class="ttname"><a href="parameter__set_8hpp.html">parameter_set.hpp</a></div></div>
 <div class="ttc" id="cell__param_8hpp_html"><div class="ttname"><a href="cell__param_8hpp.html">cell_param.hpp</a></div></div>
-<div class="ttc" id="class_deterministic___simulation_html"><div class="ttname"><a href="class_deterministic___simulation.html">Deterministic_Simulation</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:19</div></div>
-<div class="ttc" id="class_stochastic___simulation_html"><div class="ttname"><a href="class_stochastic___simulation.html">Stochastic_Simulation</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:22</div></div>
+<div class="ttc" id="class_deterministic___simulation_html"><div class="ttname"><a href="class_deterministic___simulation.html">Deterministic_Simulation</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:18</div></div>
+<div class="ttc" id="class_stochastic___simulation_html"><div class="ttname"><a href="class_stochastic___simulation.html">Stochastic_Simulation</a></div><div class="ttdef"><b>Definition:</b> stoch.hpp:21</div></div>
 <div class="ttc" id="class_simulation___set_html_ab2704e973919d4ddab33ccd4aafb3d1a"><div class="ttname"><a href="class_simulation___set.html#ab2704e973919d4ddab33ccd4aafb3d1a">Simulation_Set::~Simulation_Set</a></div><div class="ttdeci">~Simulation_Set()</div><div class="ttdef"><b>Definition:</b> set.hpp:188</div></div>
-<div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594a16244c1bb89e5a78d7da248ceb69cf68">NUM_REACTIONS</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:15</div></div>
 <div class="ttc" id="class_simulation___set_html_a8e2518e05059087aa388b8e7cccf2e98"><div class="ttname"><a href="class_simulation___set.html#a8e2518e05059087aa388b8e7cccf2e98">Simulation_Set::factors_grad</a></div><div class="ttdeci">Real ** factors_grad</div><div class="ttdef"><b>Definition:</b> set.hpp:36</div></div>
 <div class="ttc" id="classcsvr_html_aaa58282699ecf3f9b9e54e4a1aea3bd5"><div class="ttname"><a href="classcsvr.html#aaa58282699ecf3f9b9e54e4a1aea3bd5">csvr::get_next</a></div><div class="ttdeci">bool get_next(Real *pnRate)</div><div class="ttdoc">Get Next CSV Data Cell. </div><div class="ttdef"><b>Definition:</b> csvr.cpp:33</div></div>
 <div class="ttc" id="class_simulation___set_html"><div class="ttname"><a href="class_simulation___set.html">Simulation_Set</a></div><div class="ttdef"><b>Definition:</b> set.hpp:27</div></div>
@@ -331,7 +331,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 17 2018 18:42:34 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

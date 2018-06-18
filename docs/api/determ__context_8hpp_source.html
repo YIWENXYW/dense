@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cell__param_8hpp.html">sim/cell_param.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_deterministic___simulation_1_1_context.html#a55e9a2087d7f6d15dae76291f56b3ab9">   12</a></span>&#160;<a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_deterministic___simulation.html">Deterministic_Simulation</a>::<a class="code" href="class_deterministic___simulation_1_1_context.html">Context</a>::calculateNeighborAvg(<a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp, <span class="keywordtype">int</span> delay)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Average the given cell&#39;s neighbors&#39; concentrations</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sum=0;</div>
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> avg;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_deterministic___simulation_1_1_context.html#ad9ec8b891c12d7dba9832b3a6d8640c8">   23</a></span>&#160;const <a class="code" href="class_deterministic___simulation.html">Deterministic_Simulation</a>::<a class="code" href="class_deterministic___simulation_1_1_context.html">Context</a>::<a class="code" href="class_c_u_d_a___array.html">SpecieRates</a> <a class="code" href="class_deterministic___simulation.html">Deterministic_Simulation</a>::<a class="code" href="class_deterministic___simulation_1_1_context.html">Context</a>::calculateRatesOfChange(){</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <a class="code" href="classmodel.html">model</a>&amp; _model = _simulation._model;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> specie_deltas;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_deterministic___simulation_1_1_context.html#a3919133ba91bee0c7d640f78a1123117">   50</a></span>&#160;void <a class="code" href="class_deterministic___simulation.html">Deterministic_Simulation</a>::<a class="code" href="class_deterministic___simulation_1_1_context.html">Context</a>::updateCon(const <a class="code" href="class_deterministic___simulation.html">Deterministic_Simulation</a>::<a class="code" href="class_deterministic___simulation_1_1_context.html">Context</a>::<a class="code" href="class_c_u_d_a___array.html">SpecieRates</a>&amp; rates){</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//double step_size= _simulation.step_size;</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
@@ -156,20 +156,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // CONTEXT_IMPL</span></div>
 <div class="ttc" id="specie_8hpp_html_a6f079e738f767aab6d074d5e0669442e"><div class="ttname"><a href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a></div><div class="ttdeci">constexpr auto NUM_SPECIES</div><div class="ttdef"><b>Definition:</b> specie.hpp:26</div></div>
-<div class="ttc" id="common__utils_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> common_utils.hpp:8</div></div>
 <div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
-<div class="ttc" id="class_c_u_d_a___array_html"><div class="ttname"><a href="class_c_u_d_a___array.html">CUDA_Array</a></div><div class="ttdef"><b>Definition:</b> common_utils.hpp:20</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html"><div class="ttname"><a href="class_c_u_d_a___array.html">CUDA_Array</a></div><div class="ttdef"><b>Definition:</b> cuda.hpp:15</div></div>
 <div class="ttc" id="determ_8hpp_html"><div class="ttname"><a href="determ_8hpp.html">determ.hpp</a></div></div>
 <div class="ttc" id="cell__param_8hpp_html"><div class="ttname"><a href="cell__param_8hpp.html">cell_param.hpp</a></div></div>
-<div class="ttc" id="class_deterministic___simulation_html"><div class="ttname"><a href="class_deterministic___simulation.html">Deterministic_Simulation</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:19</div></div>
-<div class="ttc" id="class_deterministic___simulation_1_1_context_html"><div class="ttname"><a href="class_deterministic___simulation_1_1_context.html">Deterministic_Simulation::Context</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:22</div></div>
+<div class="ttc" id="class_deterministic___simulation_html"><div class="ttname"><a href="class_deterministic___simulation.html">Deterministic_Simulation</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:18</div></div>
+<div class="ttc" id="cuda_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:7</div></div>
+<div class="ttc" id="class_deterministic___simulation_1_1_context_html"><div class="ttname"><a href="class_deterministic___simulation_1_1_context.html">Deterministic_Simulation::Context</a></div><div class="ttdef"><b>Definition:</b> determ.hpp:21</div></div>
 <div class="ttc" id="classmodel_html"><div class="ttname"><a href="classmodel.html">model</a></div><div class="ttdef"><b>Definition:</b> model.hpp:10</div></div>
 <div class="ttc" id="common__utils_8hpp_html"><div class="ttname"><a href="common__utils_8hpp.html">common_utils.hpp</a></div></div>
 <div class="ttc" id="specie_8hpp_html_a13c7f2b53faa23c03489d6e9f71d7cd4"><div class="ttname"><a href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a></div><div class="ttdeci">Species</div><div class="ttdef"><b>Definition:</b> specie.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 17 2018 18:42:34 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

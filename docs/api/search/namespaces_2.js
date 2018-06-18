@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['style',['style',['../namespacestyle.html',1,'']]]
+  ['dense',['dense',['../namespacedense.html',1,'']]]
 ];

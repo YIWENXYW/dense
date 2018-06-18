@@ -98,34 +98,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="common__utils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UTIL_COMMON_UTILS_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UTIL_COMMON_UTILS_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifdef __CUDACC__</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IF_CUDA(X) X</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">    8</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IF_CUDA(X)</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="common__utils_8hpp.html#a01b21691d813ceb087b72a5f9db412c6">   11</a></span>&#160;<span class="preprocessor">#define STATIC_VAR IF_CUDA(__managed__)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="specie_8hpp.html">core/specie.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// converts comma seperated list of specie names to specie_vec</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <a class="code" href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a>(std::string pcfSpecies);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_real_8hpp.html">Real.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueT, std::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_u_d_a___array.html">CUDA_Array</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; ValueT array[Size];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a57d6b5d3b191eee0a75fccabd52c3715">   24</a></span>&#160;  ValueT &amp; operator[] (std::<span class="keywordtype">size_t</span> i) { <span class="keywordflow">return</span> array[i]; };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a427138b026ea60a80c721379456edec5">   26</a></span>&#160;  ValueT const&amp; operator[] (std::<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> array[i]; };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="common__utils_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="common__utils_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> common_utils.hpp:8</div></div>
-<div class="ttc" id="class_c_u_d_a___array_html"><div class="ttname"><a href="class_c_u_d_a___array.html">CUDA_Array</a></div><div class="ttdef"><b>Definition:</b> common_utils.hpp:20</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="specie_8hpp.html">core/specie.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// converts comma seperated list of specie names to specie_vec</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <a class="code" href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a>(std::string pcfSpecies);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_real_8hpp.html">Real.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="specie_8hpp_html"><div class="ttname"><a href="specie_8hpp.html">specie.hpp</a></div></div>
 <div class="ttc" id="specie_8hpp_html_a5cf24c08e534e9052761a7496b324292"><div class="ttname"><a href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a></div><div class="ttdeci">std::vector&lt; Species &gt; specie_vec</div><div class="ttdef"><b>Definition:</b> specie.hpp:40</div></div>
 <div class="ttc" id="common__utils_8hpp_html_abf836323f9adb8abb48bc3366e5e9ffc"><div class="ttname"><a href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a></div><div class="ttdeci">specie_vec str_to_species(std::string pcfSpecies)</div><div class="ttdef"><b>Definition:</b> common_utils.cpp:5</div></div>
@@ -133,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 17 2018 18:42:34 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

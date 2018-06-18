@@ -19,7 +19,6 @@ var searchData=
   ['getdelay',['getDelay',['../class_parameter___set.html#af296e350dfdd6dc8f989aeb6654c0d1a',1,'Parameter_Set::getDelay()'],['../class_deterministic___simulation_1_1_context.html#a3ef9dbec003e7bcfbcc9b4c1abbcb40b',1,'Deterministic_Simulation::Context::getDelay()'],['../classsimulation__cuda_1_1_context.html#ae94078fef3f00183e1524cee2bb05b0e',1,'simulation_cuda::Context::getDelay()'],['../class_stochastic___simulation_1_1_context_stoch.html#ae93161599270c2ac60276f7400345005',1,'Stochastic_Simulation::ContextStoch::getDelay()']]],
   ['getdelayreactionid',['getDelayReactionId',['../classmodel.html#a7dfa8fe174095808242973a58567c506',1,'model']]],
   ['getdeltas',['getDeltas',['../classreaction__base.html#a2a76ab2a306c89eb0126a4724895f620',1,'reaction_base']]],
-  ['geterrorstr',['getErrorStr',['../struct_error_info_base.html#aabcb3f6a9c6e3fa06d2c38b3095106da',1,'ErrorInfoBase']]],
   ['getnumdeltas',['getNumDeltas',['../classreaction__base.html#af0dce55f66f9aee1a9325c908065017a',1,'reaction_base']]],
   ['getrate',['getRate',['../class_deterministic___simulation_1_1_context.html#a3805208dadd20ccc9f143b474859c921',1,'Deterministic_Simulation::Context::getRate()'],['../classsimulation__cuda_1_1_context.html#a50a8280b43b975fa352ec9f47b950b17',1,'simulation_cuda::Context::getRate()'],['../class_stochastic___simulation_1_1_context_stoch.html#a75ba9c4b0df75d04deca61f72e7d89c1',1,'Stochastic_Simulation::ContextStoch::getRate()']]],
   ['getreaction',['getReaction',['../classmodel.html#a03d48fb9b48b385b968b4d3e0538101b',1,'model']]],

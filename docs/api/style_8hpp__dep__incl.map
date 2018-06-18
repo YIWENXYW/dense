@@ -3,9 +3,8 @@
 <area shape="rect" id="node3" href="$arg__parse_8cpp.html" title="source/io/arg_parse.cpp" alt="" coords="169,80,329,107"/>
 <area shape="rect" id="node4" href="$csvr_8cpp.html" title="source/io/csvr.cpp" alt="" coords="354,80,483,107"/>
 <area shape="rect" id="node5" href="$csvw_8cpp.html" title="source/io/csvw.cpp" alt="" coords="507,80,641,107"/>
-<area shape="rect" id="node6" href="$csvw__param_8cpp.html" title="source/io/csvw_param.cpp" alt="" coords="667,80,845,107"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="823,155,941,181"/>
-<area shape="rect" id="node8" href="$set_8hpp.html" title="source/sim/set.hpp" alt="" coords="920,80,1053,107"/>
-<area shape="rect" id="node10" href="$color_8cpp.html" title="source/utility/color.cpp" alt="" coords="1078,80,1231,107"/>
-<area shape="rect" id="node9" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="967,155,1135,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="621,155,739,181"/>
+<area shape="rect" id="node7" href="$set_8hpp.html" title="source/sim/set.hpp" alt="" coords="717,80,851,107"/>
+<area shape="rect" id="node9" href="$color_8cpp.html" title="source/utility/color.cpp" alt="" coords="875,80,1028,107"/>
+<area shape="rect" id="node8" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="764,155,932,181"/>
 </map>
