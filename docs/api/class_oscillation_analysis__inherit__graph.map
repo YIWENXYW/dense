@@ -1,0 +1,4 @@
+<map id="OscillationAnalysis" name="OscillationAnalysis">
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="36,80,108,107"/>
+<area shape="rect" id="node3" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="35,5,108,32"/>
+</map>

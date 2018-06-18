@@ -1,0 +1,8 @@
+<map id="Observer" name="Observer">
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="249,80,321,107"/>
+<area shape="rect" id="node7" href="$classcsvw__sim.html" title="csvw_sim" alt="" coords="346,80,427,107"/>
+<area shape="rect" id="node3" href="$class_basic_analysis.html" title="BasicAnalysis" alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$class_concentration_check.html" title="ConcentrationCheck" alt="" coords="133,155,273,181"/>
+<area shape="rect" id="node5" href="$class_correlation_analysis.html" title="CorrelationAnalysis" alt="" coords="299,155,433,181"/>
+<area shape="rect" id="node6" href="$class_oscillation_analysis.html" title="OscillationAnalysis" alt="" coords="459,155,592,181"/>
+</map>

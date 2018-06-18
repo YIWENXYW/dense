@@ -1,0 +1,4 @@
+<map id="BasicAnalysis" name="BasicAnalysis">
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="21,80,93,107"/>
+<area shape="rect" id="node3" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="20,5,93,32"/>
+</map>
