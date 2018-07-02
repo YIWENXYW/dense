@@ -1,6 +1,5 @@
 <map id="OscillationAnalysis" name="OscillationAnalysis">
-<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="149,187,221,213"/>
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="93,200,165,227"/>
 <area shape="rect" id="node3" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="5,96,79,123"/>
-<area shape="rect" id="node5" href="$classcsvw.html" title="csvw" alt="" coords="159,5,212,32"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="291,96,407,123"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="178,96,293,123"/>
 </map>

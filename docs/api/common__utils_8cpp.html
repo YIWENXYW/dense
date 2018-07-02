@@ -98,21 +98,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="common__utils_8hpp_source.html">common_utils.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="style_8hpp_source.html">utility/style.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="csvr_8hpp_source.html">io/csvr.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="reaction_8hpp_source.html">core/reaction.hpp</a>&quot;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for common_utils.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="common__utils_8cpp__incl.png" border="0" usemap="#source_2utility_2common__utils_8cpp" alt=""/></div>
 <map name="source_2utility_2common__utils_8cpp" id="source_2utility_2common__utils_8cpp">
-<area shape="rect" id="node2" href="common__utils_8hpp.html" title="common_utils.hpp" alt="" coords="108,96,236,123"/><area shape="rect" id="node3" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="56,171,171,197"/><area shape="rect" id="node7" href="_real_8hpp.html" title="Real.hpp" alt="" coords="195,171,268,197"/></map>
+<area shape="rect" id="node2" href="common__utils_8hpp.html" title="common_utils.hpp" alt="" coords="340,96,468,123"/><area shape="rect" id="node13" href="style_8hpp.html" title="utility/style.hpp" alt="" coords="761,171,871,197"/><area shape="rect" id="node14" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="773,96,859,123"/><area shape="rect" id="node16" href="reaction_8hpp.html" title="core/reaction.hpp" alt="" coords="492,96,615,123"/><area shape="rect" id="node3" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="51,171,165,197"/><area shape="rect" id="node7" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="338,171,472,197"/><area shape="rect" id="node8" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="339,245,491,272"/><area shape="rect" id="node9" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="321,320,479,347"/><area shape="rect" id="node17" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="497,171,607,197"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab7fe8b399b9edf6e6e26b894d4f34997"><td class="memItemLeft" align="right" valign="top"><a class="el" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#ab7fe8b399b9edf6e6e26b894d4f34997">str_to_species</a> (std::string pSpecies)</td></tr>
 <tr class="separator:ab7fe8b399b9edf6e6e26b894d4f34997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6beb287e8082b6c2eb2c141d747d5bf6"><td class="memItemLeft" align="right" valign="top">Real *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#a6beb287e8082b6c2eb2c141d747d5bf6">parse_perturbations</a> (std::string const &amp;pcfPertFileName)</td></tr>
+<tr class="separator:a6beb287e8082b6c2eb2c141d747d5bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabbff5c8210db3a586c58bba468e0a5"><td class="memItemLeft" align="right" valign="top">Real **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#aeabbff5c8210db3a586c58bba468e0a5">parse_gradients</a> (std::string const &amp;pcfGradFileName, int total_width)</td></tr>
+<tr class="separator:aeabbff5c8210db3a586c58bba468e0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aeabbff5c8210db3a586c58bba468e0a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real** parse_gradients </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>pcfGradFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6beb287e8082b6c2eb2c141d747d5bf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real* parse_perturbations </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>pcfPertFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab7fe8b399b9edf6e6e26b894d4f34997"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +183,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:20 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:48 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

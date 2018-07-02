@@ -1,6 +1,7 @@
 <map id="Simulation" name="Simulation">
-<area shape="rect" id="node3" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="5,155,171,181"/>
-<area shape="rect" id="node5" href="$class_stochastic___simulation.html" title="Stochastic_Simulation" alt="" coords="196,155,348,181"/>
-<area shape="rect" id="node2" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="136,5,224,32"/>
-<area shape="rect" id="node4" href="$classsimulation__cuda.html" title="simulation_cuda" alt="" coords="30,229,145,256"/>
+<area shape="rect" id="node3" href="$class_c_s_v___streamed___simulation.html" title="CSV_Streamed_Simulation" alt="" coords="5,155,187,181"/>
+<area shape="rect" id="node4" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="211,155,377,181"/>
+<area shape="rect" id="node6" href="$class_stochastic___simulation.html" title="Stochastic_Simulation" alt="" coords="403,155,555,181"/>
+<area shape="rect" id="node2" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="251,5,339,32"/>
+<area shape="rect" id="node5" href="$classsimulation__cuda.html" title="simulation_cuda" alt="" coords="237,229,352,256"/>
 </map>

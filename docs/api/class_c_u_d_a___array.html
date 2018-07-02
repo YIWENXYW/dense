@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: CUDA_Array&lt; ValueT, Size &gt; Class Template Reference</title>
+<title>Differential Equation Network Simulation Engine: CUDA_Array&lt; T, size &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_c_u_d_a___array-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CUDA_Array&lt; ValueT, Size &gt; Class Template Reference</div>  </div>
+<div class="title">CUDA_Array&lt; T, size &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -101,25 +101,189 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57d6b5d3b191eee0a75fccabd52c3715"><td class="memItemLeft" align="right" valign="top">ValueT &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a57d6b5d3b191eee0a75fccabd52c3715">operator[]</a> (std::size_t i)</td></tr>
-<tr class="separator:a57d6b5d3b191eee0a75fccabd52c3715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427138b026ea60a80c721379456edec5"><td class="memItemLeft" align="right" valign="top">ValueT const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a427138b026ea60a80c721379456edec5">operator[]</a> (std::size_t i) const </td></tr>
-<tr class="separator:a427138b026ea60a80c721379456edec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0fd6b4af3c7c1ccdc787e4beb2cbb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a1e0fd6b4af3c7c1ccdc787e4beb2cbb5">CUDA_Array</a> ()</td></tr>
+<tr class="separator:a1e0fd6b4af3c7c1ccdc787e4beb2cbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fbce6d9e6f62fd008507135b7f1c0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a43fbce6d9e6f62fd008507135b7f1c0c">CUDA_Array</a> (T const &amp;value)</td></tr>
+<tr class="separator:a43fbce6d9e6f62fd008507135b7f1c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643bb599785b2428af719dcdb8b8edbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a643bb599785b2428af719dcdb8b8edbf">begin</a> ()</td></tr>
+<tr class="separator:a643bb599785b2428af719dcdb8b8edbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf517cecb67745e1946e5050846eec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a6cf517cecb67745e1946e5050846eec5">begin</a> () const </td></tr>
+<tr class="separator:a6cf517cecb67745e1946e5050846eec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efa86970fcafb70f418b46ecc6b7641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641">end</a> ()</td></tr>
+<tr class="separator:a5efa86970fcafb70f418b46ecc6b7641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635a6d90d6856b31db5b245b932b99a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1">end</a> () const </td></tr>
+<tr class="separator:a635a6d90d6856b31db5b245b932b99a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b4443c246b61646d58f6d92b0e705d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a76b4443c246b61646d58f6d92b0e705d">operator[]</a> (std::ptrdiff_t i)</td></tr>
+<tr class="separator:a76b4443c246b61646d58f6d92b0e705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6363771614a09b6173d7afdc1adb9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_u_d_a___array.html#a9a6363771614a09b6173d7afdc1adb9d">operator[]</a> (std::ptrdiff_t i) const </td></tr>
+<tr class="separator:a9a6363771614a09b6173d7afdc1adb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a57d6b5d3b191eee0a75fccabd52c3715"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1e0fd6b4af3c7c1ccdc787e4beb2cbb5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ValueT, std::size_t Size&gt; </div>
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ValueT&amp; <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; ValueT, Size &gt;::operator[] </td>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::<a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a> </td>
           <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43fbce6d9e6f62fd008507135b7f1c0c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::<a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a> </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a643bb599785b2428af719dcdb8b8edbf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T* <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cf517cecb67745e1946e5050846eec5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const* <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5efa86970fcafb70f418b46ecc6b7641"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T* <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a635a6d90d6856b31db5b245b932b99a1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const* <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76b4443c246b61646d58f6d92b0e705d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T&amp; <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -133,19 +297,19 @@ template&lt;typename ValueT, std::size_t Size&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a427138b026ea60a80c721379456edec5"></a>
+<a class="anchor" id="a9a6363771614a09b6173d7afdc1adb9d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ValueT, std::size_t Size&gt; </div>
+template&lt;typename T, std::ptrdiff_t size&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ValueT const&amp; <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; ValueT, Size &gt;::operator[] </td>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> T const&amp; <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; T, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a> &gt;::operator[] </td>
           <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramtype">std::ptrdiff_t&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -165,7 +329,7 @@ template&lt;typename ValueT, std::size_t Size&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:20 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

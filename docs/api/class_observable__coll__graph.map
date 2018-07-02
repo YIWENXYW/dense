@@ -1,3 +1,7 @@
 <map id="Observable" name="Observable">
-<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$class_simulation.html" title="Simulation" alt="" coords="301,96,384,123"/>
+<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="573,21,683,48"/>
+<area shape="rect" id="node6" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="509,127,747,183"/>
+<area shape="rect" id="node4" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="27,64,136,91"/>
+<area shape="rect" id="node7" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="5,115,157,141"/>
 </map>

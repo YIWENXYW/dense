@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['csvr_5fsim',['csvr_sim',['../classcsvr__sim_1_1sim__ct.html#a13128ee5465ec0a023c49a898857a5cd',1,'csvr_sim::sim_ct']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../class_queue.html#a91c1ac390d58d476a34881bc7633b3a7',1,'Queue']]]
 ];

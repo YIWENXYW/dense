@@ -99,20 +99,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UTIL_COMMON_UTILS_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="specie_8hpp.html">core/specie.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// converts comma seperated list of specie names to specie_vec</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <a class="code" href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a>(std::string pcfSpecies);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_real_8hpp.html">Real.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="numerics_8hpp.html">utility/numerics.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// converts comma seperated list of specie names to specie_vec</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <a class="code" href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a>(std::string pcfSpecies);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;Real* <a class="code" href="common__utils_8hpp.html#a072fbb035d15022e604f4deab5fc22e2">parse_perturbations</a>(std::string <span class="keyword">const</span>&amp; file_name);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Real** <a class="code" href="common__utils_8hpp.html#ae524338282730a17e257a8ec31191fd3">parse_gradients</a>(std::string <span class="keyword">const</span>&amp; file_name, <span class="keywordtype">int</span> width);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="common__utils_8hpp_html_ae524338282730a17e257a8ec31191fd3"><div class="ttname"><a href="common__utils_8hpp.html#ae524338282730a17e257a8ec31191fd3">parse_gradients</a></div><div class="ttdeci">Real ** parse_gradients(std::string const &amp;file_name, int width)</div><div class="ttdef"><b>Definition:</b> common_utils.cpp:78</div></div>
 <div class="ttc" id="specie_8hpp_html"><div class="ttname"><a href="specie_8hpp.html">specie.hpp</a></div></div>
+<div class="ttc" id="common__utils_8hpp_html_a072fbb035d15022e604f4deab5fc22e2"><div class="ttname"><a href="common__utils_8hpp.html#a072fbb035d15022e604f4deab5fc22e2">parse_perturbations</a></div><div class="ttdeci">Real * parse_perturbations(std::string const &amp;file_name)</div><div class="ttdef"><b>Definition:</b> common_utils.cpp:33</div></div>
+<div class="ttc" id="numerics_8hpp_html"><div class="ttname"><a href="numerics_8hpp.html">numerics.hpp</a></div></div>
 <div class="ttc" id="specie_8hpp_html_a5cf24c08e534e9052761a7496b324292"><div class="ttname"><a href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a></div><div class="ttdeci">std::vector&lt; Species &gt; specie_vec</div><div class="ttdef"><b>Definition:</b> specie.hpp:40</div></div>
-<div class="ttc" id="common__utils_8hpp_html_abf836323f9adb8abb48bc3366e5e9ffc"><div class="ttname"><a href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a></div><div class="ttdeci">specie_vec str_to_species(std::string pcfSpecies)</div><div class="ttdef"><b>Definition:</b> common_utils.cpp:5</div></div>
-<div class="ttc" id="_real_8hpp_html"><div class="ttname"><a href="_real_8hpp.html">Real.hpp</a></div></div>
+<div class="ttc" id="common__utils_8hpp_html_abf836323f9adb8abb48bc3366e5e9ffc"><div class="ttname"><a href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a></div><div class="ttdeci">specie_vec str_to_species(std::string pcfSpecies)</div><div class="ttdef"><b>Definition:</b> common_utils.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

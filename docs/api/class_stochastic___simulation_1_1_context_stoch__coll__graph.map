@@ -1,3 +1,8 @@
 <map id="Stochastic_Simulation::ContextStoch" name="Stochastic_Simulation::ContextStoch">
-<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="26,5,136,32"/>
+<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="6,121,117,148"/>
+<area shape="rect" id="node4" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="245,121,333,148"/>
+<area shape="rect" id="node3" href="$class_simulation.html" title="Simulation" alt="" coords="509,191,592,217"/>
+<area shape="rect" id="node7" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="717,221,955,277"/>
+<area shape="rect" id="node5" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="235,235,344,261"/>
+<area shape="rect" id="node8" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="213,71,365,97"/>
 </map>

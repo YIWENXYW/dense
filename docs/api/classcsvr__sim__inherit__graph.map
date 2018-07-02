@@ -1,4 +1,5 @@
 <map id="csvr_sim" name="csvr_sim">
-<area shape="rect" id="node2" href="$classcsvr.html" title="csvr" alt="" coords="5,5,51,32"/>
-<area shape="rect" id="node3" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="76,5,164,32"/>
+<area shape="rect" id="node2" href="$classcsvr.html" title="csvr" alt="" coords="5,80,51,107"/>
+<area shape="rect" id="node3" href="$class_simulation.html" title="Simulation" alt="" coords="76,80,157,107"/>
+<area shape="rect" id="node4" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="73,5,161,32"/>
 </map>

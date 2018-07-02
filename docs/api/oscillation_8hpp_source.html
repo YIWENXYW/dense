@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: source/analysis/oscillation.hpp Source File</title>
+<title>Differential Equation Network Simulation Engine: source/measurement/oscillation.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_cdf958bd06abcc7d9575cbcdf6f4a166.html">analysis</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_657a33149547c72bb8e2e539d212a3a9.html">measurement</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="oscillation_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ANLYS_OSCILLATION_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ANLYS_OSCILLATION_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="analysis_2base_8hpp.html">base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="measurement_2base_8hpp.html">base.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
@@ -115,8 +115,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">struct </span>crit_point {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#af4c9c84fe6089563005320d2a099be86">time</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> conc;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Real <a class="code" href="class_analysis.html#af4c9c84fe6089563005320d2a099be86">time</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        Real conc;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">bool</span> is_peak;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
@@ -124,12 +124,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Outer-most vector is &quot;for each specie in observed_species_&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;std::vector&lt;Queue&gt;&gt; windows;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;std::vector&lt;Queue&lt;Real&gt;&gt;&gt; windows;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::vector&lt;std::vector&lt;std::vector&lt;crit_point&gt;&gt;&gt; peaksAndTroughs;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> range_steps;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> analysis_interval;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Real analysis_interval;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::vector&lt;std::vector&lt;std::multiset&lt;Real&gt;&gt;&gt; bst;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -137,8 +137,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::vector&lt;std::vector&lt;Real&gt;&gt; periods;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// s: specie_vec index</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> addCritPoint(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> context, <span class="keywordtype">bool</span> isPeak, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> minute, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> concentration);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> get_peaks_and_troughs(<a class="code" href="classdense_1_1_context.html">dense::Context</a> <span class="keyword">const</span>&amp; start, <span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> addCritPoint(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> context, <span class="keywordtype">bool</span> isPeak, Real minute, Real concentration);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> get_peaks_and_troughs(<a class="code" href="classdense_1_1_context.html">dense::Context&lt;&gt;</a> <span class="keyword">const</span>&amp; start, <span class="keywordtype">int</span> c);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> calcAmpsAndPers(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> c);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> checkCritPoint(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> c);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
@@ -150,11 +150,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    * range: required local range of a peak or trough in minutes.</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    * specieID: specie to analyze.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_oscillation_analysis.html#a873df9817524deb1a4169e82336b8926">   56</a></span>&#160;    <a class="code" href="class_oscillation_analysis.html#a873df9817524deb1a4169e82336b8926">OscillationAnalysis</a>(<a class="code" href="class_observable.html">Observable</a> &amp; observable, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> interval,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> range, <a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <span class="keyword">const</span>&amp; pcfSpecieOption,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <a class="code" href="classcsvw.html">csvw</a>* pnFileOut, <span class="keywordtype">unsigned</span> min_cell, <span class="keywordtype">unsigned</span> max_cell,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>) :</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_analysis.html">Analysis</a>(pcfSpecieOption,pnFileOut,min_cell,max_cell,start_time,end_time),</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_oscillation_analysis.html#abbb60af737d7cbaa7488569a52644760">   56</a></span>&#160;    <a class="code" href="class_oscillation_analysis.html#abbb60af737d7cbaa7488569a52644760">OscillationAnalysis</a>(<a class="code" href="class_observable.html">Observable</a> &amp; observable, Real interval,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        Real range, <a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <span class="keyword">const</span>&amp; pcfSpecieOption,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keywordtype">unsigned</span> min_cell, <span class="keywordtype">unsigned</span> max_cell,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        Real <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, Real <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>) :</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_analysis.html">Analysis</a>(pcfSpecieOption,min_cell,max_cell,start_time,end_time),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            range_steps(range/interval), analysis_interval(interval)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="class_observer.html#a03a78510d694c0499d37d35fa449137a">subscribe_to</a>(observable);</div>
@@ -166,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            amplitudes.emplace_back();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            periods.emplace_back();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> c = <a class="code" href="class_analysis.html#a9bf3ee71074ec46253108b62214f583e">min</a>; c &lt; <a class="code" href="class_analysis.html#a760c22396940fa629f1ec405175b30ba">max</a>; ++c){</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="class_queue.html">Queue</a> q(range_steps);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="class_queue.html">Queue&lt;Real&gt;</a> q(range_steps);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                std::vector&lt;crit_point&gt; v;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                std::multiset&lt;Real&gt; BST;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -190,13 +190,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">    * - postcondition: start.isValid() is false.</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    * - update is overloaded virtual function of Observer</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_oscillation_analysis.html#aa2d87cec753ddd07ad9353eaaa3fde17">update</a> (<a class="code" href="classdense_1_1_context.html">dense::Context</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_oscillation_analysis.html#a639577544393d13181b4e2241fd5b504">update</a> (<a class="code" href="classdense_1_1_context.html">dense::Context&lt;&gt;</a>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//Finalize: called by observable to signal end of data</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// - generates peaks and troughs in final slice of data.</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_oscillation_analysis.html#aa1ddd3ff5b10a4fae7c3dab497bbe6dd">finalize</a> () <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_oscillation_analysis.html#ae46d2a4a7aab15caa4780a88377b4d11">show</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_oscillation_analysis.html#a24589cb9d36d12152585c25311a46501">show</a> (<a class="code" href="classcsvw.html">csvw</a> * = <span class="keyword">nullptr</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_correlation_analysis.html">  105</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_correlation_analysis.html">CorrelationAnalysis</a> : <span class="keyword">public</span> <a class="code" href="class_analysis.html">Analysis</a> {</div>
@@ -204,13 +204,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_correlation_analysis.html#ab1f20384b50ab759cab3d97f7bfe8efe">  109</a></span>&#160;    <a class="code" href="class_correlation_analysis.html#ab1f20384b50ab759cab3d97f7bfe8efe">CorrelationAnalysis</a>(<a class="code" href="class_observable.html">Observable</a> *dLog,<a class="code" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> <span class="keyword">const</span>&amp; pcfSpecieOption,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">unsigned</span> min_cell, <span class="keywordtype">unsigned</span> max_cell, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>) :</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="class_analysis.html">Analysis</a>(pcfSpecieOption, 0, min_cell, max_cell, start_time, end_time)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">unsigned</span> min_cell, <span class="keywordtype">unsigned</span> max_cell, Real <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, Real <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>) :</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="class_analysis.html">Analysis</a>(pcfSpecieOption, min_cell, max_cell, start_time, end_time)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <a class="code" href="class_observer.html#a03a78510d694c0499d37d35fa449137a">subscribe_to</a>(*dLog);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_correlation_analysis.html#a07e5cfe3212f67a26a595cb8f891bcc2">  116</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_correlation_analysis.html#a07e5cfe3212f67a26a595cb8f891bcc2">update</a>(<a class="code" href="classdense_1_1_context.html">dense::Context</a> &amp; start) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_correlation_analysis.html#ad4a7d4f21a43f09e077cfbc1dc957b15">  116</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_correlation_analysis.html#ad4a7d4f21a43f09e077cfbc1dc957b15">update</a>(<a class="code" href="classdense_1_1_context.html">dense::Context&lt;&gt;</a> start)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_correlation_analysis.html#a17f83c0f4e856fda8dc8efbc28fa132b">pearsonCorrelate</a>();</div>
@@ -221,32 +221,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcsvw_html"><div class="ttname"><a href="classcsvw.html">csvw</a></div><div class="ttdef"><b>Definition:</b> csvw.hpp:10</div></div>
 <div class="ttc" id="class_correlation_analysis_html"><div class="ttname"><a href="class_correlation_analysis.html">CorrelationAnalysis</a></div><div class="ttdef"><b>Definition:</b> oscillation.hpp:105</div></div>
 <div class="ttc" id="class_analysis_html_ab4c7ecdd2cc2abcded8f06d9d672d540"><div class="ttname"><a href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">Analysis::start_time</a></div><div class="ttdeci">Real start_time</div><div class="ttdef"><b>Definition:</b> base.hpp:38</div></div>
-<div class="ttc" id="class_analysis_html"><div class="ttname"><a href="class_analysis.html">Analysis</a></div><div class="ttdoc">Superclass for Analysis Objects. </div><div class="ttdef"><b>Definition:</b> base.hpp:13</div></div>
-<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:18</div></div>
-<div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
+<div class="ttc" id="class_analysis_html"><div class="ttname"><a href="class_analysis.html">Analysis</a></div><div class="ttdoc">Superclass for Analysis Objects. </div><div class="ttdef"><b>Definition:</b> base.hpp:14</div></div>
+<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:10</div></div>
 <div class="ttc" id="class_oscillation_analysis_html"><div class="ttname"><a href="class_oscillation_analysis.html">OscillationAnalysis</a></div><div class="ttdef"><b>Definition:</b> oscillation.hpp:17</div></div>
 <div class="ttc" id="class_analysis_html_a760c22396940fa629f1ec405175b30ba"><div class="ttname"><a href="class_analysis.html#a760c22396940fa629f1ec405175b30ba">Analysis::max</a></div><div class="ttdeci">unsigned const max</div><div class="ttdef"><b>Definition:</b> base.hpp:40</div></div>
-<div class="ttc" id="class_oscillation_analysis_html_ae46d2a4a7aab15caa4780a88377b4d11"><div class="ttname"><a href="class_oscillation_analysis.html#ae46d2a4a7aab15caa4780a88377b4d11">OscillationAnalysis::show</a></div><div class="ttdeci">void show() override</div><div class="ttdef"><b>Definition:</b> oscillation.cpp:28</div></div>
-<div class="ttc" id="analysis_2base_8hpp_html"><div class="ttname"><a href="analysis_2base_8hpp.html">base.hpp</a></div></div>
-<div class="ttc" id="class_correlation_analysis_html_a07e5cfe3212f67a26a595cb8f891bcc2"><div class="ttname"><a href="class_correlation_analysis.html#a07e5cfe3212f67a26a595cb8f891bcc2">CorrelationAnalysis::update</a></div><div class="ttdeci">void update(dense::Context &amp;start)</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:116</div></div>
 <div class="ttc" id="class_correlation_analysis_html_a17f83c0f4e856fda8dc8efbc28fa132b"><div class="ttname"><a href="class_correlation_analysis.html#a17f83c0f4e856fda8dc8efbc28fa132b">CorrelationAnalysis::pearsonCorrelate</a></div><div class="ttdeci">bool pearsonCorrelate()</div></div>
-<div class="ttc" id="class_oscillation_analysis_html_aa2d87cec753ddd07ad9353eaaa3fde17"><div class="ttname"><a href="class_oscillation_analysis.html#aa2d87cec753ddd07ad9353eaaa3fde17">OscillationAnalysis::update</a></div><div class="ttdeci">void update(dense::Context &amp;) override</div><div class="ttdef"><b>Definition:</b> oscillation.cpp:147</div></div>
-<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:19</div></div>
+<div class="ttc" id="class_oscillation_analysis_html_abbb60af737d7cbaa7488569a52644760"><div class="ttname"><a href="class_oscillation_analysis.html#abbb60af737d7cbaa7488569a52644760">OscillationAnalysis::OscillationAnalysis</a></div><div class="ttdeci">OscillationAnalysis(Observable &amp;observable, Real interval, Real range, specie_vec const &amp;pcfSpecieOption, unsigned min_cell, unsigned max_cell, Real start_time, Real end_time)</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:56</div></div>
+<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:12</div></div>
 <div class="ttc" id="class_oscillation_analysis_html_aa1ddd3ff5b10a4fae7c3dab497bbe6dd"><div class="ttname"><a href="class_oscillation_analysis.html#aa1ddd3ff5b10a4fae7c3dab497bbe6dd">OscillationAnalysis::finalize</a></div><div class="ttdeci">void finalize() override</div><div class="ttdef"><b>Definition:</b> oscillation.cpp:9</div></div>
+<div class="ttc" id="class_oscillation_analysis_html_a639577544393d13181b4e2241fd5b504"><div class="ttname"><a href="class_oscillation_analysis.html#a639577544393d13181b4e2241fd5b504">OscillationAnalysis::update</a></div><div class="ttdeci">void update(dense::Context&lt;&gt;) override</div><div class="ttdef"><b>Definition:</b> oscillation.cpp:146</div></div>
 <div class="ttc" id="class_analysis_html_a9bf3ee71074ec46253108b62214f583e"><div class="ttname"><a href="class_analysis.html#a9bf3ee71074ec46253108b62214f583e">Analysis::min</a></div><div class="ttdeci">unsigned const min</div><div class="ttdef"><b>Definition:</b> base.hpp:40</div></div>
+<div class="ttc" id="measurement_2base_8hpp_html"><div class="ttname"><a href="measurement_2base_8hpp.html">base.hpp</a></div></div>
 <div class="ttc" id="class_correlation_analysis_html_ab1f20384b50ab759cab3d97f7bfe8efe"><div class="ttname"><a href="class_correlation_analysis.html#ab1f20384b50ab759cab3d97f7bfe8efe">CorrelationAnalysis::CorrelationAnalysis</a></div><div class="ttdeci">CorrelationAnalysis(Observable *dLog, specie_vec const &amp;pcfSpecieOption, unsigned min_cell, unsigned max_cell, Real start_time, Real end_time)</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:109</div></div>
-<div class="ttc" id="classdense_1_1_context_html"><div class="ttname"><a href="classdense_1_1_context.html">dense::Context</a></div><div class="ttdef"><b>Definition:</b> base.hpp:15</div></div>
+<div class="ttc" id="classdense_1_1_context_html"><div class="ttname"><a href="classdense_1_1_context.html">dense::Context</a></div><div class="ttdef"><b>Definition:</b> base.hpp:19</div></div>
+<div class="ttc" id="class_correlation_analysis_html_ad4a7d4f21a43f09e077cfbc1dc957b15"><div class="ttname"><a href="class_correlation_analysis.html#ad4a7d4f21a43f09e077cfbc1dc957b15">CorrelationAnalysis::update</a></div><div class="ttdeci">void update(dense::Context&lt;&gt; start) override</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:116</div></div>
 <div class="ttc" id="class_queue_html"><div class="ttname"><a href="class_queue.html">Queue</a></div><div class="ttdef"><b>Definition:</b> queue.hpp:10</div></div>
-<div class="ttc" id="class_oscillation_analysis_html_a873df9817524deb1a4169e82336b8926"><div class="ttname"><a href="class_oscillation_analysis.html#a873df9817524deb1a4169e82336b8926">OscillationAnalysis::OscillationAnalysis</a></div><div class="ttdeci">OscillationAnalysis(Observable &amp;observable, Real interval, Real range, specie_vec const &amp;pcfSpecieOption, csvw *pnFileOut, unsigned min_cell, unsigned max_cell, Real start_time, Real end_time)</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:56</div></div>
 <div class="ttc" id="queue_8hpp_html"><div class="ttname"><a href="queue_8hpp.html">queue.hpp</a></div></div>
 <div class="ttc" id="specie_8hpp_html_a5cf24c08e534e9052761a7496b324292"><div class="ttname"><a href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a></div><div class="ttdeci">std::vector&lt; Species &gt; specie_vec</div><div class="ttdef"><b>Definition:</b> specie.hpp:40</div></div>
+<div class="ttc" id="class_oscillation_analysis_html_a24589cb9d36d12152585c25311a46501"><div class="ttname"><a href="class_oscillation_analysis.html#a24589cb9d36d12152585c25311a46501">OscillationAnalysis::show</a></div><div class="ttdeci">void show(csvw *=nullptr) override</div><div class="ttdef"><b>Definition:</b> oscillation.cpp:27</div></div>
 <div class="ttc" id="class_analysis_html_aec18ef2ffd780c8df516ab8675d9d5f9"><div class="ttname"><a href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">Analysis::end_time</a></div><div class="ttdeci">Real end_time</div><div class="ttdef"><b>Definition:</b> base.hpp:38</div></div>
 <div class="ttc" id="class_analysis_html_af4c9c84fe6089563005320d2a099be86"><div class="ttname"><a href="class_analysis.html#af4c9c84fe6089563005320d2a099be86">Analysis::time</a></div><div class="ttdeci">unsigned time</div><div class="ttdef"><b>Definition:</b> base.hpp:42</div></div>
 <div class="ttc" id="class_oscillation_analysis_html_a476e9fd037d7efe2a69be6a3de9bae91"><div class="ttname"><a href="class_oscillation_analysis.html#a476e9fd037d7efe2a69be6a3de9bae91">OscillationAnalysis::~OscillationAnalysis</a></div><div class="ttdeci">virtual ~OscillationAnalysis()</div><div class="ttdef"><b>Definition:</b> oscillation.hpp:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

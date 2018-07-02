@@ -95,79 +95,132 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">cuda.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="cuda_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;system_error&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef __CUDACC__</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">    7</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IF_CUDA(X) X</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IF_CUDA(X)</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a01b21691d813ceb087b72a5f9db412c6">   12</a></span>&#160;<span class="preprocessor">#define STATIC_VAR IF_CUDA(__managed__)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueT, std::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_u_d_a___array.html">CUDA_Array</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; ValueT array[Size];</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a57d6b5d3b191eee0a75fccabd52c3715">   19</a></span>&#160;  ValueT &amp; operator[] (std::<span class="keywordtype">size_t</span> i) { <span class="keywordflow">return</span> array[i]; };</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a>(__host__ __device__)</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a427138b026ea60a80c721379456edec5">   21</a></span>&#160;  ValueT const&amp; operator[] (std::<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> array[i]; };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef __CUDACC__</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">class </span>Error_Category : <span class="keyword">public</span> <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">std::error_category</a> {</div>
+<a href="cuda_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DENSE_UTILITY_CUDA_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DENSE_UTILITY_CUDA_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;system_error&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifdef __CUDACC__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#ab6636109c9dab396847fc1a565c544d6">    9</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_QUALIFY(Q) Q</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a0b1222b0ef97759c82c4e0ddf8f2d320">   10</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USING_CUDA</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_QUALIFY(Q)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">   15</a></span>&#160;<span class="preprocessor">#define IF_CUDA(X) CUDA_QUALIFY(X)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_HOST CUDA_QUALIFY(__host__)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_DEVICE CUDA_QUALIFY(__device__)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#ac8e6bfebe6db1077a97b882f3f57a6ac">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_KERNEL CUDA_QUALIFY(__global__)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a3efa6562fae836c604c6287297f483db">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CUDA_MANAGED CUDA_QUALIFY(__managed__)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a01b21691d813ceb087b72a5f9db412c6">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STATIC_VAR CUDA_MANAGED</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::ptrdiff_t size&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_u_d_a___array.html">CUDA_Array</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a1e0fd6b4af3c7c1ccdc787e4beb2cbb5">   28</a></span>&#160;  <a class="code" href="class_c_u_d_a___array.html#a1e0fd6b4af3c7c1ccdc787e4beb2cbb5">CUDA_Array</a>() : data_{} {}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordtype">char</span> <span class="keyword">const</span>* name() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;cuda&quot;</span>; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      std::string message(<span class="keywordtype">int</span> value)<span class="keyword"> const override </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> cudaGetErrorString(static_cast&lt;cuda::Error_Code&gt;(value));</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a43fbce6d9e6f62fd008507135b7f1c0c">   31</a></span>&#160;  <a class="code" href="class_c_u_d_a___array.html#a43fbce6d9e6f62fd008507135b7f1c0c">CUDA_Array</a>(T <span class="keyword">const</span>&amp; value) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; x : data_) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      x = value;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a643bb599785b2428af719dcdb8b8edbf">   38</a></span>&#160;  T* <a class="code" href="class_c_u_d_a___array.html#a643bb599785b2428af719dcdb8b8edbf">begin</a>() { <span class="keywordflow">return</span> data_; }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacecuda.html">   42</a></span>&#160;<span class="keyword">namespace </span>cuda {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">   48</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">Error_Code</a> = cudaError;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">   57</a></span>&#160;  <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">std::error_category</a> <span class="keyword">const</span>&amp; <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">error_category</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> cuda::Error_Category <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">error_category</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">error_category</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structstd_1_1is__error__code__enum_3_01cuda_1_1_error___code_01_4.html">   69</a></span>&#160;  <span class="keyword">struct </span>is_error_code_enum&lt;cuda::<a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">Error_Code</a>&gt; : std::true_type {}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">   76</a></span>&#160;std::error_code <a class="code" href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">make_error_code</a>(<a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">cuda::Error_Code</a> code) noexcept {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(code), <a class="code" href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">cuda::error_category</a>() };</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a6cf517cecb67745e1946e5050846eec5">   41</a></span>&#160;  T <span class="keyword">const</span>* <a class="code" href="class_c_u_d_a___array.html#a6cf517cecb67745e1946e5050846eec5">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641">   44</a></span>&#160;  T* <a class="code" href="class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641">end</a>() { <span class="keywordflow">return</span> data_ + <a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a>; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1">   47</a></span>&#160;  T <span class="keyword">const</span>* <a class="code" href="class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1">end</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> data_ + <a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a>; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a76b4443c246b61646d58f6d92b0e705d">   50</a></span>&#160;  T &amp; <a class="code" href="class_c_u_d_a___array.html#a76b4443c246b61646d58f6d92b0e705d">operator[] </a>(std::ptrdiff_t i) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> data_[i];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="code" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_u_d_a___array.html#a9a6363771614a09b6173d7afdc1adb9d">   55</a></span>&#160;  T <span class="keyword">const</span>&amp; <a class="code" href="class_c_u_d_a___array.html#a76b4443c246b61646d58f6d92b0e705d">operator[] </a>(std::ptrdiff_t i)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> data_[i];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    T data_[<a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a>];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifdef USING_CUDA</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacecuda.html">   68</a></span>&#160;<span class="keyword">namespace </span>cuda {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">   74</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">Error_Code</a> = cudaError;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">namespace </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">class </span>Error_Category : <span class="keyword">public</span> <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">std::error_category</a> {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_c_u_d_a___array_html"><div class="ttname"><a href="class_c_u_d_a___array.html">CUDA_Array</a></div><div class="ttdef"><b>Definition:</b> cuda.hpp:15</div></div>
-<div class="ttc" id="cuda_8hpp_html_a0fdb7d909d58adb5f341702215a79da9"><div class="ttname"><a href="cuda_8hpp.html#a0fdb7d909d58adb5f341702215a79da9">IF_CUDA</a></div><div class="ttdeci">#define IF_CUDA(X)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:7</div></div>
-<div class="ttc" id="namespacecuda_html_ac1a69985a661645061c252e901b72b13"><div class="ttname"><a href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">cuda::Error_Code</a></div><div class="ttdeci">cudaError Error_Code</div><div class="ttdoc">Type alias for the CUDA error enumeration. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:48</div></div>
-<div class="ttc" id="cuda_8hpp_html_a5d350a48bfb0961dcd2b69a2c6fbbc98"><div class="ttname"><a href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">make_error_code</a></div><div class="ttdeci">std::error_code make_error_code(cuda::Error_Code code) noexcept</div><div class="ttdoc">Convert cuda::Error_Code to std::error_code. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:76</div></div>
-<div class="ttc" id="namespacecuda_html_a1f1dbba6819f9d77662ad06ee7dc0cbb"><div class="ttname"><a href="namespacecuda.html#a1f1dbba6819f9d77662ad06ee7dc0cbb">cuda::error_category</a></div><div class="ttdeci">std::error_category const &amp; error_category() override</div><div class="ttdoc">Get a reference to the CUDA error category singleton. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:57</div></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">char</span> <span class="keyword">const</span>* name() <span class="keyword">const</span> noexcept <span class="keyword">override</span> { <span class="keywordflow">return</span> <span class="stringliteral">&quot;cuda&quot;</span>; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        std::string message(<span class="keywordtype">int</span> value)<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          <span class="keywordflow">return</span> cudaGetErrorString(static_cast&lt;cuda::Error_Code&gt;(value));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">   99</a></span>&#160;  <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">std::error_category</a> <span class="keyword">const</span>&amp; <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">error_category</a>() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> cuda::Error_Category <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">error_category</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">error_category</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structstd_1_1is__error__code__enum_3_01cuda_1_1_error___code_01_4.html">  111</a></span>&#160;  <span class="keyword">struct </span>is_error_code_enum&lt;cuda::<a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">Error_Code</a>&gt; : std::true_type {};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">  118</a></span>&#160;std::error_code <a class="code" href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">make_error_code</a>(<a class="code" href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">cuda::Error_Code</a> code) noexcept {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(code), <a class="code" href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">cuda::error_category</a>() };</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="cuda_8hpp_html_a99f5ad1927871dd1fe64a29a102f6830"><div class="ttname"><a href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a></div><div class="ttdeci">#define CUDA_DEVICE</div><div class="ttdef"><b>Definition:</b> cuda.hpp:17</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a43fbce6d9e6f62fd008507135b7f1c0c"><div class="ttname"><a href="class_c_u_d_a___array.html#a43fbce6d9e6f62fd008507135b7f1c0c">CUDA_Array::CUDA_Array</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE CUDA_Array(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:31</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a635a6d90d6856b31db5b245b932b99a1"><div class="ttname"><a href="class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1">CUDA_Array::end</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE T const * end() const </div><div class="ttdef"><b>Definition:</b> cuda.hpp:47</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a1e0fd6b4af3c7c1ccdc787e4beb2cbb5"><div class="ttname"><a href="class_c_u_d_a___array.html#a1e0fd6b4af3c7c1ccdc787e4beb2cbb5">CUDA_Array::CUDA_Array</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE CUDA_Array()</div><div class="ttdef"><b>Definition:</b> cuda.hpp:28</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html"><div class="ttname"><a href="class_c_u_d_a___array.html">CUDA_Array</a></div><div class="ttdef"><b>Definition:</b> cuda.hpp:23</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a643bb599785b2428af719dcdb8b8edbf"><div class="ttname"><a href="class_c_u_d_a___array.html#a643bb599785b2428af719dcdb8b8edbf">CUDA_Array::begin</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE T * begin()</div><div class="ttdef"><b>Definition:</b> cuda.hpp:38</div></div>
+<div class="ttc" id="cuda_8hpp_html_ac072015929f97b8695e2c21dd0bf1d0e"><div class="ttname"><a href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a></div><div class="ttdeci">#define CUDA_HOST</div><div class="ttdef"><b>Definition:</b> cuda.hpp:16</div></div>
+<div class="ttc" id="namespacecuda_html_ac1a69985a661645061c252e901b72b13"><div class="ttname"><a href="namespacecuda.html#ac1a69985a661645061c252e901b72b13">cuda::Error_Code</a></div><div class="ttdeci">cudaError Error_Code</div><div class="ttdoc">Type alias for the CUDA error enumeration. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:74</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a76b4443c246b61646d58f6d92b0e705d"><div class="ttname"><a href="class_c_u_d_a___array.html#a76b4443c246b61646d58f6d92b0e705d">CUDA_Array::operator[]</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE T &amp; operator[](std::ptrdiff_t i)</div><div class="ttdef"><b>Definition:</b> cuda.hpp:50</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a6cf517cecb67745e1946e5050846eec5"><div class="ttname"><a href="class_c_u_d_a___array.html#a6cf517cecb67745e1946e5050846eec5">CUDA_Array::begin</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE T const * begin() const </div><div class="ttdef"><b>Definition:</b> cuda.hpp:41</div></div>
+<div class="ttc" id="cuda_8hpp_html_a5d350a48bfb0961dcd2b69a2c6fbbc98"><div class="ttname"><a href="cuda_8hpp.html#a5d350a48bfb0961dcd2b69a2c6fbbc98">make_error_code</a></div><div class="ttdeci">std::error_code make_error_code(cuda::Error_Code code) noexcept</div><div class="ttdoc">Convert cuda::Error_Code to std::error_code. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:118</div></div>
+<div class="ttc" id="namespacecuda_html_ad36c42481cc9015fdefabb2111245a4a"><div class="ttname"><a href="namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a">cuda::error_category</a></div><div class="ttdeci">std::error_category const &amp; error_category()</div><div class="ttdoc">Get a reference to the CUDA error category singleton. </div><div class="ttdef"><b>Definition:</b> cuda.hpp:99</div></div>
+<div class="ttc" id="specie_8hpp_html_a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41"><div class="ttname"><a href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4a052a2b4924452fb4a73f2cb52b6e9d41">size</a></div><div class="ttdef"><b>Definition:</b> specie.hpp:17</div></div>
+<div class="ttc" id="class_c_u_d_a___array_html_a5efa86970fcafb70f418b46ecc6b7641"><div class="ttname"><a href="class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641">CUDA_Array::end</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE T * end()</div><div class="ttdef"><b>Definition:</b> cuda.hpp:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -91,25 +91,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">stoch_context.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="stoch_8hpp_source.html">stoch.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="cell__param_8hpp_source.html">sim/cell_param.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="reaction_8hpp_source.html">core/reaction.hpp</a>&quot;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
-<code>#include &quot;reactions_list.hpp&quot;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for stoch_context.hpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="stoch__context_8hpp__incl.png" border="0" usemap="#source_2sim_2stoch_2stoch__context_8hpp" alt=""/></div>
-<map name="source_2sim_2stoch_2stoch__context_8hpp" id="source_2sim_2stoch_2stoch__context_8hpp">
-<area shape="rect" id="node2" href="stoch_8hpp.html" title="stoch.hpp" alt="" coords="529,96,607,123"/><area shape="rect" id="node13" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="194,395,287,421"/><area shape="rect" id="node23" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="312,245,422,272"/><area shape="rect" id="node3" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="562,171,662,197"/><area shape="rect" id="node5" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="526,469,640,496"/><area shape="rect" id="node10" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="719,245,858,272"/><area shape="rect" id="node12" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="162,320,320,347"/><area shape="rect" id="node21" href="model_8hpp.html" title="core/model.hpp" alt="" coords="650,320,760,347"/><area shape="rect" id="node4" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="362,395,524,421"/><area shape="rect" id="node9" href="_real_8hpp.html" title="Real.hpp" alt="" coords="427,469,500,496"/><area shape="rect" id="node19" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="82,395,168,421"/><area shape="rect" id="node14" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="292,469,402,496"/></map>
-</div>
-</div><div class="textblock"><div class="dynheader">
+<div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="stoch__context_8hpp__dep__incl.png" border="0" usemap="#source_2sim_2stoch_2stoch__context_8hppdep" alt=""/></div>
@@ -118,48 +104,10 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="stoch__context_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stoch__context_8hpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
-<tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a43a88125d1a054381c420a93ae827edc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REACTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (std::size_t i=0; i&lt;_simulation.propensity_network[rid].size(); i++) { \</div>
-<div class="line">        if ( name == _simulation.propensity_network[rid][i] ) { \</div>
-<div class="line">            _simulation.propensities[_cell][name] = _model.reaction_##name.active_rate(*<span class="keyword">this</span>); \</div>
-<div class="line">        } \</div>
-<div class="line">    } \</div>
-<div class="line">\</div>
-<div class="line">    for (std::size_t r=0; r&lt;_simulation.neighbor_propensity_network[rid].size(); r++) { \</div>
-<div class="line">        if (name == _simulation.neighbor_propensity_network[rid][r]) { \</div>
-<div class="line">            for (<span class="keywordtype">int</span> n=0; n&lt;_simulation._numNeighbors[_cell]; n++) { \</div>
-<div class="line">                int n_cell = _simulation._neighbors[_cell][n]; \</div>
-<div class="line">                ContextStoch neighbor(_simulation,n_cell); \</div>
-<div class="line">                _simulation.propensities[n_cell][name] = _model.reaction_##name.active_rate(neighbor); \</div>
-<div class="line">            } \</div>
-<div class="line">        } \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:20 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 29 2018 14:42:48 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_stochastic___simulation-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,76 +112,89 @@ Collaboration diagram for Stochastic_Simulation:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_stochastic___simulation__coll__graph.png" border="0" usemap="#_stochastic___simulation_coll__map" alt="Collaboration graph"/></div>
 <map name="_stochastic___simulation_coll__map" id="_stochastic___simulation_coll__map">
-<area shape="rect" id="node2" href="class_simulation.html" title="Simulation" alt="" coords="509,83,592,109"/><area shape="rect" id="node7" href="classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="717,105,955,161"/><area shape="rect" id="node3" href="class_observable.html" title="Superclass for Simulation. " alt="" coords="245,7,333,33"/><area shape="rect" id="node4" href="classdense_1_1_context.html" title="dense::Context" alt="" coords="6,7,117,33"/><area shape="rect" id="node5" href="classmodel.html" title="model" alt="" coords="261,57,318,84"/><area shape="rect" id="node6" href="class_parameter___set.html" title="Parameter_Set" alt="" coords="235,108,344,135"/><area shape="rect" id="node8" href="class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="213,159,365,185"/></map>
+<area shape="rect" id="node2" href="class_simulation.html" title="Simulation" alt="" coords="301,145,384,172"/><area shape="rect" id="node6" href="classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="509,63,747,119"/><area shape="rect" id="node3" href="class_observable.html" title="Superclass for Simulation. " alt="" coords="37,192,125,219"/><area shape="rect" id="node4" href="class_parameter___set.html" title="Parameter_Set" alt="" coords="27,243,136,269"/><area shape="rect" id="node7" href="class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="5,141,157,168"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation_1_1_context_stoch.html">ContextStoch</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a20d3b02f0970eefd9cf306cffd5b1125"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a20d3b02f0970eefd9cf306cffd5b1125">SpecieRates</a> = <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; Real, <a class="el" href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a> &gt;</td></tr>
+<tr class="separator:a20d3b02f0970eefd9cf306cffd5b1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_simulation')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_simulation.html">Simulation</a></td></tr>
+<tr class="memitem:ab4effef686ce762dbcd6583692973e64 inherit pub_types_class_simulation"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ab4effef686ce762dbcd6583692973e64">Context</a> = <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt;&gt;</td></tr>
+<tr class="separator:ab4effef686ce762dbcd6583692973e64 inherit pub_types_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abdd0500b99d12a70ae1cbaec4b7a03ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#abdd0500b99d12a70ae1cbaec4b7a03ce">Stochastic_Simulation</a> (const <a class="el" href="classmodel.html">model</a> &amp;m, const <a class="el" href="class_parameter___set.html">Parameter_Set</a> &amp;ps, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *pnFactorsPert, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> **pnFactorsGrad, int cells_total, int width_total, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> analysis_interval, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sim_time, int seed)</td></tr>
-<tr class="separator:abdd0500b99d12a70ae1cbaec4b7a03ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b02ea7d4331bd339deca44b0d71778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#aa4b02ea7d4331bd339deca44b0d71778">Stochastic_Simulation</a> (const <a class="el" href="class_parameter___set.html">Parameter_Set</a> &amp;ps, Real *pnFactorsPert, Real **pnFactorsGrad, int cells_total, int width_total, Real analysis_interval, Real sim_time, int seed)</td></tr>
+<tr class="separator:aa4b02ea7d4331bd339deca44b0d71778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1243f860515ccbaf38200506116f61e7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a1243f860515ccbaf38200506116f61e7">~Stochastic_Simulation</a> ()</td></tr>
 <tr class="separator:a1243f860515ccbaf38200506116f61e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f60e61efc47a29d8a8b335356a92645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a7f60e61efc47a29d8a8b335356a92645">initialize</a> ()</td></tr>
-<tr class="separator:a7f60e61efc47a29d8a8b335356a92645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f2ae84283565804a5a11f7bea9e05b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#ac7f2ae84283565804a5a11f7bea9e05b">simulate</a> ()</td></tr>
-<tr class="separator:ac7f2ae84283565804a5a11f7bea9e05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fe5c69b2591d3b15ed10aaf2604c4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a59fe5c69b2591d3b15ed10aaf2604c4a">initialize</a> () overridefinal</td></tr>
+<tr class="separator:a59fe5c69b2591d3b15ed10aaf2604c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14369b11dc69bb20ce8a74c46ac87470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a14369b11dc69bb20ce8a74c46ac87470">simulate_for</a> (Real duration) overridefinal</td></tr>
+<tr class="separator:a14369b11dc69bb20ce8a74c46ac87470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb75a4203be6d391f9520d42e3955c69"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#aeb75a4203be6d391f9520d42e3955c69">get_concentration</a> (<a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> species) const overridefinal</td></tr>
+<tr class="separator:aeb75a4203be6d391f9520d42e3955c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb20968c31b92554e73e8da37de440d"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a9cb20968c31b92554e73e8da37de440d">get_concentration</a> (<a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> species, <a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> delay) const overridefinal</td></tr>
+<tr class="separator:a9cb20968c31b92554e73e8da37de440d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a1cf8332e8202fd48b0dc2abe80a62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a10a1cf8332e8202fd48b0dc2abe80a62">update_concentration</a> (<a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell_, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sid, int delta)</td></tr>
+<tr class="separator:a10a1cf8332e8202fd48b0dc2abe80a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8241d92970e969551de34ad9a67829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a8f8241d92970e969551de34ad9a67829">get_total_propensity</a> () const </td></tr>
+<tr class="separator:a8f8241d92970e969551de34ad9a67829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc55bdc027c34275dfecb825718698dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#afc55bdc027c34275dfecb825718698dd">choose_reaction</a> (Real propensity_portion)</td></tr>
+<tr class="separator:afc55bdc027c34275dfecb825718698dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cae62a9c366fdeaffb9fc44120a6e18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a7cae62a9c366fdeaffb9fc44120a6e18">update_propensities</a> (<a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell_, <a class="el" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid)</td></tr>
+<tr class="separator:a7cae62a9c366fdeaffb9fc44120a6e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d765b410fb140afe449a595bd4e5df"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html#a69d765b410fb140afe449a595bd4e5df">calculate_neighbor_average</a> (<a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell, <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> species, <a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> delay) const overridefinal</td></tr>
+<tr class="separator:a69d765b410fb140afe449a595bd4e5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_simulation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_simulation.html">Simulation</a></td></tr>
-<tr class="memitem:ae390b83800f4e891c6cebf0d3c528caf inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ae390b83800f4e891c6cebf0d3c528caf">Simulation</a> (<a class="el" href="classmodel.html">model</a> const &amp;m, <a class="el" href="class_parameter___set.html">Parameter_Set</a> const &amp;ps, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *pnFactorsPert, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> **pnFactorsGrad, int cells_total, int width_total, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> analysis_interval, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sim_time)</td></tr>
-<tr class="separator:ae390b83800f4e891c6cebf0d3c528caf inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac888ce24c96067be8e6d96482701dc92 inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac888ce24c96067be8e6d96482701dc92">Simulation</a> (<a class="el" href="class_parameter___set.html">Parameter_Set</a> ps, Real *pnFactorsPert, Real **pnFactorsGrad, int cells_total, int width_total, Real analysis_interval, Real sim_time)</td></tr>
+<tr class="separator:ac888ce24c96067be8e6d96482701dc92 inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b224cc5b36bcc8eb29689aff223de41 inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5b224cc5b36bcc8eb29689aff223de41">Simulation</a> ()</td></tr>
+<tr class="separator:a5b224cc5b36bcc8eb29689aff223de41 inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701bd94edc5cf562b5c4e66ae43400bb inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a701bd94edc5cf562b5c4e66ae43400bb">~Simulation</a> ()</td></tr>
 <tr class="separator:a701bd94edc5cf562b5c4e66ae43400bb inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7912d04536c4e4af2c08b2631b56b876 inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a7912d04536c4e4af2c08b2631b56b876">calc_neighbor_2d</a> ()</td></tr>
 <tr class="separator:a7912d04536c4e4af2c08b2631b56b876 inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31eb57b56fe9e660c7374c4f34e1a8ae inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a31eb57b56fe9e660c7374c4f34e1a8ae">run</a> () final</td></tr>
-<tr class="separator:a31eb57b56fe9e660c7374c4f34e1a8ae inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f499ca0e5e424564f995f11631bb2c inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a37f499ca0e5e424564f995f11631bb2c">simulate</a> ()</td></tr>
+<tr class="separator:a37f499ca0e5e424564f995f11631bb2c inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49bdaf89bc48b8dbb5a8e88d6b74daa inherit pub_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#aa49bdaf89bc48b8dbb5a8e88d6b74daa">finalize</a> ()</td></tr>
+<tr class="separator:aa49bdaf89bc48b8dbb5a8e88d6b74daa inherit pub_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_observable.html">Observable</a></td></tr>
-<tr class="memitem:af8e51d2f6dac137462bf7dc1e832dbcb inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#af8e51d2f6dac137462bf7dc1e832dbcb">notify</a> (<a class="el" href="classdense_1_1_context.html">dense::Context</a> &amp;start)</td></tr>
-<tr class="separator:af8e51d2f6dac137462bf7dc1e832dbcb inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2480c66f78d93c3348daa93c04448920 inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a2480c66f78d93c3348daa93c04448920">finalize</a> ()</td></tr>
-<tr class="separator:a2480c66f78d93c3348daa93c04448920 inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099bf851e05bb8c1a25e83f2a1389e58 inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a099bf851e05bb8c1a25e83f2a1389e58">notify</a> ()</td></tr>
+<tr class="separator:a099bf851e05bb8c1a25e83f2a1389e58 inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434d5dfd41ed25f8f120ca2a8a6a95b0 inherit pub_methods_class_observable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a434d5dfd41ed25f8f120ca2a8a6a95b0">~Observable</a> () noexcept=default</td></tr>
+<tr class="separator:a434d5dfd41ed25f8f120ca2a8a6a95b0 inherit pub_methods_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_simulation')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_simulation.html">Simulation</a></td></tr>
-<tr class="memitem:adc93e65e5b14634b4c19288d7b62568c inherit pub_types_class_simulation"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#adc93e65e5b14634b4c19288d7b62568c">Context</a> = <a class="el" href="classdense_1_1_context.html">dense::Context</a></td></tr>
-<tr class="separator:adc93e65e5b14634b4c19288d7b62568c inherit pub_types_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_simulation')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_simulation.html">Simulation</a></td></tr>
-<tr class="memitem:a0bc7e834f8ec00ad35fc26b5c9354dea inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a0bc7e834f8ec00ad35fc26b5c9354dea">_width_total</a></td></tr>
-<tr class="separator:a0bc7e834f8ec00ad35fc26b5c9354dea inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d1d9f707bbdeb261eb51a525da3850 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a78d1d9f707bbdeb261eb51a525da3850">circumf</a></td></tr>
-<tr class="separator:a78d1d9f707bbdeb261eb51a525da3850 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2d8541fa7f4e28e22785a7c07bad1e inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a7a2d8541fa7f4e28e22785a7c07bad1e">_cells_total</a></td></tr>
-<tr class="separator:a7a2d8541fa7f4e28e22785a7c07bad1e inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eda863760fb64afd31536ebaef61af6 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a4eda863760fb64afd31536ebaef61af6">time_total</a></td></tr>
+<tr class="memitem:aa4ce7390055eef68e48d6d5a34b58e26 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#aa4ce7390055eef68e48d6d5a34b58e26">t</a> = 0.0</td></tr>
+<tr class="separator:aa4ce7390055eef68e48d6d5a34b58e26 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1df83ceb3fdd1885d6e7dd194e0ebb5 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ae1df83ceb3fdd1885d6e7dd194e0ebb5">_width_total</a></td></tr>
+<tr class="separator:ae1df83ceb3fdd1885d6e7dd194e0ebb5 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d3b8663f3e08b46b1a188a9aafac04 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#af2d3b8663f3e08b46b1a188a9aafac04">circumf</a></td></tr>
+<tr class="separator:af2d3b8663f3e08b46b1a188a9aafac04 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd320c13c8dc9271ea114cb19b41584 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#abdd320c13c8dc9271ea114cb19b41584">_cells_total</a></td></tr>
+<tr class="separator:abdd320c13c8dc9271ea114cb19b41584 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eda863760fb64afd31536ebaef61af6 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a4eda863760fb64afd31536ebaef61af6">time_total</a></td></tr>
 <tr class="separator:a4eda863760fb64afd31536ebaef61af6 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b86b56486e52cd8f202e34852e5b985 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5b86b56486e52cd8f202e34852e5b985">analysis_gran</a></td></tr>
+<tr class="memitem:a5b86b56486e52cd8f202e34852e5b985 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a5b86b56486e52cd8f202e34852e5b985">analysis_gran</a></td></tr>
 <tr class="separator:a5b86b56486e52cd8f202e34852e5b985 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82ef391658a65c14ca93298116ee7317 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt; int, 6 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a82ef391658a65c14ca93298116ee7317">_neighbors</a></td></tr>
 <tr class="separator:a82ef391658a65c14ca93298116ee7317 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68bc49c804dc222352384004cddb83c inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_parameter___set.html">Parameter_Set</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#af68bc49c804dc222352384004cddb83c">_parameter_set</a></td></tr>
-<tr class="separator:af68bc49c804dc222352384004cddb83c inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdd337786fce5a5ae15c389f4df1514 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmodel.html">model</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a2fdd337786fce5a5ae15c389f4df1514">_model</a></td></tr>
-<tr class="separator:a2fdd337786fce5a5ae15c389f4df1514 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab498ec3ff96585e9f2e39936840b75 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#aeab498ec3ff96585e9f2e39936840b75">factors_perturb</a></td></tr>
+<tr class="memitem:adc55b489d612b98e227688c5514ae897 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_parameter___set.html">Parameter_Set</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#adc55b489d612b98e227688c5514ae897">_parameter_set</a></td></tr>
+<tr class="separator:adc55b489d612b98e227688c5514ae897 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab498ec3ff96585e9f2e39936840b75 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#aeab498ec3ff96585e9f2e39936840b75">factors_perturb</a></td></tr>
 <tr class="separator:aeab498ec3ff96585e9f2e39936840b75 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8194ab3614122c3a0b99c576c2ad695 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac8194ab3614122c3a0b99c576c2ad695">factors_gradient</a></td></tr>
+<tr class="memitem:ac8194ab3614122c3a0b99c576c2ad695 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac8194ab3614122c3a0b99c576c2ad695">factors_gradient</a></td></tr>
 <tr class="separator:ac8194ab3614122c3a0b99c576c2ad695 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac24e3b8dbb03641da8149f056b865e0b inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcell__param.html">cell_param</a>&lt; <a class="el" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>+<a class="el" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32a247414d1bf44580f3c0cc79c03c9c563">NUM_DELAY_REACTIONS</a>+<a class="el" href="specie_8hpp.html#affd8e4127f4bf2cc9de61894712798fcab57354942b3808343ff16c39bf77a0e9">NUM_CRITICAL_SPECIES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ac24e3b8dbb03641da8149f056b865e0b">_cellParams</a></td></tr>
 <tr class="separator:ac24e3b8dbb03641da8149f056b865e0b inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b16eb9ddb854c9ad0a30b287703baab inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a0b16eb9ddb854c9ad0a30b287703baab">_numNeighbors</a></td></tr>
-<tr class="separator:a0b16eb9ddb854c9ad0a30b287703baab inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6385f2f0f15aa6dea1bc7bcc755c315a inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a6385f2f0f15aa6dea1bc7bcc755c315a">max_delays</a> [<a class="el" href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a>] {}</td></tr>
+<tr class="memitem:a0169e401e4886c28884089ebf0a8c034 inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a0169e401e4886c28884089ebf0a8c034">_numNeighbors</a></td></tr>
+<tr class="separator:a0169e401e4886c28884089ebf0a8c034 inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6385f2f0f15aa6dea1bc7bcc755c315a inherit pub_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#a6385f2f0f15aa6dea1bc7bcc755c315a">max_delays</a> [<a class="el" href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a>] {}</td></tr>
 <tr class="separator:a6385f2f0f15aa6dea1bc7bcc755c315a inherit pub_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_observable')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_observable.html">Observable</a></td></tr>
-<tr class="memitem:a3c2287cb3e7eb5cdfc9c9c4d2c87cf41 inherit pub_attribs_class_observable"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a3c2287cb3e7eb5cdfc9c9c4d2c87cf41">t</a> = 0.0</td></tr>
-<tr class="separator:a3c2287cb3e7eb5cdfc9c9c4d2c87cf41 inherit pub_attribs_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43377509fab98a48007d896782fc342 inherit pub_attribs_class_observable"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdense_1_1_context.html">dense::Context</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#ac43377509fab98a48007d896782fc342">context</a> = nullptr</td></tr>
-<tr class="separator:ac43377509fab98a48007d896782fc342 inherit pub_attribs_class_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_simulation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_simulation')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_simulation.html">Simulation</a></td></tr>
 <tr class="memitem:adcbd157d8a2cbee9bff4d5095f7e5bc1 inherit pro_methods_class_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#adcbd157d8a2cbee9bff4d5095f7e5bc1">calc_max_delays</a> ()</td></tr>
 <tr class="separator:adcbd157d8a2cbee9bff4d5095f7e5bc1 inherit pro_methods_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,8 +209,21 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab9308890167d797212421ae476403efb inherit pro_attribs_class_simulation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation.html#ab9308890167d797212421ae476403efb">abort_signaled</a> = false</td></tr>
 <tr class="separator:ab9308890167d797212421ae476403efb inherit pro_attribs_class_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a20d3b02f0970eefd9cf306cffd5b1125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_stochastic___simulation.html#a20d3b02f0970eefd9cf306cffd5b1125">Stochastic_Simulation::SpecieRates</a> =  <a class="el" href="class_c_u_d_a___array.html">CUDA_Array</a>&lt;Real, <a class="el" href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abdd0500b99d12a70ae1cbaec4b7a03ce"></a>
+<a class="anchor" id="aa4b02ea7d4331bd339deca44b0d71778"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -206,25 +233,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">Stochastic_Simulation::Stochastic_Simulation </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmodel.html">model</a> &amp;&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="class_parameter___set.html">Parameter_Set</a> &amp;&#160;</td>
           <td class="paramname"><em>ps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *&#160;</td>
+          <td class="paramtype">Real *&#160;</td>
           <td class="paramname"><em>pnFactorsPert</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> **&#160;</td>
+          <td class="paramtype">Real **&#160;</td>
           <td class="paramname"><em>pnFactorsGrad</em>, </td>
         </tr>
         <tr>
@@ -242,13 +263,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td>
+          <td class="paramtype">Real&#160;</td>
           <td class="paramname"><em>analysis_interval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td>
+          <td class="paramtype">Real&#160;</td>
           <td class="paramname"><em>sim_time</em>, </td>
         </tr>
         <tr>
@@ -296,7 +317,174 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7f60e61efc47a29d8a8b335356a92645"></a>
+<a class="anchor" id="a69d765b410fb140afe449a595bd4e5df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Stochastic_Simulation::calculate_neighbor_average </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>species</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_simulation.html#a964755de39786ca456f814accbd2ad61">Simulation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc55bdc027c34275dfecb825718698dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> int Stochastic_Simulation::choose_reaction </td>
+          <td>(</td>
+          <td class="paramtype">Real&#160;</td>
+          <td class="paramname"><em>propensity_portion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb75a4203be6d391f9520d42e3955c69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Stochastic_Simulation::get_concentration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>species</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_simulation.html#a9c5acc1a6797b8bd781ee845e1ffe2ac">Simulation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cb20968c31b92554e73e8da37de440d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Stochastic_Simulation::get_concentration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>species</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_simulation.html#a7107b803af4d82964ff7245696b281d0">Simulation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f8241d92970e969551de34ad9a67829"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real Stochastic_Simulation::get_total_propensity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59fe5c69b2591d3b15ed10aaf2604c4a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -312,7 +500,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -321,7 +509,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac7f2ae84283565804a5a11f7bea9e05b"></a>
+<a class="anchor" id="a14369b11dc69bb20ce8a74c46ac87470"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -329,20 +517,95 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Stochastic_Simulation::simulate </td>
+          <td class="memname">void Stochastic_Simulation::simulate_for </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Real&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_simulation.html#a32440d6d8a0bbd608c6c16f2907e6c9f">Simulation</a>.</p>
+<p>Implements <a class="el" href="class_simulation.html#aa66771066031a13428ae1788cc48e959">Simulation</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10a1cf8332e8202fd48b0dc2abe80a62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void Stochastic_Simulation::update_concentration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>sid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7cae62a9c366fdeaffb9fc44120a6e18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void Stochastic_Simulation::update_propensities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a>&#160;</td>
+          <td class="paramname"><em>rid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -353,7 +616,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:21 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

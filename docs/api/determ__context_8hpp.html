@@ -91,25 +91,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">determ_context.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="common__utils_8hpp_source.html">utility/common_utils.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="determ_8hpp_source.html">determ.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="cell__param_8hpp_source.html">sim/cell_param.hpp</a>&quot;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
-<code>#include &quot;reactions_list.hpp&quot;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for determ_context.hpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="determ__context_8hpp__incl.png" border="0" usemap="#source_2sim_2determ_2determ__context_8hpp" alt=""/></div>
-<map name="source_2sim_2determ_2determ__context_8hpp" id="source_2sim_2determ_2determ__context_8hpp">
-<area shape="rect" id="node2" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="349,320,512,347"/><area shape="rect" id="node8" href="determ_8hpp.html" title="determ.hpp" alt="" coords="579,96,665,123"/><area shape="rect" id="node23" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="207,245,317,272"/><area shape="rect" id="node3" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="533,469,648,496"/><area shape="rect" id="node7" href="_real_8hpp.html" title="Real.hpp" alt="" coords="167,469,240,496"/><area shape="rect" id="node9" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="517,171,616,197"/><area shape="rect" id="node10" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="873,245,1012,272"/><area shape="rect" id="node12" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="14,320,172,347"/><area shape="rect" id="node13" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="268,395,361,421"/><area shape="rect" id="node21" href="model_8hpp.html" title="core/model.hpp" alt="" coords="739,320,849,347"/><area shape="rect" id="node24" href="baby__cl_8hpp.html" title="baby_cl.hpp" alt="" coords="655,245,747,272"/><area shape="rect" id="node19" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="5,395,91,421"/><area shape="rect" id="node14" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="317,469,427,496"/></map>
-</div>
-</div><div class="textblock"><div class="dynheader">
+<div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="determ__context_8hpp__dep__incl.png" border="0" usemap="#source_2sim_2determ_2determ__context_8hppdep" alt=""/></div>
@@ -118,57 +104,10 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="determ__context_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="determ__context_8hpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)&#160;&#160;&#160;reaction_rates[name] = _model.reaction_##name.active_rate(*this);</td></tr>
-<tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="determ__context_8hpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
-<tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a43a88125d1a054381c420a93ae827edc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REACTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;reaction_rates[name] = _model.reaction_##name.active_rate(*this);</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a43a88125d1a054381c420a93ae827edc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REACTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">name</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> <a class="code" href="classreaction.html">reaction&lt;name&gt;</a>&amp; r##name = _model.reaction_##name; \</div>
-<div class="line">    for (<span class="keywordtype">int</span> j = 0; j &lt; r##name.<a class="code" href="classreaction__base.html#af0dce55f66f9aee1a9325c908065017a">getNumDeltas</a>(); j++) { \</div>
-<div class="line">        specie_deltas[delta_ids_##name[j]] += reaction_rates[name]*deltas_##name[j]; \</div>
-<div class="line">    }</div>
-<div class="ttc" id="classreaction__base_html_af0dce55f66f9aee1a9325c908065017a"><div class="ttname"><a href="classreaction__base.html#af0dce55f66f9aee1a9325c908065017a">reaction_base::getNumDeltas</a></div><div class="ttdeci">int getNumDeltas() const </div><div class="ttdef"><b>Definition:</b> reaction.hpp:47</div></div>
-<div class="ttc" id="classreaction_html"><div class="ttname"><a href="classreaction.html">reaction</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:60</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:19 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 29 2018 14:42:48 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

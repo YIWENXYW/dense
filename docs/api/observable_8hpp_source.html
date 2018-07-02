@@ -101,118 +101,101 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacedense.html">    7</a></span>&#160;<span class="keyword">namespace </span>dense {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_observer.html">Observer</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">class </span><a class="code" href="classdense_1_1_context.html">Context</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_observable.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_observable.html">Observable</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_observer.html">Observer</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">friend</span> <a class="code" href="class_observer.html">Observer</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_observable.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_observable.html">Observable</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">friend</span> <a class="code" href="class_observer.html">Observer</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observable.html#a1b2d53c488f253f338461c041301c24a">run</a>() = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#af8e51d2f6dac137462bf7dc1e832dbcb">notify</a> (<a class="code" href="classdense_1_1_context.html">dense::Context</a> &amp; start);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#a2480c66f78d93c3348daa93c04448920">finalize</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_observable.html#a3c2287cb3e7eb5cdfc9c9c4d2c87cf41">   31</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_observable.html#a3c2287cb3e7eb5cdfc9c9c4d2c87cf41">t</a> = 0.0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_observable.html#ac43377509fab98a48007d896782fc342">   33</a></span>&#160;    <a class="code" href="classdense_1_1_context.html">dense::Context</a> * <a class="code" href="class_observable.html#ac43377509fab98a48007d896782fc342">context</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_observable.html#a10f296876f01335fe7227818cdff92e0">   37</a></span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observer&gt;&gt; <span class="keyword">const</span>&amp; <a class="code" href="class_observable.html#a10f296876f01335fe7227818cdff92e0">subscribers</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">return</span> subscribers_;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#a099bf851e05bb8c1a25e83f2a1389e58">notify</a> ();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_observable.html#a434d5dfd41ed25f8f120ca2a8a6a95b0">~Observable</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_observable.html#a10f296876f01335fe7227818cdff92e0">   24</a></span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observer&gt;&gt; <span class="keyword">const</span>&amp; <a class="code" href="class_observable.html#a10f296876f01335fe7227818cdff92e0">subscribers</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">return</span> subscribers_;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observer&gt;&gt; subscribers_;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_observer.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_observer.html">Observer</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">friend</span> <a class="code" href="class_observable.html">Observable</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observer&gt;&gt; subscribers_;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer</a> () = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_observer.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_observer.html">Observer</a> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">friend</span> <a class="code" href="class_observable.html">Observable</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer</a> () = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer</a> (<a class="code" href="class_observer.html">Observer</a> <span class="keyword">const</span>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_observer.html">Observer</a> &amp; <a class="code" href="class_observer.html#a89a17fec2250b8114a1f963353cd65f3">operator= </a>(<a class="code" href="class_observer.html">Observer</a> <span class="keyword">const</span>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer</a> (<a class="code" href="class_observer.html">Observer</a> <span class="keyword">const</span>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_observer.html">Observer</a> &amp; <a class="code" href="class_observer.html#a89a17fec2250b8114a1f963353cd65f3">operator= </a>(<a class="code" href="class_observer.html">Observer</a> <span class="keyword">const</span>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">   57</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">~Observer</a> () { <a class="code" href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">unsubscribe_from_all</a>(); };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a03a78510d694c0499d37d35fa449137a">subscribe_to</a> (<a class="code" href="class_observable.html">Observable</a> &amp; observable);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#af91e4ff021adac9f70a4791d2b2a2d6e">unsubscribe_from</a> (<a class="code" href="class_observable.html">Observable</a> &amp; observable);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">   70</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">~Observer</a> () { <a class="code" href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">unsubscribe_from_all</a>(); };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">unsubscribe_from_all</a> ();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a03a78510d694c0499d37d35fa449137a">subscribe_to</a> (<a class="code" href="class_observable.html">Observable</a> &amp; observable);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observable&gt;&gt; <span class="keyword">const</span>&amp; <a class="code" href="class_observer.html#a7e9ae65a7ceb32a290678989016c2987">subscriptions</a> ();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#af91e4ff021adac9f70a4791d2b2a2d6e">unsubscribe_from</a> (<a class="code" href="class_observable.html">Observable</a> &amp; observable);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">unsubscribe_from_all</a> ();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observable&gt;&gt; <span class="keyword">const</span>&amp; <a class="code" href="class_observer.html#a7e9ae65a7ceb32a290678989016c2987">subscriptions</a> ();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">   89</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">operator==</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span> == &amp;other;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">   93</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">operator!=</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">return</span> !<a class="code" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">operator==</a>(other);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">   97</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">operator&lt;</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span> &lt; &amp;other;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">  103</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">when_subscribed_to</a> (<a class="code" href="class_observable.html">Observable</a> &amp;) {};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#ab21d250cc2470dca82e3f3c17637b217">when_updated_by</a> (<a class="code" href="class_observable.html">Observable</a> &amp;);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">  107</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">when_unsubscribed_from</a> (<a class="code" href="class_observable.html">Observable</a> &amp;) {};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observable&gt;&gt; subscriptions_;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_observer_html"><div class="ttname"><a href="class_observer.html">Observer</a></div><div class="ttdoc">Superclass for CSV Writer and Analysis. </div><div class="ttdef"><b>Definition:</b> observable.hpp:50</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">   76</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">operator==</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span> == &amp;other;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">operator!=</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> !<a class="code" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">operator==</a>(other);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">   84</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">operator&lt;</a>(<a class="code" href="class_observer.html">Observer</a> &amp; other) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">this</span> &lt; &amp;other;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">   90</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">when_subscribed_to</a> (<a class="code" href="class_observable.html">Observable</a> &amp;) {};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#ab21d250cc2470dca82e3f3c17637b217">when_updated_by</a> (<a class="code" href="class_observable.html">Observable</a> &amp;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">   94</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">when_unsubscribed_from</a> (<a class="code" href="class_observable.html">Observable</a> &amp;) {};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;std::reference_wrapper&lt;Observable&gt;&gt; subscriptions_;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_observer_html"><div class="ttname"><a href="class_observer.html">Observer</a></div><div class="ttdoc">Superclass for CSV Writer and Analysis. </div><div class="ttdef"><b>Definition:</b> observable.hpp:37</div></div>
 <div class="ttc" id="class_observer_html_a89a17fec2250b8114a1f963353cd65f3"><div class="ttname"><a href="class_observer.html#a89a17fec2250b8114a1f963353cd65f3">Observer::operator=</a></div><div class="ttdeci">Observer &amp; operator=(Observer const &amp;)=delete</div><div class="ttdoc">Forbid copy-assigning to an observer. </div></div>
-<div class="ttc" id="class_observable_html_a3c2287cb3e7eb5cdfc9c9c4d2c87cf41"><div class="ttname"><a href="class_observable.html#a3c2287cb3e7eb5cdfc9c9c4d2c87cf41">Observable::t</a></div><div class="ttdeci">double t</div><div class="ttdef"><b>Definition:</b> observable.hpp:31</div></div>
-<div class="ttc" id="class_observer_html_a2565974b0cd29c69463c303a5c5480c0"><div class="ttname"><a href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">Observer::operator==</a></div><div class="ttdeci">bool operator==(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:89</div></div>
-<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:18</div></div>
-<div class="ttc" id="class_observer_html_a315835b4a79fb8be4553480bf5bb77c5"><div class="ttname"><a href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">Observer::unsubscribe_from_all</a></div><div class="ttdeci">void unsubscribe_from_all()</div><div class="ttdoc">Unsubscribe an observer from all of its subscriptions. </div><div class="ttdef"><b>Definition:</b> observable.cpp:24</div></div>
-<div class="ttc" id="class_observer_html_ab21d250cc2470dca82e3f3c17637b217"><div class="ttname"><a href="class_observer.html#ab21d250cc2470dca82e3f3c17637b217">Observer::when_updated_by</a></div><div class="ttdeci">virtual void when_updated_by(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.cpp:38</div></div>
-<div class="ttc" id="class_observer_html_addc53b10ec4dfe15ee1473ea4129b622"><div class="ttname"><a href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">Observer::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:97</div></div>
-<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:19</div></div>
-<div class="ttc" id="class_observer_html_afcc6b67be6c386f2f3d2c363aa59cb47"><div class="ttname"><a href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">Observer::~Observer</a></div><div class="ttdeci">virtual ~Observer()</div><div class="ttdoc">Destruct an observer, unsubscribing it from all of its subscriptions. </div><div class="ttdef"><b>Definition:</b> observable.hpp:70</div></div>
-<div class="ttc" id="class_observer_html_af91e4ff021adac9f70a4791d2b2a2d6e"><div class="ttname"><a href="class_observer.html#af91e4ff021adac9f70a4791d2b2a2d6e">Observer::unsubscribe_from</a></div><div class="ttdeci">void unsubscribe_from(Observable &amp;observable)</div><div class="ttdoc">Unsubscribe an observer from an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:30</div></div>
-<div class="ttc" id="class_observer_html_a0b94e43ae3f969a93385a0c53f46237c"><div class="ttname"><a href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">Observer::when_subscribed_to</a></div><div class="ttdeci">virtual void when_subscribed_to(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.hpp:103</div></div>
-<div class="ttc" id="class_observable_html_a2480c66f78d93c3348daa93c04448920"><div class="ttname"><a href="class_observable.html#a2480c66f78d93c3348daa93c04448920">Observable::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> observable.cpp:12</div></div>
-<div class="ttc" id="class_observable_html_ac43377509fab98a48007d896782fc342"><div class="ttname"><a href="class_observable.html#ac43377509fab98a48007d896782fc342">Observable::context</a></div><div class="ttdeci">dense::Context * context</div><div class="ttdef"><b>Definition:</b> observable.hpp:33</div></div>
-<div class="ttc" id="class_observer_html_a8af6a7a63703d9624ac3f17c055e1f2c"><div class="ttname"><a href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">Observer::operator!=</a></div><div class="ttdeci">bool operator!=(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:93</div></div>
-<div class="ttc" id="class_observable_html_a10f296876f01335fe7227818cdff92e0"><div class="ttname"><a href="class_observable.html#a10f296876f01335fe7227818cdff92e0">Observable::subscribers</a></div><div class="ttdeci">std::vector&lt; std::reference_wrapper&lt; Observer &gt; &gt; const &amp; subscribers() const </div><div class="ttdef"><b>Definition:</b> observable.hpp:37</div></div>
-<div class="ttc" id="classdense_1_1_context_html"><div class="ttname"><a href="classdense_1_1_context.html">dense::Context</a></div><div class="ttdef"><b>Definition:</b> base.hpp:15</div></div>
-<div class="ttc" id="class_observer_html_a2c5b9fa264c66769712ae6ca193346fc"><div class="ttname"><a href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">Observer::when_unsubscribed_from</a></div><div class="ttdeci">virtual void when_unsubscribed_from(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.hpp:107</div></div>
-<div class="ttc" id="class_observable_html_af8e51d2f6dac137462bf7dc1e832dbcb"><div class="ttname"><a href="class_observable.html#af8e51d2f6dac137462bf7dc1e832dbcb">Observable::notify</a></div><div class="ttdeci">void notify(dense::Context &amp;start)</div><div class="ttdef"><b>Definition:</b> observable.cpp:4</div></div>
+<div class="ttc" id="class_observer_html_a2565974b0cd29c69463c303a5c5480c0"><div class="ttname"><a href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">Observer::operator==</a></div><div class="ttdeci">bool operator==(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:76</div></div>
+<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:10</div></div>
+<div class="ttc" id="class_observable_html_a099bf851e05bb8c1a25e83f2a1389e58"><div class="ttname"><a href="class_observable.html#a099bf851e05bb8c1a25e83f2a1389e58">Observable::notify</a></div><div class="ttdeci">void notify()</div><div class="ttdef"><b>Definition:</b> observable.cpp:4</div></div>
+<div class="ttc" id="class_observer_html_a315835b4a79fb8be4553480bf5bb77c5"><div class="ttname"><a href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">Observer::unsubscribe_from_all</a></div><div class="ttdeci">void unsubscribe_from_all()</div><div class="ttdoc">Unsubscribe an observer from all of its subscriptions. </div><div class="ttdef"><b>Definition:</b> observable.cpp:16</div></div>
+<div class="ttc" id="class_observer_html_ab21d250cc2470dca82e3f3c17637b217"><div class="ttname"><a href="class_observer.html#ab21d250cc2470dca82e3f3c17637b217">Observer::when_updated_by</a></div><div class="ttdeci">virtual void when_updated_by(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.cpp:30</div></div>
+<div class="ttc" id="class_observer_html_addc53b10ec4dfe15ee1473ea4129b622"><div class="ttname"><a href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">Observer::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:84</div></div>
+<div class="ttc" id="class_observable_html_a434d5dfd41ed25f8f120ca2a8a6a95b0"><div class="ttname"><a href="class_observable.html#a434d5dfd41ed25f8f120ca2a8a6a95b0">Observable::~Observable</a></div><div class="ttdeci">virtual ~Observable() noexcept=default</div></div>
+<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:12</div></div>
+<div class="ttc" id="class_observer_html_afcc6b67be6c386f2f3d2c363aa59cb47"><div class="ttname"><a href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">Observer::~Observer</a></div><div class="ttdeci">virtual ~Observer()</div><div class="ttdoc">Destruct an observer, unsubscribing it from all of its subscriptions. </div><div class="ttdef"><b>Definition:</b> observable.hpp:57</div></div>
+<div class="ttc" id="class_observer_html_af91e4ff021adac9f70a4791d2b2a2d6e"><div class="ttname"><a href="class_observer.html#af91e4ff021adac9f70a4791d2b2a2d6e">Observer::unsubscribe_from</a></div><div class="ttdeci">void unsubscribe_from(Observable &amp;observable)</div><div class="ttdoc">Unsubscribe an observer from an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:22</div></div>
+<div class="ttc" id="class_observer_html_a0b94e43ae3f969a93385a0c53f46237c"><div class="ttname"><a href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">Observer::when_subscribed_to</a></div><div class="ttdeci">virtual void when_subscribed_to(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.hpp:90</div></div>
+<div class="ttc" id="class_observer_html_a8af6a7a63703d9624ac3f17c055e1f2c"><div class="ttname"><a href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">Observer::operator!=</a></div><div class="ttdeci">bool operator!=(Observer &amp;other) const noexcept</div><div class="ttdef"><b>Definition:</b> observable.hpp:80</div></div>
+<div class="ttc" id="class_observable_html_a10f296876f01335fe7227818cdff92e0"><div class="ttname"><a href="class_observable.html#a10f296876f01335fe7227818cdff92e0">Observable::subscribers</a></div><div class="ttdeci">std::vector&lt; std::reference_wrapper&lt; Observer &gt; &gt; const &amp; subscribers() const </div><div class="ttdef"><b>Definition:</b> observable.hpp:24</div></div>
+<div class="ttc" id="class_observer_html_a2c5b9fa264c66769712ae6ca193346fc"><div class="ttname"><a href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">Observer::when_unsubscribed_from</a></div><div class="ttdeci">virtual void when_unsubscribed_from(Observable &amp;)</div><div class="ttdef"><b>Definition:</b> observable.hpp:94</div></div>
 <div class="ttc" id="class_observer_html_acb0af5014875c6ec7465cccc85e4f39b"><div class="ttname"><a href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer::Observer</a></div><div class="ttdeci">Observer()=default</div><div class="ttdoc">Construct an observer with no subscriptions. </div></div>
-<div class="ttc" id="class_observable_html_a1b2d53c488f253f338461c041301c24a"><div class="ttname"><a href="class_observable.html#a1b2d53c488f253f338461c041301c24a">Observable::run</a></div><div class="ttdeci">virtual void run()=0</div></div>
-<div class="ttc" id="class_observer_html_a7e9ae65a7ceb32a290678989016c2987"><div class="ttname"><a href="class_observer.html#a7e9ae65a7ceb32a290678989016c2987">Observer::subscriptions</a></div><div class="ttdeci">std::vector&lt; std::reference_wrapper&lt; Observable &gt; &gt; const &amp; subscriptions()</div><div class="ttdoc">View an observer&#39;s subscriptions as a ContiguousContainer. </div><div class="ttdef"><b>Definition:</b> observable.cpp:34</div></div>
+<div class="ttc" id="class_observer_html_a7e9ae65a7ceb32a290678989016c2987"><div class="ttname"><a href="class_observer.html#a7e9ae65a7ceb32a290678989016c2987">Observer::subscriptions</a></div><div class="ttdeci">std::vector&lt; std::reference_wrapper&lt; Observable &gt; &gt; const &amp; subscriptions()</div><div class="ttdoc">View an observer&#39;s subscriptions as a ContiguousContainer. </div><div class="ttdef"><b>Definition:</b> observable.cpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

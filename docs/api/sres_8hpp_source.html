@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">   57</a></span>&#160;    <a class="code" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">SRES</a> (<span class="keywordtype">int</span> population_size, <span class="keywordtype">int</span> num_parents, <span class="keywordtype">int</span> num_generations,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; lBounds, <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; uBounds, <a class="code" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES_Scorer</a> scorer,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keywordtype">int</span> seed = 0) :</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        param(NULL), population(NULL), stats(NULL), pf(0),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        param(nullptr), population(nullptr), stats(nullptr), pf(0),</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        lowerBounds(lBounds), upperBounds(uBounds), popsize(population_size),</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        parentsize(num_parents), ngenerations(num_generations), score_fcn(scorer)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="_e_s_e_s_8cpp.html#ae8abeca6bbabcfe0848c97075d54e3c8">ESInitial</a>(seed, <span class="comment">//random seed</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        &amp;param, <span class="comment">//Parameter set to be filled</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        NULL, <span class="comment">//Optional transform function</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">nullptr</span>, <span class="comment">//Optional transform function</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        [<span class="keyword">this</span>](<span class="keywordtype">double</span>** pop, <span class="keywordtype">double</span>* scores, <span class="keywordtype">double</span>** constr, <span class="keywordtype">int</span> popc) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <a class="code" href="class_s_r_e_s.html#a66617505b53d74d7ab958c8f6a5dc22e">simulate_population</a>(popc, pop, scores);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }, <span class="comment">//Fitness evaluation callback</span></div>
@@ -223,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

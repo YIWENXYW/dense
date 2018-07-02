@@ -110,12 +110,12 @@ Include dependency graph for base.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="sim_2base_8cpp__incl.png" border="0" usemap="#source_2sim_2base_8cpp" alt=""/></div>
 <map name="source_2sim_2base_8cpp" id="source_2sim_2base_8cpp">
-<area shape="rect" id="node3" href="sim_2base_8hpp.html" title="base.hpp" alt="" coords="559,80,632,107"/><area shape="rect" id="node23" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="353,155,463,181"/><area shape="rect" id="node4" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="23,304,186,331"/><area shape="rect" id="node5" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="128,379,243,405"/><area shape="rect" id="node10" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="1022,155,1160,181"/><area shape="rect" id="node12" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="324,229,482,256"/><area shape="rect" id="node13" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="524,304,618,331"/><area shape="rect" id="node21" href="model_8hpp.html" title="core/model.hpp" alt="" coords="609,229,719,256"/><area shape="rect" id="node9" href="_real_8hpp.html" title="Real.hpp" alt="" coords="368,379,442,405"/><area shape="rect" id="node19" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="413,304,499,331"/><area shape="rect" id="node14" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="609,379,719,405"/></map>
+<area shape="rect" id="node3" href="sim_2base_8hpp.html" title="base.hpp" alt="" coords="803,80,876,107"/><area shape="rect" id="node27" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="710,155,820,181"/><area shape="rect" id="node4" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="761,304,924,331"/><area shape="rect" id="node5" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="773,379,888,405"/><area shape="rect" id="node15" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="991,155,1129,181"/><area shape="rect" id="node17" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="593,229,751,256"/><area shape="rect" id="node18" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="380,304,473,331"/><area shape="rect" id="node25" href="model_8hpp.html" title="core/model.hpp" alt="" coords="355,229,465,256"/><area shape="rect" id="node9" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="366,379,500,405"/><area shape="rect" id="node10" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="444,453,596,480"/><area shape="rect" id="node11" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="441,528,599,555"/><area shape="rect" id="node23" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="549,304,635,331"/><area shape="rect" id="node19" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="231,379,341,405"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2base_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
+<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2base_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)&#160;&#160;&#160;dense::model::reaction_##name.active_rate( DummyContext (rate_terms[name]));</td></tr>
 <tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2base_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
 <tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,26 +136,26 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">delts = rate_terms[name]; <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">\</a></div>
-<div class="line"><a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">  Real</a> max_gradient_##name = 1.0; \</div>
+<b>Value:</b><div class="fragment"><div class="line">delts = rate_terms[name]; \</div>
+<div class="line">  Real max_gradient_##name = 1.0; \</div>
 <div class="line">  if (factors_gradient) \</div>
 <div class="line">  { \</div>
-<div class="line">    for (<span class="keywordtype">int</span> k = 0; k &lt; _width_total &amp;&amp; factors_gradient[name]; k++) { \</div>
+<div class="line">    for (<a class="code" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> k = 0; k &lt; _width_total &amp;&amp; factors_gradient[name]; k++) { \</div>
 <div class="line">      max_gradient_##name = std::max&lt;Real&gt;(factors_gradient[ name ][k], max_gradient_##name); \</div>
 <div class="line">    } \</div>
 <div class="line">  } \</div>
-<div class="line">  <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">\</a></div>
-<div class="line"><a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">  Real</a> pert_##name = 0.0; \</div>
+<div class="line">  \</div>
+<div class="line">  Real pert_##name = 0.0; \</div>
 <div class="line">  if (factors_perturb) \</div>
 <div class="line">  { \</div>
 <div class="line">    pert_##name = factors_perturb[name]; \</div>
 <div class="line">  } \</div>
 <div class="line">  \</div>
-<div class="line">  for (<span class="keyword">auto</span> factor : delts) { <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">\</a></div>
-<div class="line"><a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">    Real</a>&amp; sp_max_delay = max_delays[factor]; \</div>
+<div class="line">  for (<span class="keyword">auto</span> factor : delts) { \</div>
+<div class="line">    Real&amp; sp_max_delay = max_delays[factor]; \</div>
 <div class="line">    sp_max_delay = std::max&lt;Real&gt;((_parameter_set.getDelay(dreact_##name) * max_gradient_##name * (1.0 + pert_##name) ), sp_max_delay); \</div>
 <div class="line">  }</div>
-<div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
+<div class="ttc" id="namespacedense_html_a640f19567ce911a9d30143002a1887a2"><div class="ttname"><a href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a></div><div class="ttdeci">int Natural</div><div class="ttdoc">A signed integral type used to represent natural (non-negative) numbers. </div><div class="ttdef"><b>Definition:</b> numerics.hpp:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -168,15 +168,11 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;dense::model::reaction_##name.active_rate( DummyContext (rate_terms[name]));</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="classreaction.html">reaction&lt;name&gt;</a> <span class="keyword">const</span>&amp; r##name = _model.reaction_##name; \</div>
-<div class="line">    r##name.<a class="code" href="classreaction.html#a3dd5920367c9db25f14fc456211be6ac">active_rate</a>( DummyContext (rate_terms[name]));</div>
-<div class="ttc" id="classreaction_html"><div class="ttname"><a href="classreaction.html">reaction</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:60</div></div>
-<div class="ttc" id="classreaction_html_a3dd5920367c9db25f14fc456211be6ac"><div class="ttname"><a href="classreaction.html#a3dd5920367c9db25f14fc456211be6ac">reaction::active_rate</a></div><div class="ttdeci">Real active_rate(Ctxt const &amp;c) const </div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a class="anchor" id="a43a88125d1a054381c420a93ae827edc"></a>
@@ -198,7 +194,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

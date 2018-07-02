@@ -1,8 +1,10 @@
 <map id="source/sim/determ/dense_cl.hpp" name="source/sim/determ/dense_cl.hpp">
-<area shape="rect" id="node2" href="$common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="135,171,297,197"/>
-<area shape="rect" id="node3" href="$specie_8hpp.html" title="core/specie.hpp" alt="" coords="75,245,189,272"/>
-<area shape="rect" id="node8" href="$model_8hpp.html" title="core/model.hpp" alt="" coords="321,96,431,123"/>
-<area shape="rect" id="node7" href="$_real_8hpp.html" title="Real.hpp" alt="" coords="213,245,287,272"/>
-<area shape="rect" id="node10" href="$reaction_8hpp.html" title="reaction.hpp" alt="" coords="372,171,465,197"/>
-<area shape="rect" id="node11" href="$cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="363,245,473,272"/>
+<area shape="rect" id="node2" href="$common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="241,171,404,197"/>
+<area shape="rect" id="node3" href="$specie_8hpp.html" title="core/specie.hpp" alt="" coords="97,245,212,272"/>
+<area shape="rect" id="node13" href="$model_8hpp.html" title="core/model.hpp" alt="" coords="419,96,529,123"/>
+<area shape="rect" id="node7" href="$numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="287,245,421,272"/>
+<area shape="rect" id="node8" href="$configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="301,320,453,347"/>
+<area shape="rect" id="node9" href="$preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="285,395,443,421"/>
+<area shape="rect" id="node15" href="$reaction_8hpp.html" title="reaction.hpp" alt="" coords="428,171,521,197"/>
+<area shape="rect" id="node16" href="$cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="525,245,635,272"/>
 </map>

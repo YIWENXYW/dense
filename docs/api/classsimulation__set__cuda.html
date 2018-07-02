@@ -99,12 +99,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="set__cuda_8hpp_source.html">set_cuda.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for simulation_set_cuda:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsimulation__set__cuda__coll__graph.png" border="0" usemap="#simulation__set__cuda_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56c5bd71ec21200675d1802420b556ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a56c5bd71ec21200675d1802420b556ea">param_set_init</a> (<a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *paramset)</td></tr>
+<tr class="memitem:a56c5bd71ec21200675d1802420b556ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a56c5bd71ec21200675d1802420b556ea">param_set_init</a> (Real *paramset)</td></tr>
 <tr class="separator:a56c5bd71ec21200675d1802420b556ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5baf1c29f54003f334e0d752105ef834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a5baf1c29f54003f334e0d752105ef834">simulation_set_cuda</a> (int num_param, bool using_gradients, bool using_perturb, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *paramset, int cell_total, int total_width, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> step_size, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> analysis_interval, <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> sim_time)</td></tr>
+<tr class="memitem:a5baf1c29f54003f334e0d752105ef834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a5baf1c29f54003f334e0d752105ef834">simulation_set_cuda</a> (int num_param, bool using_gradients, bool using_perturb, Real *paramset, int cell_total, int total_width, Real step_size, Real analysis_interval, Real sim_time)</td></tr>
 <tr class="separator:a5baf1c29f54003f334e0d752105ef834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a06f0146af79222df922d1836ebe140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a7a06f0146af79222df922d1836ebe140">simulate_sets</a> ()</td></tr>
 <tr class="separator:a7a06f0146af79222df922d1836ebe140"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,7 +118,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1f0a8f0d0a3c756d572cf2c98f4620fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a1f0a8f0d0a3c756d572cf2c98f4620fe">time_total</a></td></tr>
+<tr class="memitem:a1f0a8f0d0a3c756d572cf2c98f4620fe"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimulation__set__cuda.html#a1f0a8f0d0a3c756d572cf2c98f4620fe">time_total</a></td></tr>
 <tr class="separator:a1f0a8f0d0a3c756d572cf2c98f4620fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -145,7 +150,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *&#160;</td>
+          <td class="paramtype">Real *&#160;</td>
           <td class="paramname"><em>paramset</em>, </td>
         </tr>
         <tr>
@@ -163,19 +168,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td>
+          <td class="paramtype">Real&#160;</td>
           <td class="paramname"><em>step_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td>
+          <td class="paramtype">Real&#160;</td>
           <td class="paramname"><em>analysis_interval</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td>
+          <td class="paramtype">Real&#160;</td>
           <td class="paramname"><em>sim_time</em>&#160;</td>
         </tr>
         <tr>
@@ -227,7 +232,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void simulation_set_cuda::param_set_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> *&#160;</td>
+          <td class="paramtype">Real *&#160;</td>
           <td class="paramname"><em>paramset</em></td><td>)</td>
           <td></td>
         </tr>
@@ -262,7 +267,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> simulation_set_cuda::time_total</td>
+          <td class="memname">Real simulation_set_cuda::time_total</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -275,7 +280,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:21 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

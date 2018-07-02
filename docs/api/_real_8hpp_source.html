@@ -95,14 +95,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Real.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_real_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">    1</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> = double;</div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="_real_8hpp.html#a7dca5da554cd793c8ad4fac0be7eb69b">    2</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_real_8hpp.html#a7dca5da554cd793c8ad4fac0be7eb69b">RATETYPE</a> = <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>;</div>
-<div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
-<div class="ttc" id="_real_8hpp_html_a7dca5da554cd793c8ad4fac0be7eb69b"><div class="ttname"><a href="_real_8hpp.html#a7dca5da554cd793c8ad4fac0be7eb69b">RATETYPE</a></div><div class="ttdeci">Real RATETYPE</div><div class="ttdef"><b>Definition:</b> Real.hpp:2</div></div>
+<a href="_real_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DENSE_NUMERICS_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DENSE_NUMERICS_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>dense {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">  #ifndef DENSE_REAL</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_real_8hpp.html#ad3123c508dfb4617fd72e93d2ab81dcc">   11</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define DENSE_REAL double</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #else</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define TEST #DENSE_REAL</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span>  static_assert(TEST == <span class="stringliteral">&quot;float&quot;</span> || TEST == <span class="stringliteral">&quot;long-double&quot;</span> || TEST == <span class="stringliteral">&quot;double&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">  #undef TEST</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">   17</a></span>&#160;<span class="preprocessor"></span>  <span class="keyword">using</span> <a class="code" href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">Real</a> = <a class="code" href="_real_8hpp.html#ad3123c508dfb4617fd72e93d2ab81dcc">DENSE_REAL</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespacedense.html#a11a1bc6c5c34daec36c3492d5558d5a5">   21</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacedense.html#a11a1bc6c5c34daec36c3492d5558d5a5">Natural</a> = std::ptrdiff_t;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespacedense.html#a645ed66899f11f0c2821043a671e9b2c">   25</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="namespacedense.html#a645ed66899f11f0c2821043a671e9b2c">Whole</a> = std::ptrdiff_t;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">namespace </span>numeric_literals {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    constexpr <a class="code" href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">dense::Real</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _R (<span class="keywordtype">long</span> <span class="keywordtype">double</span> value) noexcept;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    constexpr <a class="code" href="namespacedense.html#a11a1bc6c5c34daec36c3492d5558d5a5">dense::Natural</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _N (<span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> value) noexcept;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    constexpr <a class="code" href="namespacedense.html#a645ed66899f11f0c2821043a671e9b2c">dense::Whole</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _Z (<span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> value) noexcept;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">dense::Real</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_real_8hpp.html#a56177a20e3f9fbc839bfa77f858507c3">   40</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_real_8hpp.html#a56177a20e3f9fbc839bfa77f858507c3">RATETYPE</a> = <a class="code" href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">::Real</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_real_8hpp_html_a56177a20e3f9fbc839bfa77f858507c3"><div class="ttname"><a href="_real_8hpp.html#a56177a20e3f9fbc839bfa77f858507c3">RATETYPE</a></div><div class="ttdeci">::Real RATETYPE</div><div class="ttdef"><b>Definition:</b> Real.hpp:40</div></div>
+<div class="ttc" id="namespacedense_html_a2c41f7d223b1738fba85565cc952a7a7"><div class="ttname"><a href="namespacedense.html#a2c41f7d223b1738fba85565cc952a7a7">dense::Real</a></div><div class="ttdeci">DENSE_REAL Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:17</div></div>
+<div class="ttc" id="namespacedense_html_a11a1bc6c5c34daec36c3492d5558d5a5"><div class="ttname"><a href="namespacedense.html#a11a1bc6c5c34daec36c3492d5558d5a5">dense::Natural</a></div><div class="ttdeci">std::ptrdiff_t Natural</div><div class="ttdoc">A signed integral type used to represent natural (non-negative) numbers. </div><div class="ttdef"><b>Definition:</b> Real.hpp:21</div></div>
+<div class="ttc" id="namespacedense_html_a645ed66899f11f0c2821043a671e9b2c"><div class="ttname"><a href="namespacedense.html#a645ed66899f11f0c2821043a671e9b2c">dense::Whole</a></div><div class="ttdeci">std::ptrdiff_t Whole</div><div class="ttdoc">A signed integral type used to represent whole numbers. </div><div class="ttdef"><b>Definition:</b> Real.hpp:25</div></div>
+<div class="ttc" id="_real_8hpp_html_ad3123c508dfb4617fd72e93d2ab81dcc"><div class="ttname"><a href="_real_8hpp.html#ad3123c508dfb4617fd72e93d2ab81dcc">DENSE_REAL</a></div><div class="ttdeci">#define DENSE_REAL</div><div class="ttdoc">A floating-point type used to represent real numbers. </div><div class="ttdef"><b>Definition:</b> Real.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 22 2018 19:32:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

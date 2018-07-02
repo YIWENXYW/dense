@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: dense::Context Class Reference</title>
+<title>Differential Equation Network Simulation Engine: dense::Context&lt; Simulation_T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,40 +97,89 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classdense_1_1_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dense::Context Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">dense::Context&lt; Simulation_T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sim_2base_8hpp_source.html">base.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for dense::Context:</div>
+Inheritance diagram for dense::Context&lt; Simulation_T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdense_1_1_context__inherit__graph.png" border="0" usemap="#dense_1_1_context_inherit__map" alt="Inheritance graph"/></div>
-<map name="dense_1_1_context_inherit__map" id="dense_1_1_context_inherit__map">
-<area shape="rect" id="node2" href="classcsvr__sim_1_1sim__ct.html" title="csvr_sim::sim_ct" alt="" coords="189,5,312,32"/><area shape="rect" id="node3" href="class_deterministic___simulation_1_1_context.html" title="Deterministic_Simulation\l::Context" alt="" coords="167,57,334,98"/><area shape="rect" id="node4" href="classsimulation__cuda_1_1_context.html" title="simulation_cuda::Context" alt="" coords="165,123,336,149"/><area shape="rect" id="node5" href="class_stochastic___simulation_1_1_context_stoch.html" title="Stochastic_Simulation\l::ContextStoch" alt="" coords="175,174,327,215"/></map>
+<div class="center"><img src="classdense_1_1_context__inherit__graph.png" border="0" usemap="#dense_1_1_context_3_01_simulation___t_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="dense_1_1_context_3_01_simulation___t_01_4_inherit__map" id="dense_1_1_context_3_01_simulation___t_01_4_inherit__map">
+<area shape="rect" id="node2" href="classsimulation__cuda_1_1_context.html" title="simulation_cuda::Context" alt="" coords="24,80,195,107"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0e7372fcbee2e0c1d9c54aed667a829"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#ae0e7372fcbee2e0c1d9c54aed667a829">getCon</a> (<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp) const =0</td></tr>
-<tr class="separator:ae0e7372fcbee2e0c1d9c54aed667a829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b97907d9f6ae58954e1ad1a86ddc50e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a7b97907d9f6ae58954e1ad1a86ddc50e">advance</a> ()=0</td></tr>
-<tr class="separator:a7b97907d9f6ae58954e1ad1a86ddc50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e1c3c595fd5a8219656e39d351e9893"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a5e1c3c595fd5a8219656e39d351e9893">isValid</a> () const =0</td></tr>
-<tr class="separator:a5e1c3c595fd5a8219656e39d351e9893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484584b9263d230d9f319d365f5d2753"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a484584b9263d230d9f319d365f5d2753">set</a> (int c)=0</td></tr>
-<tr class="separator:a484584b9263d230d9f319d365f5d2753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e538cdb39258d5c55b1690979820804"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a6e538cdb39258d5c55b1690979820804">Context</a> (Simulation_T *owner, <a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> cell=0)</td></tr>
+<tr class="separator:a6e538cdb39258d5c55b1690979820804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac678eaa9dc95b507bcf7901edf6085c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#ac678eaa9dc95b507bcf7901edf6085c3">advance</a> ()</td></tr>
+<tr class="separator:ac678eaa9dc95b507bcf7901edf6085c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cd8e50cef10fdad504ae020f0f16d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a55cd8e50cef10fdad504ae020f0f16d6">isValid</a> () const </td></tr>
+<tr class="separator:a55cd8e50cef10fdad504ae020f0f16d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3038cb8e017e40886b085273840c62e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a3038cb8e017e40886b085273840c62e0">getCon</a> (<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp) const </td></tr>
+<tr class="separator:a3038cb8e017e40886b085273840c62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e509394c3e840f2509b8bd654d05b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#ab7e509394c3e840f2509b8bd654d05b7">getCon</a> (<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp, int delay) const </td></tr>
+<tr class="separator:ab7e509394c3e840f2509b8bd654d05b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9c7827c0991cf5519e09b29ec6eb83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#abc9c7827c0991cf5519e09b29ec6eb83">calculateNeighborAvg</a> (<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> sp, int delay) const </td></tr>
+<tr class="separator:abc9c7827c0991cf5519e09b29ec6eb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f4b06c99d20420e3bf33e6df325cfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a16f4b06c99d20420e3bf33e6df325cfd">getCritVal</a> (<a class="el" href="specie_8hpp.html#affd8e4127f4bf2cc9de61894712798fc">critspecie_id</a> rcritsp) const </td></tr>
+<tr class="separator:a16f4b06c99d20420e3bf33e6df325cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6d5a5d8087c73bd8b6ba226efc1f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a2b6d5a5d8087c73bd8b6ba226efc1f0b">getRate</a> (<a class="el" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> <a class="el" href="classreaction.html">reaction</a>) const </td></tr>
+<tr class="separator:a2b6d5a5d8087c73bd8b6ba226efc1f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e5acd48c4d411d220b660caf884f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense_1_1_context.html#a19e5acd48c4d411d220b660caf884f68">getDelay</a> (<a class="el" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32">delay_reaction_id</a> delay_reaction) const </td></tr>
+<tr class="separator:a19e5acd48c4d411d220b660caf884f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7b97907d9f6ae58954e1ad1a86ddc50e"></a>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6e538cdb39258d5c55b1690979820804"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Simulation_T = Simulation&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dense::Context::advance </td>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; Simulation_T &gt;::<a class="el" href="classdense_1_1_context.html">Context</a> </td>
+          <td>(</td>
+          <td class="paramtype">Simulation_T *&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a>&#160;</td>
+          <td class="paramname"><em>cell</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac678eaa9dc95b507bcf7901edf6085c3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Simulation_T = Simulation&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cuda_8hpp.html#ac072015929f97b8695e2c21dd0bf1d0e">CUDA_HOST</a> <a class="el" href="cuda_8hpp.html#a99f5ad1927871dd1fe64a29a102f6830">CUDA_DEVICE</a> void <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; Simulation_T &gt;::advance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -138,89 +187,155 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_stochastic___simulation_1_1_context_stoch.html#a75b3f3410d16fde502973327a8bca81d">Stochastic_Simulation::ContextStoch</a>, <a class="el" href="classsimulation__cuda_1_1_context.html#ad7a0f2ea8a9f3496710d9323c0f6f805">simulation_cuda::Context</a>, <a class="el" href="class_deterministic___simulation_1_1_context.html#ab5dfa0cfc05dd28454f5f26eb8b02101">Deterministic_Simulation::Context</a>, and <a class="el" href="classcsvr__sim_1_1sim__ct.html#abc908ccb1f2fa0699927aa68387dba2d">csvr_sim::sim_ct</a>.</p>
+</div>
+</div>
+<a class="anchor" id="abc9c7827c0991cf5519e09b29ec6eb83"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">dense::Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::calculateNeighborAvg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ae0e7372fcbee2e0c1d9c54aed667a829"></a>
+<a class="anchor" id="a3038cb8e017e40886b085273840c62e0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> dense::Context::getCon </td>
+          <td class="memname">dense::Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::getCon </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
           <td class="paramname"><em>sp</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_stochastic___simulation_1_1_context_stoch.html#ad321d95507918e7f29a8bdaf2afaf441">Stochastic_Simulation::ContextStoch</a>, <a class="el" href="classsimulation__cuda_1_1_context.html#a1c0932392b43ff8a6d61e9d8d9c164bb">simulation_cuda::Context</a>, <a class="el" href="class_deterministic___simulation_1_1_context.html#af2a49d3efcf1513640d6bf0795dedaba">Deterministic_Simulation::Context</a>, and <a class="el" href="classcsvr__sim_1_1sim__ct.html#a292baa67d98ee8e8e1ca1e15f615678c">csvr_sim::sim_ct</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ab7e509394c3e840f2509b8bd654d05b7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">dense::Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::getCon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>&#160;</td>
+          <td class="paramname"><em>sp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5e1c3c595fd5a8219656e39d351e9893"></a>
+<a class="anchor" id="a16f4b06c99d20420e3bf33e6df325cfd"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool dense::Context::isValid </td>
+          <td class="memname">Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::getCritVal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="specie_8hpp.html#affd8e4127f4bf2cc9de61894712798fc">critspecie_id</a>&#160;</td>
+          <td class="paramname"><em>rcritsp</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a19e5acd48c4d411d220b660caf884f68"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::getDelay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32">delay_reaction_id</a>&#160;</td>
+          <td class="paramname"><em>delay_reaction</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b6d5a5d8087c73bd8b6ba226efc1f0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::getRate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a>&#160;</td>
+          <td class="paramname"><em>reaction</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55cd8e50cef10fdad504ae020f0f16d6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdense_1_1_context.html">dense::Context</a>&lt; T &gt;::isValid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_stochastic___simulation_1_1_context_stoch.html#a0b83bbfc6c1b278a3b795c9d4ed3c0a5">Stochastic_Simulation::ContextStoch</a>, <a class="el" href="classsimulation__cuda_1_1_context.html#ad1590c67af44357217a2f4128f7c4d7e">simulation_cuda::Context</a>, <a class="el" href="class_deterministic___simulation_1_1_context.html#ac1930a79cea1224eda12db2d3f2417e3">Deterministic_Simulation::Context</a>, and <a class="el" href="classcsvr__sim_1_1sim__ct.html#ab6e93e0e3eb29bfd1a684567fccb8f48">csvr_sim::sim_ct</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a484584b9263d230d9f319d365f5d2753"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void dense::Context::set </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_stochastic___simulation_1_1_context_stoch.html#a689507305a4989eb3f370c2c9edc83e5">Stochastic_Simulation::ContextStoch</a>, <a class="el" href="classsimulation__cuda_1_1_context.html#a289b467c700c65e1dbcffe95b7f3837f">simulation_cuda::Context</a>, <a class="el" href="class_deterministic___simulation_1_1_context.html#af825a51eb5e4f92fb797efeedaaf80d8">Deterministic_Simulation::Context</a>, and <a class="el" href="classcsvr__sim_1_1sim__ct.html#abb84f9f9b7edb546e2def418d4e26dc6">csvr_sim::sim_ct</a>.</p>
 
 </div>
 </div>
@@ -230,7 +345,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:21 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

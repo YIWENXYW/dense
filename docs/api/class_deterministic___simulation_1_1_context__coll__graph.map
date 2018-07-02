@@ -1,12 +1,11 @@
 <map id="Deterministic_Simulation::Context" name="Deterministic_Simulation::Context">
-<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="6,13,117,40"/>
-<area shape="rect" id="node5" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="245,43,333,69"/>
-<area shape="rect" id="node3" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="1070,72,1237,99"/>
-<area shape="rect" id="node11" href="$classbaby__cl.html" title="baby_cl" alt="" coords="1408,87,1475,113"/>
-<area shape="rect" id="node4" href="$class_simulation.html" title="Simulation" alt="" coords="509,133,592,160"/>
-<area shape="rect" id="node8" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="717,105,955,161"/>
-<area shape="rect" id="node10" href="$classcell__param.html" title="cell_param\&lt; NUM_DELAY\l_REACTIONS, int \&gt;" alt="" coords="747,185,925,226"/>
-<area shape="rect" id="node6" href="$classmodel.html" title="model" alt="" coords="261,93,318,120"/>
-<area shape="rect" id="node7" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="235,144,344,171"/>
-<area shape="rect" id="node9" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="213,195,365,221"/>
+<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="6,95,117,121"/>
+<area shape="rect" id="node4" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="245,156,333,183"/>
+<area shape="rect" id="node3" href="$class_simulation.html" title="Simulation" alt="" coords="509,173,592,200"/>
+<area shape="rect" id="node7" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="717,239,955,295"/>
+<area shape="rect" id="node9" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="1070,173,1237,200"/>
+<area shape="rect" id="node10" href="$classcell__param.html" title="cell_param\&lt; NUM_DELAY\l_REACTIONS, int \&gt;" alt="" coords="747,107,925,149"/>
+<area shape="rect" id="node5" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="235,207,344,233"/>
+<area shape="rect" id="node11" href="$classbaby__cl.html" title="baby_cl" alt="" coords="1408,219,1475,245"/>
+<area shape="rect" id="node8" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="213,43,365,69"/>
 </map>

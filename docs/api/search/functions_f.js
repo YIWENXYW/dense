@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue',['Queue',['../class_queue.html#a2f6af0e9e14826e168ec1386c0d02c96',1,'Queue']]]
+  ['queue',['Queue',['../class_queue.html#aefd38eae5dc4aa644d59d6ebf2c0a34f',1,'Queue']]]
 ];

@@ -1,7 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classdense_1_1_context.html" title="dense::Context" alt="" coords="6,93,117,120"/>
-<area shape="rect" id="node2" href="$classcsvr__sim_1_1sim__ct.html" title="csvr_sim::sim_ct" alt="" coords="189,5,312,32"/>
-<area shape="rect" id="node3" href="$class_deterministic___simulation_1_1_context.html" title="Deterministic_Simulation\l::Context" alt="" coords="167,57,334,98"/>
-<area shape="rect" id="node4" href="$classsimulation__cuda_1_1_context.html" title="simulation_cuda::Context" alt="" coords="165,123,336,149"/>
-<area shape="rect" id="node5" href="$class_stochastic___simulation_1_1_context_stoch.html" title="Stochastic_Simulation\l::ContextStoch" alt="" coords="175,174,327,215"/>
+<area shape="rect" id="node1" href="$classdense_1_1_context.html" title="dense::Context\&lt; Simulation_T \&gt;" alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node2" href="$classsimulation__cuda_1_1_context.html" title="simulation_cuda::Context" alt="" coords="264,5,435,32"/>
 </map>

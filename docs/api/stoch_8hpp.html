@@ -92,7 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">stoch.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -107,19 +108,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;set&gt;</code><br/>
 <code>#include &lt;random&gt;</code><br/>
+<code>#include &quot;reactions_list.hpp&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for stoch.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="stoch_8hpp__incl.png" border="0" usemap="#source_2sim_2stoch_2stoch_8hpp" alt=""/></div>
 <map name="source_2sim_2stoch_2stoch_8hpp" id="source_2sim_2stoch_2stoch_8hpp">
-<area shape="rect" id="node2" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="446,80,545,107"/><area shape="rect" id="node4" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="468,379,583,405"/><area shape="rect" id="node9" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="64,155,203,181"/><area shape="rect" id="node11" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="249,229,407,256"/><area shape="rect" id="node12" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="703,304,796,331"/><area shape="rect" id="node20" href="model_8hpp.html" title="core/model.hpp" alt="" coords="737,229,847,256"/><area shape="rect" id="node22" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="538,155,648,181"/><area shape="rect" id="node3" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="415,304,577,331"/><area shape="rect" id="node8" href="_real_8hpp.html" title="Real.hpp" alt="" coords="369,379,443,405"/><area shape="rect" id="node18" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="202,304,288,331"/><area shape="rect" id="node13" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="739,379,849,405"/></map>
+<area shape="rect" id="node2" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="473,80,572,107"/><area shape="rect" id="node4" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="571,379,685,405"/><area shape="rect" id="node14" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="43,155,181,181"/><area shape="rect" id="node16" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="334,229,492,256"/><area shape="rect" id="node17" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="767,304,860,331"/><area shape="rect" id="node24" href="model_8hpp.html" title="core/model.hpp" alt="" coords="915,229,1025,256"/><area shape="rect" id="node26" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="526,155,636,181"/><area shape="rect" id="node3" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="327,304,489,331"/><area shape="rect" id="node8" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="306,379,440,405"/><area shape="rect" id="node9" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="347,453,499,480"/><area shape="rect" id="node10" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="344,528,501,555"/><area shape="rect" id="node22" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="215,304,301,331"/><area shape="rect" id="node18" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="838,379,948,405"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="stoch_8hpp__dep__incl.png" border="0" usemap="#source_2sim_2stoch_2stoch_8hppdep" alt=""/></div>
 <map name="source_2sim_2stoch_2stoch_8hppdep" id="source_2sim_2stoch_2stoch_8hppdep">
-<area shape="rect" id="node2" href="set_8hpp.html" title="source/sim/set.hpp" alt="" coords="160,88,293,115"/><area shape="rect" id="node5" href="stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="346,171,528,197"/><area shape="rect" id="node6" href="stoch__context_8hpp.html" title="source/sim/stoch/stoch\l_context.hpp" alt="" coords="369,81,527,122"/><area shape="rect" id="node3" href="main_8cpp.html" title="source/main.cpp" alt="" coords="5,171,123,197"/><area shape="rect" id="node4" href="set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="148,171,316,197"/></map>
+<area shape="rect" id="node2" href="set_8hpp.html" title="source/sim/set.hpp" alt="" coords="81,80,215,107"/><area shape="rect" id="node5" href="stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="239,80,421,107"/><area shape="rect" id="node3" href="main_8cpp.html" title="source/main.cpp" alt="" coords="5,155,123,181"/><area shape="rect" id="node4" href="set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="148,155,316,181"/></map>
 </div>
 </div>
 <p><a href="stoch_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -128,13 +130,49 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation.html">Stochastic_Simulation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stochastic___simulation_1_1_context_stoch.html">Stochastic_Simulation::ContextStoch</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stoch_8hpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
+<tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a43a88125d1a054381c420a93ae827edc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REACTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (std::size_t i=0; i&lt; propensity_network[rid].size(); i++) { \</div>
+<div class="line">            if ( name == propensity_network[rid][i] ) { \</div>
+<div class="line">                propensities[cell_][name] = dense::model::reaction_##name.active_rate(Context(<span class="keyword">this</span>, cell_)); \</div>
+<div class="line">            } \</div>
+<div class="line">        } \</div>
+<div class="line">    \</div>
+<div class="line">        for (std::size_t r=0; r&lt; neighbor_propensity_network[rid].size(); r++) { \</div>
+<div class="line">            if (name == neighbor_propensity_network[rid][r]) { \</div>
+<div class="line">                for (<a class="code" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> n=0; n&lt; _numNeighbors[cell_]; n++) { \</div>
+<div class="line">                    int n_cell = _neighbors[cell_][n]; \</div>
+<div class="line">                    Context neighbor(<span class="keyword">this</span>, n_cell); \</div>
+<div class="line">                    propensities[n_cell][name] = dense::model::reaction_##name.active_rate(neighbor); \</div>
+<div class="line">                } \</div>
+<div class="line">            } \</div>
+<div class="line">        }</div>
+<div class="ttc" id="namespacedense_html_a640f19567ce911a9d30143002a1887a2"><div class="ttname"><a href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a></div><div class="ttdeci">int Natural</div><div class="ttdoc">A signed integral type used to represent natural (non-negative) numbers. </div><div class="ttdef"><b>Definition:</b> numerics.hpp:17</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:20 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:48 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

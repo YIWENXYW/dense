@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: source/analysis/conccheck.hpp Source File</title>
+<title>Differential Equation Network Simulation Engine: source/measurement/conccheck.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_cdf958bd06abcc7d9575cbcdf6f4a166.html">analysis</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_657a33149547c72bb8e2e539d212a3a9.html">measurement</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,21 +98,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="conccheck_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ANLYS_CONCCHECK_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ANLYS_CONCCHECK_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="analysis_2base_8hpp.html">base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="measurement_2base_8hpp.html">base.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;core/context.hpp&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_concentration_check.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_concentration_check.html">ConcentrationCheck</a> : <span class="keyword">public</span> <a class="code" href="class_analysis.html">Analysis</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> lower_bound, upper_bound;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    Real lower_bound, upper_bound;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> target_specie;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_concentration_check.html#a3e43947af329ffe85d351203c1bf7d0b">   14</a></span>&#160;    <a class="code" href="class_concentration_check.html#a3e43947af329ffe85d351203c1bf7d0b">ConcentrationCheck</a> (</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="class_observable.html">Observable</a> &amp; observable,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keywordtype">unsigned</span> min_cell, <span class="keywordtype">unsigned</span> max_cell,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> lowerB, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> upperB,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      Real lowerB, Real upperB,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      Real <a class="code" href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">start_time</a>, Real <a class="code" href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">end_time</a>,</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a> t_specie = static_cast&lt;specie_id&gt;(-1)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ) :</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="class_analysis.html">Analysis</a>(min_cell, max_cell, start_time, end_time),</div>
@@ -124,13 +124,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_concentration_check.html#a2f58dc0103cf204f0389ef6a9440bc54">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_concentration_check.html#a2f58dc0103cf204f0389ef6a9440bc54">update</a> (<a class="code" href="classdense_1_1_context.html">dense::Context</a> &amp; start)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> c = <a class="code" href="class_analysis.html#a9bf3ee71074ec46253108b62214f583e">min</a>; c &lt; <a class="code" href="class_analysis.html#a760c22396940fa629f1ec405175b30ba">max</a>; ++c) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (target_specie &gt; -1) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> concentration = start.<a class="code" href="classdense_1_1_context.html#ae0e7372fcbee2e0c1d9c54aed667a829">getCon</a>(target_specie);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                Real concentration = start.<a class="code" href="classdense_1_1_context.html#a3038cb8e017e40886b085273840c62e0">getCon</a>(target_specie);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">if</span> (con &lt; lower_bound || con &gt; upper_bound) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    subject-&gt;abort();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> s = 0; s &lt; <a class="code" href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a>; ++s){</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <a class="code" href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a> con = start.<a class="code" href="classdense_1_1_context.html#ae0e7372fcbee2e0c1d9c54aed667a829">getCon</a>((<a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>) s);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    Real con = start.<a class="code" href="classdense_1_1_context.html#a3038cb8e017e40886b085273840c62e0">getCon</a>((<a class="code" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">specie_id</a>) s);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">if</span> (con&lt;lower_bound || con&gt;upper_bound) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        subject-&gt;abort();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    }</div>
@@ -142,27 +142,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_concentration_check.html#a9788f22a789915af2a3e2dee62b88bdb">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_concentration_check.html#a9788f22a789915af2a3e2dee62b88bdb">finalize</a>()<span class="keyword"> override </span>{};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classdense_1_1_context_html_a3038cb8e017e40886b085273840c62e0"><div class="ttname"><a href="classdense_1_1_context.html#a3038cb8e017e40886b085273840c62e0">dense::Context::getCon</a></div><div class="ttdeci">CUDA_HOST CUDA_DEVICE Real getCon(specie_id sp) const </div><div class="ttdef"><b>Definition:</b> base.hpp:285</div></div>
 <div class="ttc" id="class_concentration_check_html_a9788f22a789915af2a3e2dee62b88bdb"><div class="ttname"><a href="class_concentration_check.html#a9788f22a789915af2a3e2dee62b88bdb">ConcentrationCheck::finalize</a></div><div class="ttdeci">void finalize() override</div><div class="ttdef"><b>Definition:</b> conccheck.hpp:45</div></div>
 <div class="ttc" id="class_analysis_html_ab4c7ecdd2cc2abcded8f06d9d672d540"><div class="ttname"><a href="class_analysis.html#ab4c7ecdd2cc2abcded8f06d9d672d540">Analysis::start_time</a></div><div class="ttdeci">Real start_time</div><div class="ttdef"><b>Definition:</b> base.hpp:38</div></div>
-<div class="ttc" id="class_analysis_html"><div class="ttname"><a href="class_analysis.html">Analysis</a></div><div class="ttdoc">Superclass for Analysis Objects. </div><div class="ttdef"><b>Definition:</b> base.hpp:13</div></div>
+<div class="ttc" id="class_analysis_html"><div class="ttname"><a href="class_analysis.html">Analysis</a></div><div class="ttdoc">Superclass for Analysis Objects. </div><div class="ttdef"><b>Definition:</b> base.hpp:14</div></div>
 <div class="ttc" id="class_concentration_check_html_a3e43947af329ffe85d351203c1bf7d0b"><div class="ttname"><a href="class_concentration_check.html#a3e43947af329ffe85d351203c1bf7d0b">ConcentrationCheck::ConcentrationCheck</a></div><div class="ttdeci">ConcentrationCheck(Observable &amp;observable, unsigned min_cell, unsigned max_cell, Real lowerB, Real upperB, Real start_time, Real end_time, specie_id t_specie=static_cast&lt; specie_id &gt;(-1))</div><div class="ttdef"><b>Definition:</b> conccheck.hpp:14</div></div>
 <div class="ttc" id="specie_8hpp_html_a6f079e738f767aab6d074d5e0669442e"><div class="ttname"><a href="specie_8hpp.html#a6f079e738f767aab6d074d5e0669442e">NUM_SPECIES</a></div><div class="ttdeci">constexpr auto NUM_SPECIES</div><div class="ttdef"><b>Definition:</b> specie.hpp:26</div></div>
-<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:18</div></div>
-<div class="ttc" id="_real_8hpp_html_a4b04262b81aa7d31eb5d2f607e2a35de"><div class="ttname"><a href="_real_8hpp.html#a4b04262b81aa7d31eb5d2f607e2a35de">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> Real.hpp:1</div></div>
+<div class="ttc" id="class_observer_html_a03a78510d694c0499d37d35fa449137a"><div class="ttname"><a href="class_observer.html#a03a78510d694c0499d37d35fa449137a">Observer::subscribe_to</a></div><div class="ttdeci">void subscribe_to(Observable &amp;observable)</div><div class="ttdoc">Subscribe an observer to an observable. </div><div class="ttdef"><b>Definition:</b> observable.cpp:10</div></div>
 <div class="ttc" id="class_concentration_check_html_a2f58dc0103cf204f0389ef6a9440bc54"><div class="ttname"><a href="class_concentration_check.html#a2f58dc0103cf204f0389ef6a9440bc54">ConcentrationCheck::update</a></div><div class="ttdeci">void update(dense::Context &amp;start) override</div><div class="ttdef"><b>Definition:</b> conccheck.hpp:27</div></div>
 <div class="ttc" id="class_analysis_html_a760c22396940fa629f1ec405175b30ba"><div class="ttname"><a href="class_analysis.html#a760c22396940fa629f1ec405175b30ba">Analysis::max</a></div><div class="ttdeci">unsigned const max</div><div class="ttdef"><b>Definition:</b> base.hpp:40</div></div>
-<div class="ttc" id="analysis_2base_8hpp_html"><div class="ttname"><a href="analysis_2base_8hpp.html">base.hpp</a></div></div>
-<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:19</div></div>
+<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Superclass for Simulation. </div><div class="ttdef"><b>Definition:</b> observable.hpp:12</div></div>
 <div class="ttc" id="class_analysis_html_a9bf3ee71074ec46253108b62214f583e"><div class="ttname"><a href="class_analysis.html#a9bf3ee71074ec46253108b62214f583e">Analysis::min</a></div><div class="ttdeci">unsigned const min</div><div class="ttdef"><b>Definition:</b> base.hpp:40</div></div>
-<div class="ttc" id="classdense_1_1_context_html"><div class="ttname"><a href="classdense_1_1_context.html">dense::Context</a></div><div class="ttdef"><b>Definition:</b> base.hpp:15</div></div>
-<div class="ttc" id="classdense_1_1_context_html_ae0e7372fcbee2e0c1d9c54aed667a829"><div class="ttname"><a href="classdense_1_1_context.html#ae0e7372fcbee2e0c1d9c54aed667a829">dense::Context::getCon</a></div><div class="ttdeci">virtual Real getCon(specie_id sp) const =0</div></div>
+<div class="ttc" id="measurement_2base_8hpp_html"><div class="ttname"><a href="measurement_2base_8hpp.html">base.hpp</a></div></div>
+<div class="ttc" id="classdense_1_1_context_html"><div class="ttname"><a href="classdense_1_1_context.html">dense::Context</a></div><div class="ttdef"><b>Definition:</b> base.hpp:19</div></div>
 <div class="ttc" id="class_concentration_check_html"><div class="ttname"><a href="class_concentration_check.html">ConcentrationCheck</a></div><div class="ttdef"><b>Definition:</b> conccheck.hpp:7</div></div>
 <div class="ttc" id="specie_8hpp_html_a13c7f2b53faa23c03489d6e9f71d7cd4"><div class="ttname"><a href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a></div><div class="ttdeci">Species</div><div class="ttdef"><b>Definition:</b> specie.hpp:11</div></div>
 <div class="ttc" id="class_analysis_html_aec18ef2ffd780c8df516ab8675d9d5f9"><div class="ttname"><a href="class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9">Analysis::end_time</a></div><div class="ttdeci">Real end_time</div><div class="ttdef"><b>Definition:</b> base.hpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:18 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -101,7 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="stoch_8hpp_source.html">stoch.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="cell__param_8hpp_source.html">sim/cell_param.hpp</a>&quot;</code><br/>
 <code>#include &quot;model_impl.hpp&quot;</code><br/>
-<code>#include &quot;<a class="el" href="stoch__context_8hpp_source.html">stoch_context.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="model_8hpp_source.html">core/model.hpp</a>&quot;</code><br/>
 <code>#include &lt;limits&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
@@ -113,12 +112,12 @@ Include dependency graph for stoch.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="stoch_8cpp__incl.png" border="0" usemap="#source_2sim_2stoch_2stoch_8cpp" alt=""/></div>
 <map name="source_2sim_2stoch_2stoch_8cpp" id="source_2sim_2stoch_2stoch_8cpp">
-<area shape="rect" id="node3" href="stoch_8hpp.html" title="stoch.hpp" alt="" coords="677,155,755,181"/><area shape="rect" id="node22" href="model_8hpp.html" title="core/model.hpp" alt="" coords="846,304,956,331"/><area shape="rect" id="node24" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="530,304,640,331"/><area shape="rect" id="node28" href="stoch__context_8hpp.html" title="stoch_context.hpp" alt="" coords="963,80,1092,107"/><area shape="rect" id="node4" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="425,229,524,256"/><area shape="rect" id="node6" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="429,528,544,555"/><area shape="rect" id="node11" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="43,304,181,331"/><area shape="rect" id="node13" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="510,379,668,405"/><area shape="rect" id="node14" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="881,453,975,480"/><area shape="rect" id="node5" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="408,453,571,480"/><area shape="rect" id="node10" href="_real_8hpp.html" title="Real.hpp" alt="" coords="709,528,783,555"/><area shape="rect" id="node20" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="697,453,783,480"/><area shape="rect" id="node15" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="987,528,1097,555"/></map>
+<area shape="rect" id="node3" href="stoch_8hpp.html" title="stoch.hpp" alt="" coords="631,80,709,107"/><area shape="rect" id="node26" href="model_8hpp.html" title="core/model.hpp" alt="" coords="798,229,908,256"/><area shape="rect" id="node28" href="cell__param_8hpp.html" title="cell_param.hpp" alt="" coords="381,229,491,256"/><area shape="rect" id="node4" href="sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="531,155,631,181"/><area shape="rect" id="node6" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="360,453,475,480"/><area shape="rect" id="node16" href="observable_8hpp.html" title="core/observable.hpp" alt="" coords="64,229,203,256"/><area shape="rect" id="node18" href="parameter__set_8hpp.html" title="core/parameter_set.hpp" alt="" coords="502,304,660,331"/><area shape="rect" id="node19" href="reaction_8hpp.html" title="reaction.hpp" alt="" coords="851,379,944,405"/><area shape="rect" id="node5" href="common__utils_8hpp.html" title="utility/common_utils.hpp" alt="" coords="400,379,563,405"/><area shape="rect" id="node10" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="499,453,633,480"/><area shape="rect" id="node11" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="609,528,761,555"/><area shape="rect" id="node12" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="607,603,764,629"/><area shape="rect" id="node24" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="689,379,775,405"/><area shape="rect" id="node20" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="979,453,1089,480"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stoch_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)&#160;&#160;&#160;propensities[c].push_back(_model.reaction_##name.active_rate(ctxt));</td></tr>
+<tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stoch_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)&#160;&#160;&#160;propensities[c].push_back(dense::model::reaction_##name.active_rate(ctxt));</td></tr>
 <tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a88125d1a054381c420a93ae827edc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stoch_8cpp.html#a43a88125d1a054381c420a93ae827edc">REACTION</a>(name)</td></tr>
 <tr class="separator:a43a88125d1a054381c420a93ae827edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +134,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;propensities[c].push_back(_model.reaction_##name.active_rate(ctxt));</td>
+          <td>&#160;&#160;&#160;propensities[c].push_back(dense::model::reaction_##name.active_rate(ctxt));</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -155,10 +154,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> <a class="code" href="classreaction.html">reaction&lt;name&gt;</a>&amp; r##name = _model.reaction_##name; \</div>
-<div class="line">    r##name.<a class="code" href="classreaction.html#a3dd5920367c9db25f14fc456211be6ac">active_rate</a>( DependanceContext (neighbor_dependencies[name],dependencies[name]));</div>
-<div class="ttc" id="classreaction_html"><div class="ttname"><a href="classreaction.html">reaction</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:60</div></div>
-<div class="ttc" id="classreaction_html_a3dd5920367c9db25f14fc456211be6ac"><div class="ttname"><a href="classreaction.html#a3dd5920367c9db25f14fc456211be6ac">reaction::active_rate</a></div><div class="ttdeci">Real active_rate(Ctxt const &amp;c) const </div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> <a class="code" href="classreaction.html">reaction&lt;name&gt;</a>&amp; r##name = dense::model::reaction_##name; \</div>
+<div class="line">    r##name.<a class="code" href="classreaction.html#ac75cbf9844acac483f53cfac8ad8262c">active_rate</a>( DependanceContext (neighbor_dependencies[name],dependencies[name]));</div>
+<div class="ttc" id="classreaction_html"><div class="ttname"><a href="classreaction.html">reaction</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:59</div></div>
+<div class="ttc" id="classreaction_html_ac75cbf9844acac483f53cfac8ad8262c"><div class="ttname"><a href="classreaction.html#ac75cbf9844acac483f53cfac8ad8262c">reaction::active_rate</a></div><div class="ttdeci">static Real active_rate(Ctxt const &amp;c)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,7 +174,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> n=0; n&lt;<a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; n++) { \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> (<a class="code" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a> n=0; n&lt;<a class="code" href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a>; n++) { \</div>
 <div class="line">        const std::set&lt;specie_id&gt;&amp; intradeps = dependencies[n]; \</div>
 <div class="line">        const std::set&lt;specie_id&gt;&amp; interdeps = neighbor_dependencies[n]; \</div>
 <div class="line">        std::set&lt;specie_id&gt;::iterator intra = intradeps.begin(); \</div>
@@ -207,13 +206,14 @@ Macros</h2></td></tr>
 <div class="line">    }</div>
 <div class="ttc" id="reaction_8hpp_html_a5b1d2ad0e683b91a06410c4e999bcbf0"><div class="ttname"><a href="reaction_8hpp.html#a5b1d2ad0e683b91a06410c4e999bcbf0">NUM_REACTIONS</a></div><div class="ttdeci">constexpr auto NUM_REACTIONS</div><div class="ttdef"><b>Definition:</b> reaction.hpp:19</div></div>
 <div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">Reaction_ID</a></div><div class="ttdeci">Reaction_ID</div><div class="ttdef"><b>Definition:</b> reaction.hpp:12</div></div>
+<div class="ttc" id="namespacedense_html_a640f19567ce911a9d30143002a1887a2"><div class="ttname"><a href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a></div><div class="ttdeci">int Natural</div><div class="ttdoc">A signed integral type used to represent natural (non-negative) numbers. </div><div class="ttdef"><b>Definition:</b> numerics.hpp:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 18 2018 12:39:20 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2018 23:39:48 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
