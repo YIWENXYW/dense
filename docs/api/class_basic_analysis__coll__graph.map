@@ -1,5 +1,5 @@
 <map id="BasicAnalysis" name="BasicAnalysis">
-<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="93,200,165,227"/>
-<area shape="rect" id="node3" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="5,96,79,123"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="178,96,293,123"/>
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="179,200,251,227"/>
+<area shape="rect" id="node3" href="$class_observer.html" title="Observer\&lt; Simulation \&gt;" alt="" coords="5,96,164,123"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="263,96,379,123"/>
 </map>

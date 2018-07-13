@@ -109,50 +109,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classdense_1_1model.html#a8aa8ce64c5ef019246c600ab63a48f8c">model</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">   15</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32">delay_reaction_id</a> <a class="code" href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">getDelayReactionId</a>(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">switch</span> (rid) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">            #define REACTION(name)</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #define DELAY_REACTION(name) \</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">            case name : return dreact_##name;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #include &quot;reactions_list.hpp&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">            #undef REACTION</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #undef DELAY_REACTION</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32a247414d1bf44580f3c0cc79c03c9c563">NUM_DELAY_REACTIONS</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">   27</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classreaction__base.html">reaction_base</a> <span class="keyword">const</span>&amp; <a class="code" href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">getReaction</a>(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">switch</span> (rid) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">            #define REACTION(name) \</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">            case name: return reaction_##name;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #include &quot;reactions_list.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">            #undef REACTION</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;Invalid reaction ID: &quot;</span> + std::to_string(static_cast&lt;unsigned&gt;(rid)));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="model_8hpp.html#a43a88125d1a054381c420a93ae827edc">   37</a></span>&#160;<span class="preprocessor">    #define REACTION(name) static CUDA_MANAGED reaction&lt;name&gt; reaction_##name;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &quot;reactions_list.hpp&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    #undef REACTION</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="model_8hpp.html#a43a88125d1a054381c420a93ae827edc">   15</a></span>&#160;<span class="preprocessor">    #define REACTION(name) static CUDA_MANAGED reaction&lt;name&gt; reaction_##name;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #include &quot;reactions_list.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    #undef REACTION</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">   19</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32">delay_reaction_id</a> <a class="code" href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">getDelayReactionId</a>(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">switch</span> (rid) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">            #define REACTION(name)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #define DELAY_REACTION(name) \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">            case name : return dreact_##name;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #include &quot;reactions_list.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">            #undef REACTION</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #undef DELAY_REACTION</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <a class="code" href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32a247414d1bf44580f3c0cc79c03c9c563">NUM_DELAY_REACTIONS</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">   31</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classreaction__base.html">reaction_base</a> <span class="keyword">const</span>&amp; <a class="code" href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">getReaction</a>(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> rid) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">switch</span> (rid) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">            #define REACTION(name) \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">            case name: return reaction_##name;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            #include &quot;reactions_list.hpp&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">            #undef REACTION</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;Invalid reaction ID: &quot;</span> + std::to_string(static_cast&lt;unsigned&gt;(rid)));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classdense_1_1model.html#af5b8d9911061dc8063d5c43a53365c3e">   42</a></span>&#160;    <span class="keyword">static</span> Real <a class="code" href="classdense_1_1model.html#af5b8d9911061dc8063d5c43a53365c3e">active_rate</a>(<a class="code" href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">reaction_id</a> <span class="keywordtype">id</span>, T context) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">switch</span> (<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        #define REACTION(name)\</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">          case name: return reaction_##name.active_rate(context);</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #include &quot;reactions_list.hpp&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        #undef REACTION</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> std::out_of_range(<span class="stringliteral">&quot;Invalid reaction ID: &quot;</span> + std::to_string(static_cast&lt;unsigned&gt;(<span class="keywordtype">id</span>)));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="reaction_8hpp_html_a2d81ddbdce10116d3cfdf1a2a80ebc32"><div class="ttname"><a href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32">delay_reaction_id</a></div><div class="ttdeci">delay_reaction_id</div><div class="ttdef"><b>Definition:</b> reaction.hpp:29</div></div>
 <div class="ttc" id="reaction_8hpp_html"><div class="ttname"><a href="reaction_8hpp.html">reaction.hpp</a></div></div>
-<div class="ttc" id="classdense_1_1model_html_ad206c326f9364f6cffa2d06d5cc4b41e"><div class="ttname"><a href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">dense::model::getDelayReactionId</a></div><div class="ttdeci">static delay_reaction_id getDelayReactionId(reaction_id rid)</div><div class="ttdef"><b>Definition:</b> model.hpp:15</div></div>
+<div class="ttc" id="classdense_1_1model_html_ad206c326f9364f6cffa2d06d5cc4b41e"><div class="ttname"><a href="classdense_1_1model.html#ad206c326f9364f6cffa2d06d5cc4b41e">dense::model::getDelayReactionId</a></div><div class="ttdeci">static delay_reaction_id getDelayReactionId(reaction_id rid)</div><div class="ttdef"><b>Definition:</b> model.hpp:19</div></div>
 <div class="ttc" id="specie_8hpp_html"><div class="ttname"><a href="specie_8hpp.html">specie.hpp</a></div></div>
+<div class="ttc" id="classdense_1_1model_html_af5b8d9911061dc8063d5c43a53365c3e"><div class="ttname"><a href="classdense_1_1model.html#af5b8d9911061dc8063d5c43a53365c3e">dense::model::active_rate</a></div><div class="ttdeci">static Real active_rate(reaction_id id, T context)</div><div class="ttdef"><b>Definition:</b> model.hpp:42</div></div>
 <div class="ttc" id="classdense_1_1model_html"><div class="ttname"><a href="classdense_1_1model.html">dense::model</a></div><div class="ttdef"><b>Definition:</b> model.hpp:11</div></div>
 <div class="ttc" id="classdense_1_1model_html_a8aa8ce64c5ef019246c600ab63a48f8c"><div class="ttname"><a href="classdense_1_1model.html#a8aa8ce64c5ef019246c600ab63a48f8c">dense::model::model</a></div><div class="ttdeci">model()=delete</div></div>
 <div class="ttc" id="reaction_8hpp_html_a9c0d6eff001ab1b1fde420d5d5a4f594"><div class="ttname"><a href="reaction_8hpp.html#a9c0d6eff001ab1b1fde420d5d5a4f594">Reaction_ID</a></div><div class="ttdeci">Reaction_ID</div><div class="ttdef"><b>Definition:</b> reaction.hpp:12</div></div>
 <div class="ttc" id="reaction_8hpp_html_a2d81ddbdce10116d3cfdf1a2a80ebc32a247414d1bf44580f3c0cc79c03c9c563"><div class="ttname"><a href="reaction_8hpp.html#a2d81ddbdce10116d3cfdf1a2a80ebc32a247414d1bf44580f3c0cc79c03c9c563">NUM_DELAY_REACTIONS</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:35</div></div>
 <div class="ttc" id="classreaction__base_html"><div class="ttname"><a href="classreaction__base.html">reaction_base</a></div><div class="ttdef"><b>Definition:</b> reaction.hpp:40</div></div>
-<div class="ttc" id="classdense_1_1model_html_ac94ed757ed5579896dc5b0c6cc7e0850"><div class="ttname"><a href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">dense::model::getReaction</a></div><div class="ttdeci">static reaction_base const &amp; getReaction(reaction_id rid)</div><div class="ttdef"><b>Definition:</b> model.hpp:27</div></div>
+<div class="ttc" id="classdense_1_1model_html_ac94ed757ed5579896dc5b0c6cc7e0850"><div class="ttname"><a href="classdense_1_1model.html#ac94ed757ed5579896dc5b0c6cc7e0850">dense::model::getReaction</a></div><div class="ttdeci">static reaction_base const &amp; getReaction(reaction_id rid)</div><div class="ttdef"><b>Definition:</b> model.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 11:39:09 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

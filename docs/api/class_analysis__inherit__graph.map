@@ -3,5 +3,5 @@
 <area shape="rect" id="node4" href="$class_concentration_check.html" title="ConcentrationCheck" alt="" coords="133,155,273,181"/>
 <area shape="rect" id="node5" href="$class_correlation_analysis.html" title="CorrelationAnalysis" alt="" coords="299,155,433,181"/>
 <area shape="rect" id="node6" href="$class_oscillation_analysis.html" title="OscillationAnalysis" alt="" coords="459,155,592,181"/>
-<area shape="rect" id="node2" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="248,5,321,32"/>
+<area shape="rect" id="node2" href="$class_observer.html" title="Observer\&lt; Simulation \&gt;" alt="" coords="205,5,364,32"/>
 </map>

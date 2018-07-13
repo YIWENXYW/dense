@@ -1,7 +1,7 @@
 var searchData=
 [
   ['e',['e',['../structezxml__root.html#aa7c79613eafbab688ae45a1e16ae03fd',1,'ezxml_root']]],
-  ['enable',['enable',['../namespacestyle.html#a7f219c63fdadd008b1e3223abb3041a8',1,'style']]],
+  ['emplace',['emplace',['../classdense_1_1_simulation___set.html#ae228286da0f540ee8371ac3d097bf13c',1,'dense::Simulation_Set::emplace()'],['../class_simulation___set.html#a46fd4edf15caa5dad1dd06ed16635910',1,'Simulation_Set::emplace()']]],
   ['end',['end',['../class_parameter___set.html#acadc313207e8b3e4325f2ec662a69fda',1,'Parameter_Set::end()'],['../class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641',1,'CUDA_Array::end()'],['../class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1',1,'CUDA_Array::end() const '],['../classpreprocessor_1_1_text.html#af89e0546ffbd8c3ddc3888f31a8e905e',1,'preprocessor::Text::end()'],['../class_range.html#a30113cf3f364906d54199c32e163d787',1,'Range::end()']]],
   ['end_5ftime',['end_time',['../class_analysis.html#aec18ef2ffd780c8df516ab8675d9d5f9',1,'Analysis']]],
   ['enqueue',['enqueue',['../class_queue.html#a312e607478ee2e7bcca93aa549dc9b57',1,'Queue']]],

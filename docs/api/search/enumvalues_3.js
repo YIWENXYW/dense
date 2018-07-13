@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initial',['initial',['../namespacestyle.html#aff75b663a6cee675ed07237da20499dbacc51b81974287ab79cef9e94fe778cc9',1,'style']]]
+  ['force',['force',['../namespacestyle.html#a89be089deaf29e7ed97081beece2e6cbaae254d63f2381cc183c11594873793e0',1,'style']]]
 ];

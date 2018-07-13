@@ -1,10 +1,2 @@
 <map id="baby_cl_cuda" name="baby_cl_cuda">
-<area shape="rect" id="node2" href="$classbaby__cl.html" title="baby_cl" alt="" coords="595,23,661,49"/>
-<area shape="rect" id="node4" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="862,129,1029,156"/>
-<area shape="rect" id="node5" href="$class_simulation.html" title="Simulation" alt="" coords="301,276,384,303"/>
-<area shape="rect" id="node8" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="509,180,747,236"/>
-<area shape="rect" id="node10" href="$classcell__param.html" title="cell_param\&lt; NUM_DELAY\l_REACTIONS, int \&gt;" alt="" coords="539,318,717,359"/>
-<area shape="rect" id="node6" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="37,327,125,353"/>
-<area shape="rect" id="node7" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="27,377,136,404"/>
-<area shape="rect" id="node9" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="5,276,157,303"/>
 </map>

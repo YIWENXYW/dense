@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['grad',['GRAD',['../csv__gen_8cpp.html#a448f647fca8391a8e5ce382ab398474ea638518d3be33e7b43ccac7acf55fb64a',1,'csv_gen.cpp']]],
-  ['green',['green',['../namespacestyle.html#aff75b663a6cee675ed07237da20499dba9f27410725ab8cc8854a2769c7a516b8',1,'style']]]
+  ['detect',['detect',['../namespacestyle.html#a89be089deaf29e7ed97081beece2e6cba296ccece3e9d4949a538964510e58d21',1,'style']]],
+  ['disable',['disable',['../namespacestyle.html#a89be089deaf29e7ed97081beece2e6cba0aaa87422396fdd678498793b6d5250e',1,'style']]]
 ];

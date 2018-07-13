@@ -108,34 +108,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classcsvw.html#a05f9703ee8ccc35c9e0d9471ef5cbf63">csvw</a>(std::string <span class="keyword">const</span>&amp; pcfFileName, <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; pcfWriteDoc = <span class="keyword">true</span>, std::string <span class="keyword">const</span>&amp; pcfChildDoc = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classcsvw.html#a5ce07bb221d0a0bb0990841e4da6ed0e">~csvw</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">add_data</a>(Real <span class="keyword">const</span>&amp; pcfRate);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">add_div</a>(std::string <span class="keyword">const</span>&amp; pcfDiv);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">   41</a></span>&#160;    <a class="code" href="classcsvw.html">csvw</a> &amp; <a class="code" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">operator&lt;&lt; </a>(T <span class="keyword">const</span>&amp; value) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      iFile &lt;&lt; value;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Output file of CSV</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::ofstream iFile;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">add_data</a>(Real <span class="keyword">const</span>&amp; pcfRate);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">add_div</a>(std::string <span class="keyword">const</span>&amp; pcfDiv);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">   40</a></span>&#160;    <a class="code" href="classcsvw.html">csvw</a> &amp; <a class="code" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">operator&lt;&lt; </a>(T <span class="keyword">const</span>&amp; value) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      iFile &lt;&lt; value;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Output file of CSV</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::ofstream iFile;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classcsvw_html"><div class="ttname"><a href="classcsvw.html">csvw</a></div><div class="ttdef"><b>Definition:</b> csvw.hpp:10</div></div>
-<div class="ttc" id="classcsvw_html_a5ce07bb221d0a0bb0990841e4da6ed0e"><div class="ttname"><a href="classcsvw.html#a5ce07bb221d0a0bb0990841e4da6ed0e">csvw::~csvw</a></div><div class="ttdeci">virtual ~csvw()=default</div></div>
-<div class="ttc" id="classcsvw_html_a93bc62304745bfdbd0a330e1da614054"><div class="ttname"><a href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">csvw::add_div</a></div><div class="ttdeci">void add_div(std::string const &amp;pcfDiv)</div><div class="ttdef"><b>Definition:</b> csvw.cpp:50</div></div>
+<div class="ttc" id="classcsvw_html_a93bc62304745bfdbd0a330e1da614054"><div class="ttname"><a href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">csvw::add_div</a></div><div class="ttdeci">void add_div(std::string const &amp;pcfDiv)</div><div class="ttdef"><b>Definition:</b> csvw.cpp:52</div></div>
 <div class="ttc" id="numerics_8hpp_html"><div class="ttname"><a href="numerics_8hpp.html">numerics.hpp</a></div></div>
-<div class="ttc" id="classcsvw_html_a6608370c3172929ba698976c0a2a6d60"><div class="ttname"><a href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">csvw::add_data</a></div><div class="ttdeci">void add_data(Real const &amp;pcfRate)</div><div class="ttdoc">Add Data Add Data Divider (Seperator) </div><div class="ttdef"><b>Definition:</b> csvw.cpp:56</div></div>
-<div class="ttc" id="classcsvw_html_a339262564c3cf06a1b6c8fd931e0fcfc"><div class="ttname"><a href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">csvw::operator&lt;&lt;</a></div><div class="ttdeci">csvw &amp; operator&lt;&lt;(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> csvw.hpp:41</div></div>
-<div class="ttc" id="classcsvw_html_a05f9703ee8ccc35c9e0d9471ef5cbf63"><div class="ttname"><a href="classcsvw.html#a05f9703ee8ccc35c9e0d9471ef5cbf63">csvw::csvw</a></div><div class="ttdeci">csvw(std::string const &amp;pcfFileName, bool const &amp;pcfWriteDoc=true, std::string const &amp;pcfChildDoc=&quot;&quot;)</div><div class="ttdoc">CSVWriter ctor. </div><div class="ttdef"><b>Definition:</b> csvw.cpp:8</div></div>
+<div class="ttc" id="classcsvw_html_a6608370c3172929ba698976c0a2a6d60"><div class="ttname"><a href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">csvw::add_data</a></div><div class="ttdeci">void add_data(Real const &amp;pcfRate)</div><div class="ttdoc">Add Data Add Data Divider (Seperator) </div><div class="ttdef"><b>Definition:</b> csvw.cpp:58</div></div>
+<div class="ttc" id="classcsvw_html_a339262564c3cf06a1b6c8fd931e0fcfc"><div class="ttname"><a href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">csvw::operator&lt;&lt;</a></div><div class="ttdeci">csvw &amp; operator&lt;&lt;(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> csvw.hpp:40</div></div>
+<div class="ttc" id="classcsvw_html_a05f9703ee8ccc35c9e0d9471ef5cbf63"><div class="ttname"><a href="classcsvw.html#a05f9703ee8ccc35c9e0d9471ef5cbf63">csvw::csvw</a></div><div class="ttdeci">csvw(std::string const &amp;pcfFileName, bool const &amp;pcfWriteDoc=true, std::string const &amp;pcfChildDoc=&quot;&quot;)</div><div class="ttdoc">CSVWriter ctor. </div><div class="ttdef"><b>Definition:</b> csvw.cpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 23:39:46 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 11:39:09 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

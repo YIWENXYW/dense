@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: Observable Class Reference</title>
+<title>Differential Equation Network Simulation Engine: Observable&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,48 +94,135 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_observable-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Observable Class Reference</div>  </div>
+<div class="title">Observable&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Superclass for <a class="el" href="class_simulation.html">Simulation</a>.  
+<p>Superclass for Simulation.  
  <a href="class_observable.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="observable_8hpp_source.html">observable.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Observable:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_observable__inherit__graph.png" border="0" usemap="#_observable_inherit__map" alt="Inheritance graph"/></div>
-<map name="_observable_inherit__map" id="_observable_inherit__map">
-<area shape="rect" id="node2" href="class_simulation.html" title="Simulation" alt="" coords="253,80,335,107"/><area shape="rect" id="node3" href="class_c_s_v___streamed___simulation.html" title="CSV_Streamed_Simulation" alt="" coords="5,155,187,181"/><area shape="rect" id="node4" href="class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="211,155,377,181"/><area shape="rect" id="node6" href="class_stochastic___simulation.html" title="Stochastic_Simulation" alt="" coords="403,155,555,181"/><area shape="rect" id="node5" href="classsimulation__cuda.html" title="simulation_cuda" alt="" coords="237,229,352,256"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a099bf851e05bb8c1a25e83f2a1389e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a099bf851e05bb8c1a25e83f2a1389e58">notify</a> ()</td></tr>
-<tr class="separator:a099bf851e05bb8c1a25e83f2a1389e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434d5dfd41ed25f8f120ca2a8a6a95b0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a434d5dfd41ed25f8f120ca2a8a6a95b0">~Observable</a> () noexcept=default</td></tr>
-<tr class="separator:a434d5dfd41ed25f8f120ca2a8a6a95b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad47337bd926b191aab5295ba8692e63c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#ad47337bd926b191aab5295ba8692e63c">Observable</a> () noexcept=default</td></tr>
+<tr class="separator:ad47337bd926b191aab5295ba8692e63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d322fb4b48e1ab4b7e1ce958fe0aaa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a3d322fb4b48e1ab4b7e1ce958fe0aaa7">Observable</a> (<a class="el" href="class_observable.html">Observable</a> const &amp;)=delete</td></tr>
+<tr class="separator:a3d322fb4b48e1ab4b7e1ce958fe0aaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f8da9d87917e67cd86017228c21fbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a84f8da9d87917e67cd86017228c21fbd">operator=</a> (<a class="el" href="class_observable.html">Observable</a> const &amp;)=delete</td></tr>
+<tr class="separator:a84f8da9d87917e67cd86017228c21fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4947cb617f0267fbabbb2b9309e0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a3e4947cb617f0267fbabbb2b9309e0b1">Observable</a> (<a class="el" href="class_observable.html">Observable</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a3e4947cb617f0267fbabbb2b9309e0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9683a8c9b772d7e0d9536e8602515a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a9683a8c9b772d7e0d9536e8602515a49">operator=</a> (<a class="el" href="class_observable.html">Observable</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a9683a8c9b772d7e0d9536e8602515a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd831904eab84ec1cdda7c51a83adcbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#acd831904eab84ec1cdda7c51a83adcbb">notify</a> ()</td></tr>
+<tr class="separator:acd831904eab84ec1cdda7c51a83adcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5a4d10de31ca931606332f8c5e4e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a9e5a4d10de31ca931606332f8c5e4e9b">unsubscribe_all</a> () noexcept</td></tr>
+<tr class="separator:a9e5a4d10de31ca931606332f8c5e4e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4562048516bcfe2c42ec8d983b197fa2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a4562048516bcfe2c42ec8d983b197fa2">~Observable</a> () noexcept=default</td></tr>
+<tr class="separator:a4562048516bcfe2c42ec8d983b197fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a10f296876f01335fe7227818cdff92e0"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+<tr class="memitem:a5c4988f390ab4c90afdb44daa8d5ad97"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
 &lt; std::reference_wrapper<br class="typebreak"/>
-&lt; <a class="el" href="class_observer.html">Observer</a> &gt; &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a10f296876f01335fe7227818cdff92e0">subscribers</a> () const </td></tr>
-<tr class="separator:a10f296876f01335fe7227818cdff92e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="class_observer.html">Observer</a>&lt; T &gt; &gt; &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observable.html#a5c4988f390ab4c90afdb44daa8d5ad97">subscribers</a> () const </td></tr>
+<tr class="separator:a5c4988f390ab4c90afdb44daa8d5ad97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Superclass for <a class="el" href="class_simulation.html">Simulation</a>. </p>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class Observable&lt; T &gt;</h3>
+
+<p>Superclass for Simulation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a434d5dfd41ed25f8f120ca2a8a6a95b0"></a>
+<a class="anchor" id="ad47337bd926b191aab5295ba8692e63c"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Observable::~Observable </td>
+          <td class="memname"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::<a class="el" href="class_observable.html">Observable</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d322fb4b48e1ab4b7e1ce958fe0aaa7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::<a class="el" href="class_observable.html">Observable</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e4947cb617f0267fbabbb2b9309e0b1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::<a class="el" href="class_observable.html">Observable</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4562048516bcfe2c42ec8d983b197fa2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::~<a class="el" href="class_observable.html">Observable</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -151,12 +238,14 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a099bf851e05bb8c1a25e83f2a1389e58"></a>
+<a class="anchor" id="acd831904eab84ec1cdda7c51a83adcbb"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void Observable::notify </td>
+          <td class="memname">void <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::notify </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -166,15 +255,69 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a10f296876f01335fe7227818cdff92e0"></a>
+<a class="anchor" id="a84f8da9d87917e67cd86017228c21fbd"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::reference_wrapper&lt;<a class="el" href="class_observer.html">Observer</a>&gt; &gt; const&amp; Observable::subscribers </td>
+          <td class="memname"><a class="el" href="class_observable.html">Observable</a>&amp; <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9683a8c9b772d7e0d9536e8602515a49"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_observable.html">Observable</a>&amp; <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c4988f390ab4c90afdb44daa8d5ad97"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::reference_wrapper&lt;<a class="el" href="class_observer.html">Observer</a>&lt;T&gt; &gt; &gt; const&amp; <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::subscribers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -189,14 +332,38 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a class="anchor" id="a9e5a4d10de31ca931606332f8c5e4e9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_observable.html">Observable</a>&lt; T &gt;::unsubscribe_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/core/<a class="el" href="observable_8hpp_source.html">observable.hpp</a></li>
-<li>source/core/<a class="el" href="observable_8cpp.html">observable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 11:39:12 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

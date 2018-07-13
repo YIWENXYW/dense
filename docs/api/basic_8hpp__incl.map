@@ -1,6 +1,6 @@
 <map id="source/measurement/basic.hpp" name="source/measurement/basic.hpp">
-<area shape="rect" id="node2" href="$measurement_2base_8hpp.html" title="base.hpp" alt="" coords="972,96,1045,123"/>
-<area shape="rect" id="node3" href="$observable_8hpp.html" title="core/observable.hpp" alt="" coords="1061,245,1200,272"/>
+<area shape="rect" id="node2" href="$measurement_2base_8hpp.html" title="base.hpp" alt="" coords="1005,96,1079,123"/>
+<area shape="rect" id="node3" href="$observable_8hpp.html" title="core/observable.hpp" alt="" coords="1065,245,1204,272"/>
 <area shape="rect" id="node6" href="$specie_8hpp.html" title="core/specie.hpp" alt="" coords="788,469,903,496"/>
 <area shape="rect" id="node9" href="$csvw_8hpp.html" title="io/csvw.hpp" alt="" coords="55,395,147,421"/>
 <area shape="rect" id="node17" href="$sim_2base_8hpp.html" title="sim/base.hpp" alt="" coords="762,171,861,197"/>

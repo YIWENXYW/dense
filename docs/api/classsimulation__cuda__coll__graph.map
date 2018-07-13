@@ -1,11 +1,4 @@
 <map id="simulation_cuda" name="simulation_cuda">
-<area shape="rect" id="node2" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="862,97,1029,124"/>
-<area shape="rect" id="node10" href="$classbaby__cl.html" title="baby_cl" alt="" coords="1136,156,1203,183"/>
-<area shape="rect" id="node3" href="$class_simulation.html" title="Simulation" alt="" coords="301,83,384,109"/>
-<area shape="rect" id="node7" href="$classcell__param.html" title="cell_param\&lt; NUM_REACTIONS\l+NUM_DELAY_REACTIONS+NUM\l_CRITICAL_SPECIES \&gt;" alt="" coords="509,127,747,183"/>
-<area shape="rect" id="node9" href="$classcell__param.html" title="cell_param\&lt; NUM_DELAY\l_REACTIONS, int \&gt;" alt="" coords="539,62,717,103"/>
-<area shape="rect" id="node4" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="37,5,125,32"/>
-<area shape="rect" id="node5" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="27,56,136,83"/>
-<area shape="rect" id="node8" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="5,127,157,153"/>
-<area shape="rect" id="node11" href="$classbaby__cl__cuda.html" title="baby_cl_cuda" alt="" coords="1254,156,1357,183"/>
+<area shape="rect" id="node4" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="272,83,424,109"/>
+<area shape="rect" id="node5" href="$classbaby__cl__cuda.html" title="baby_cl_cuda" alt="" coords="449,83,551,109"/>
 </map>

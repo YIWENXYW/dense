@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Differential Equation Network Simulation Engine: Observer Class Reference</title>
+<title>Differential Equation Network Simulation Engine: Observer&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_observer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Observer Class Reference</div>  </div>
+<div class="title">Observer&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -102,70 +102,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_observer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="observable_8hpp_source.html">observable.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Observer:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_observer__inherit__graph.png" border="0" usemap="#_observer_inherit__map" alt="Inheritance graph"/></div>
-<map name="_observer_inherit__map" id="_observer_inherit__map">
-<area shape="rect" id="node2" href="class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="249,80,321,107"/><area shape="rect" id="node7" href="classcsvw__sim.html" title="csvw_sim" alt="" coords="346,80,427,107"/><area shape="rect" id="node3" href="class_basic_analysis.html" title="BasicAnalysis" alt="" coords="5,155,109,181"/><area shape="rect" id="node4" href="class_concentration_check.html" title="ConcentrationCheck" alt="" coords="133,155,273,181"/><area shape="rect" id="node5" href="class_correlation_analysis.html" title="CorrelationAnalysis" alt="" coords="299,155,433,181"/><area shape="rect" id="node6" href="class_oscillation_analysis.html" title="OscillationAnalysis" alt="" coords="459,155,592,181"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb0af5014875c6ec7465cccc85e4f39b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#acb0af5014875c6ec7465cccc85e4f39b">Observer</a> ()=default</td></tr>
-<tr class="memdesc:acb0af5014875c6ec7465cccc85e4f39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an observer with no subscriptions.  <a href="#acb0af5014875c6ec7465cccc85e4f39b">More...</a><br/></td></tr>
-<tr class="separator:acb0af5014875c6ec7465cccc85e4f39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb662d35333fcbc7d06915b9f6146c0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#acb662d35333fcbc7d06915b9f6146c0b">Observer</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:acb662d35333fcbc7d06915b9f6146c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbid copy-constructing an observer.  <a href="#acb662d35333fcbc7d06915b9f6146c0b">More...</a><br/></td></tr>
-<tr class="separator:acb662d35333fcbc7d06915b9f6146c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a17fec2250b8114a1f963353cd65f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a89a17fec2250b8114a1f963353cd65f3">operator=</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:a89a17fec2250b8114a1f963353cd65f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbid copy-assigning to an observer.  <a href="#a89a17fec2250b8114a1f963353cd65f3">More...</a><br/></td></tr>
-<tr class="separator:a89a17fec2250b8114a1f963353cd65f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc6b67be6c386f2f3d2c363aa59cb47"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#afcc6b67be6c386f2f3d2c363aa59cb47">~Observer</a> ()</td></tr>
-<tr class="memdesc:afcc6b67be6c386f2f3d2c363aa59cb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct an observer, unsubscribing it from all of its subscriptions.  <a href="#afcc6b67be6c386f2f3d2c363aa59cb47">More...</a><br/></td></tr>
-<tr class="separator:afcc6b67be6c386f2f3d2c363aa59cb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a78510d694c0499d37d35fa449137a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a03a78510d694c0499d37d35fa449137a">subscribe_to</a> (<a class="el" href="class_observable.html">Observable</a> &amp;observable)</td></tr>
-<tr class="memdesc:a03a78510d694c0499d37d35fa449137a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe an observer to an observable.  <a href="#a03a78510d694c0499d37d35fa449137a">More...</a><br/></td></tr>
-<tr class="separator:a03a78510d694c0499d37d35fa449137a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af91e4ff021adac9f70a4791d2b2a2d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#af91e4ff021adac9f70a4791d2b2a2d6e">unsubscribe_from</a> (<a class="el" href="class_observable.html">Observable</a> &amp;observable)</td></tr>
-<tr class="memdesc:af91e4ff021adac9f70a4791d2b2a2d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe an observer from an observable.  <a href="#af91e4ff021adac9f70a4791d2b2a2d6e">More...</a><br/></td></tr>
-<tr class="separator:af91e4ff021adac9f70a4791d2b2a2d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315835b4a79fb8be4553480bf5bb77c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a315835b4a79fb8be4553480bf5bb77c5">unsubscribe_from_all</a> ()</td></tr>
-<tr class="memdesc:a315835b4a79fb8be4553480bf5bb77c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe an observer from all of its subscriptions.  <a href="#a315835b4a79fb8be4553480bf5bb77c5">More...</a><br/></td></tr>
-<tr class="separator:a315835b4a79fb8be4553480bf5bb77c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9ae65a7ceb32a290678989016c2987"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+<tr class="memitem:a8c81ed4f40714185aead53cbf394657c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a8c81ed4f40714185aead53cbf394657c">Observer</a> ()=default</td></tr>
+<tr class="memdesc:a8c81ed4f40714185aead53cbf394657c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an observer with no subscriptions.  <a href="#a8c81ed4f40714185aead53cbf394657c">More...</a><br/></td></tr>
+<tr class="separator:a8c81ed4f40714185aead53cbf394657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e73b55a9b11a1ab930d1ed4575e5c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a5e73b55a9b11a1ab930d1ed4575e5c7b">Observer</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;)=delete</td></tr>
+<tr class="memdesc:a5e73b55a9b11a1ab930d1ed4575e5c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbid copy-constructing an observer.  <a href="#a5e73b55a9b11a1ab930d1ed4575e5c7b">More...</a><br/></td></tr>
+<tr class="separator:a5e73b55a9b11a1ab930d1ed4575e5c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11e39f10055a44a0ba067dc67e409f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#ac11e39f10055a44a0ba067dc67e409f9">operator=</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;)=delete</td></tr>
+<tr class="memdesc:ac11e39f10055a44a0ba067dc67e409f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbid copy-assigning to an observer.  <a href="#ac11e39f10055a44a0ba067dc67e409f9">More...</a><br/></td></tr>
+<tr class="separator:ac11e39f10055a44a0ba067dc67e409f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf946bdef45b0fa20eb60cc27d94cfb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a2cf946bdef45b0fa20eb60cc27d94cfb">~Observer</a> () noexcept</td></tr>
+<tr class="memdesc:a2cf946bdef45b0fa20eb60cc27d94cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruct an observer, unsubscribing it from all of its subscriptions.  <a href="#a2cf946bdef45b0fa20eb60cc27d94cfb">More...</a><br/></td></tr>
+<tr class="separator:a2cf946bdef45b0fa20eb60cc27d94cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedadead6ddbbc89b435e44f9738c258d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#aedadead6ddbbc89b435e44f9738c258d">subscribe_to</a> (Observable_T &amp;observable)</td></tr>
+<tr class="memdesc:aedadead6ddbbc89b435e44f9738c258d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe an observer to an observable.  <a href="#aedadead6ddbbc89b435e44f9738c258d">More...</a><br/></td></tr>
+<tr class="separator:aedadead6ddbbc89b435e44f9738c258d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ac62b3f49feeb11ef5cc993e252451"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a83ac62b3f49feeb11ef5cc993e252451">unsubscribe_from</a> (Observable_T &amp;observable) noexcept</td></tr>
+<tr class="memdesc:a83ac62b3f49feeb11ef5cc993e252451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe an observer from an observable.  <a href="#a83ac62b3f49feeb11ef5cc993e252451">More...</a><br/></td></tr>
+<tr class="separator:a83ac62b3f49feeb11ef5cc993e252451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8eef349042f23777dd80bcf06f3390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a6b8eef349042f23777dd80bcf06f3390">unsubscribe_from_all</a> () noexcept</td></tr>
+<tr class="memdesc:a6b8eef349042f23777dd80bcf06f3390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe an observer from all of its subscriptions.  <a href="#a6b8eef349042f23777dd80bcf06f3390">More...</a><br/></td></tr>
+<tr class="separator:a6b8eef349042f23777dd80bcf06f3390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3590b41e9cfd8905dd1bc1fac9a1dfa4"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
 &lt; std::reference_wrapper<br class="typebreak"/>
-&lt; <a class="el" href="class_observable.html">Observable</a> &gt; &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a7e9ae65a7ceb32a290678989016c2987">subscriptions</a> ()</td></tr>
-<tr class="memdesc:a7e9ae65a7ceb32a290678989016c2987"><td class="mdescLeft">&#160;</td><td class="mdescRight">View an observer's subscriptions as a ContiguousContainer.  <a href="#a7e9ae65a7ceb32a290678989016c2987">More...</a><br/></td></tr>
-<tr class="separator:a7e9ae65a7ceb32a290678989016c2987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2565974b0cd29c69463c303a5c5480c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a2565974b0cd29c69463c303a5c5480c0">operator==</a> (<a class="el" href="class_observer.html">Observer</a> &amp;other) const noexcept</td></tr>
-<tr class="separator:a2565974b0cd29c69463c303a5c5480c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af6a7a63703d9624ac3f17c055e1f2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a8af6a7a63703d9624ac3f17c055e1f2c">operator!=</a> (<a class="el" href="class_observer.html">Observer</a> &amp;other) const noexcept</td></tr>
-<tr class="separator:a8af6a7a63703d9624ac3f17c055e1f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc53b10ec4dfe15ee1473ea4129b622"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#addc53b10ec4dfe15ee1473ea4129b622">operator&lt;</a> (<a class="el" href="class_observer.html">Observer</a> &amp;other) const noexcept</td></tr>
-<tr class="separator:addc53b10ec4dfe15ee1473ea4129b622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; Observable_T &gt; &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a3590b41e9cfd8905dd1bc1fac9a1dfa4">subscriptions</a> ()</td></tr>
+<tr class="memdesc:a3590b41e9cfd8905dd1bc1fac9a1dfa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">View an observer's subscriptions as a ContiguousContainer.  <a href="#a3590b41e9cfd8905dd1bc1fac9a1dfa4">More...</a><br/></td></tr>
+<tr class="separator:a3590b41e9cfd8905dd1bc1fac9a1dfa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7c70d0f10e9925e57cbc8903081eca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a2b7c70d0f10e9925e57cbc8903081eca">operator==</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;other) const noexcept</td></tr>
+<tr class="separator:a2b7c70d0f10e9925e57cbc8903081eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428f3a0d8c65153b92d4a5cd02f4738c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a428f3a0d8c65153b92d4a5cd02f4738c">operator!=</a> (<a class="el" href="class_observer.html">Observer</a> const &amp;other) const noexcept</td></tr>
+<tr class="separator:a428f3a0d8c65153b92d4a5cd02f4738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0b94e43ae3f969a93385a0c53f46237c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a0b94e43ae3f969a93385a0c53f46237c">when_subscribed_to</a> (<a class="el" href="class_observable.html">Observable</a> &amp;)</td></tr>
-<tr class="separator:a0b94e43ae3f969a93385a0c53f46237c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21d250cc2470dca82e3f3c17637b217"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#ab21d250cc2470dca82e3f3c17637b217">when_updated_by</a> (<a class="el" href="class_observable.html">Observable</a> &amp;)</td></tr>
-<tr class="separator:ab21d250cc2470dca82e3f3c17637b217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5b9fa264c66769712ae6ca193346fc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a2c5b9fa264c66769712ae6ca193346fc">when_unsubscribed_from</a> (<a class="el" href="class_observable.html">Observable</a> &amp;)</td></tr>
-<tr class="separator:a2c5b9fa264c66769712ae6ca193346fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2070df4c806f95d21fd1cec3d23fac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#adf2070df4c806f95d21fd1cec3d23fac">when_subscribed_to</a> (Observable_T &amp;)</td></tr>
+<tr class="separator:adf2070df4c806f95d21fd1cec3d23fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7a32371c0295f747eba426d6089d76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a5e7a32371c0295f747eba426d6089d76">when_updated_by</a> (Observable_T &amp;)</td></tr>
+<tr class="separator:a5e7a32371c0295f747eba426d6089d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605f4a726b8a270c50926b3e46e432ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observer.html#a605f4a726b8a270c50926b3e46e432ab">when_unsubscribed_from</a> (Observable_T &amp;)</td></tr>
+<tr class="separator:a605f4a726b8a270c50926b3e46e432ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Superclass for CSV Writer and <a class="el" href="class_analysis.html" title="Superclass for Analysis Objects. ">Analysis</a>. </p>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class Observer&lt; T &gt;</h3>
+
+<p>Superclass for CSV Writer and <a class="el" href="class_analysis.html" title="Superclass for Analysis Objects. ">Analysis</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acb0af5014875c6ec7465cccc85e4f39b"></a>
+<a class="anchor" id="a8c81ed4f40714185aead53cbf394657c"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Observer::Observer </td>
+          <td class="memname"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::<a class="el" href="class_observer.html">Observer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,17 +179,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acb662d35333fcbc7d06915b9f6146c0b"></a>
+<a class="anchor" id="a5e73b55a9b11a1ab930d1ed4575e5c7b"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Observer::Observer </td>
+          <td class="memname"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::<a class="el" href="class_observer.html">Observer</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -210,15 +208,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afcc6b67be6c386f2f3d2c363aa59cb47"></a>
+<a class="anchor" id="a2cf946bdef45b0fa20eb60cc27d94cfb"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual Observer::~Observer </td>
+          <td class="memname">virtual <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::~<a class="el" href="class_observer.html">Observer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -226,7 +226,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -237,17 +237,19 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8af6a7a63703d9624ac3f17c055e1f2c"></a>
+<a class="anchor" id="a428f3a0d8c65153b92d4a5cd02f4738c"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Observer::operator!= </td>
+          <td class="memname">bool <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -261,41 +263,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="addc53b10ec4dfe15ee1473ea4129b622"></a>
+<a class="anchor" id="ac11e39f10055a44a0ba067dc67e409f9"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Observer::operator&lt; </td>
+          <td class="memname"><a class="el" href="class_observer.html">Observer</a>&amp; <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a89a17fec2250b8114a1f963353cd65f3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_observer.html">Observer</a>&amp; Observer::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -312,17 +292,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2565974b0cd29c69463c303a5c5480c0"></a>
+<a class="anchor" id="a2b7c70d0f10e9925e57cbc8903081eca"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Observer::operator== </td>
+          <td class="memname">bool <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_observer.html">Observer</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -336,14 +318,16 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a03a78510d694c0499d37d35fa449137a"></a>
+<a class="anchor" id="aedadead6ddbbc89b435e44f9738c258d"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Observable_T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void Observer::subscribe_to </td>
+          <td class="memname">void <a class="el" href="class_observer.html">Observer</a>&lt; Observable_T &gt;::subscribe_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramtype">Observable_T &amp;&#160;</td>
           <td class="paramname"><em>observable</em></td><td>)</td>
           <td></td>
         </tr>
@@ -355,12 +339,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7e9ae65a7ceb32a290678989016c2987"></a>
+<a class="anchor" id="a3590b41e9cfd8905dd1bc1fac9a1dfa4"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Observable_T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::reference_wrapper&lt; <a class="el" href="class_observable.html">Observable</a> &gt; &gt; const &amp; Observer::subscriptions </td>
+          <td class="memname">std::vector&lt; std::reference_wrapper&lt; Observable_T &gt; &gt; const &amp; <a class="el" href="class_observer.html">Observer</a>&lt; Observable_T &gt;::subscriptions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -373,18 +359,28 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af91e4ff021adac9f70a4791d2b2a2d6e"></a>
+<a class="anchor" id="a83ac62b3f49feeb11ef5cc993e252451"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Observable_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Observer::unsubscribe_from </td>
+          <td class="memname">void <a class="el" href="class_observer.html">Observer</a>&lt; Observable_T &gt;::unsubscribe_from </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramtype">Observable_T &amp;&#160;</td>
           <td class="paramname"><em>observable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Unsubscribe an observer from an observable. </p>
@@ -392,17 +388,27 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a315835b4a79fb8be4553480bf5bb77c5"></a>
+<a class="anchor" id="a6b8eef349042f23777dd80bcf06f3390"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Observable_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Observer::unsubscribe_from_all </td>
+          <td class="memname">void <a class="el" href="class_observer.html">Observer</a>&lt; Observable_T &gt;::unsubscribe_from_all </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Unsubscribe an observer from all of its subscriptions. </p>
@@ -410,17 +416,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0b94e43ae3f969a93385a0c53f46237c"></a>
+<a class="anchor" id="adf2070df4c806f95d21fd1cec3d23fac"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Observer::when_subscribed_to </td>
+          <td class="memname">virtual void <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::when_subscribed_to </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramtype">Observable_T &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -434,17 +442,19 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2c5b9fa264c66769712ae6ca193346fc"></a>
+<a class="anchor" id="a605f4a726b8a270c50926b3e46e432ab"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Observer::when_unsubscribed_from </td>
+          <td class="memname">virtual void <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::when_unsubscribed_from </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
+          <td class="paramtype">Observable_T &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -456,44 +466,41 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_analysis.html#ab1464d497d2193dd67243f64bcb85561">Analysis</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ab21d250cc2470dca82e3f3c17637b217"></a>
+<a class="anchor" id="a5e7a32371c0295f747eba426d6089d76"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Observer::when_updated_by </td>
+          <td class="memname">virtual void <a class="el" href="class_observer.html">Observer</a>&lt; T &gt;::when_updated_by </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_observable.html">Observable</a> &amp;&#160;</td>
-          <td class="paramname"><em>observable</em></td><td>)</td>
+          <td class="paramtype">Observable_T &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="class_analysis.html#a100624a10bfddea0dce08f3ef49bdf3b">Analysis</a>, and <a class="el" href="classcsvw__sim.html#a605dfa31d33c2fed399bfa2bdbf32fd6">csvw_sim</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>source/core/<a class="el" href="observable_8hpp_source.html">observable.hpp</a></li>
-<li>source/core/<a class="el" href="observable_8cpp.html">observable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 1 2018 23:39:49 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2018 11:39:12 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

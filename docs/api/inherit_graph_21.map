@@ -1,9 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcsvr.html" title="csvr" alt="" coords="159,5,206,32"/>
-<area shape="rect" id="node2" href="$class_c_s_v___streamed___simulation.html" title="CSV_Streamed_Simulation" alt="" coords="272,5,453,32"/>
-<area shape="rect" id="node3" href="$class_observable.html" title="Superclass for Simulation. " alt="" coords="5,56,93,83"/>
-<area shape="rect" id="node4" href="$class_simulation.html" title="Simulation" alt="" coords="141,56,224,83"/>
-<area shape="rect" id="node5" href="$class_deterministic___simulation.html" title="Deterministic_Simulation" alt="" coords="279,56,446,83"/>
-<area shape="rect" id="node7" href="$class_stochastic___simulation.html" title="Stochastic_Simulation" alt="" coords="287,107,439,133"/>
-<area shape="rect" id="node6" href="$classsimulation__cuda.html" title="simulation_cuda" alt="" coords="502,56,618,83"/>
+<area shape="rect" id="node1" href="$structezxml__root.html" title="ezxml_root" alt="" coords="6,5,93,32"/>
 </map>

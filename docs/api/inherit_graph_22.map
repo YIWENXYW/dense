@@ -1,11 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcsvw.html" title="csvw" alt="" coords="16,19,69,45"/>
-<area shape="rect" id="node2" href="$structcsvw__param.html" title="csvw_param" alt="" coords="128,5,224,32"/>
-<area shape="rect" id="node3" href="$classcsvw__sim.html" title="csvw_sim" alt="" coords="135,56,217,83"/>
-<area shape="rect" id="node4" href="$class_observer.html" title="Superclass for CSV Writer and Analysis. " alt="" coords="5,95,80,121"/>
-<area shape="rect" id="node5" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="140,107,212,133"/>
-<area shape="rect" id="node6" href="$class_basic_analysis.html" title="BasicAnalysis" alt="" coords="290,31,395,57"/>
-<area shape="rect" id="node7" href="$class_concentration_check.html" title="ConcentrationCheck" alt="" coords="272,81,413,108"/>
-<area shape="rect" id="node8" href="$class_correlation_analysis.html" title="CorrelationAnalysis" alt="" coords="275,132,410,159"/>
-<area shape="rect" id="node9" href="$class_oscillation_analysis.html" title="OscillationAnalysis" alt="" coords="276,183,409,209"/>
+<area shape="rect" id="node1" href="$class_generic___simulation___set.html" title="Generic_Simulation_Set" alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$class_simulation___set.html" title="Simulation_Set\&lt; T \&gt;" alt="" coords="217,5,359,32"/>
 </map>
