@@ -1,6 +1,5 @@
 <map id="source/core/queue.hpp" name="source/core/queue.hpp">
-<area shape="rect" id="node2" href="$oscillation_8hpp.html" title="source/measurement\l/oscillation.hpp" alt="" coords="69,81,213,122"/>
-<area shape="rect" id="node5" href="$queue__usage_8cpp.html" title="source/queue_usage.cpp" alt="" coords="238,88,404,115"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="5,179,123,205"/>
-<area shape="rect" id="node4" href="$oscillation_8cpp.html" title="source/measurement\l/oscillation.cpp" alt="" coords="148,171,292,213"/>
+<area shape="rect" id="node2" href="$oscillation_8hpp.html" title="source/measurement\l/oscillation.hpp" alt="" coords="5,81,149,122"/>
+<area shape="rect" id="node4" href="$queue__usage_8cpp.html" title="source/queue_usage.cpp" alt="" coords="174,88,340,115"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="18,171,136,197"/>
 </map>

@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">common_utils.hpp File Reference</div>  </div>
@@ -99,33 +99,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="specie_8hpp_source.html">core/specie.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="numerics_8hpp_source.html">utility/numerics.hpp</a>&quot;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for common_utils.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="common__utils_8hpp__incl.png" border="0" usemap="#source_2utility_2common__utils_8hpp" alt=""/></div>
 <map name="source_2utility_2common__utils_8hpp" id="source_2utility_2common__utils_8hpp">
-<area shape="rect" id="node2" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="109,96,224,123"/><area shape="rect" id="node6" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="309,96,443,123"/><area shape="rect" id="node7" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="300,171,452,197"/><area shape="rect" id="node8" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="225,245,383,272"/></map>
+<area shape="rect" id="node2" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="81,96,196,123"/><area shape="rect" id="node5" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="226,96,360,123"/><area shape="rect" id="node6" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="217,171,369,197"/><area shape="rect" id="node7" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="143,245,300,272"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="common__utils_8hpp__dep__incl.png" border="0" usemap="#source_2utility_2common__utils_8hppdep" alt=""/></div>
 <map name="source_2utility_2common__utils_8hppdep" id="source_2utility_2common__utils_8hppdep">
-<area shape="rect" id="node2" href="arg__parse_8cpp.html" title="source/io/arg_parse.cpp" alt="" coords="5,104,165,131"/><area shape="rect" id="node3" href="main_8cpp.html" title="source/main.cpp" alt="" coords="803,467,921,493"/><area shape="rect" id="node4" href="set_8hpp.html" title="source/sim/set.hpp" alt="" coords="1484,376,1617,403"/><area shape="rect" id="node6" href="cell__param_8hpp.html" title="source/sim/cell_param.hpp" alt="" coords="1737,104,1916,131"/><area shape="rect" id="node7" href="sim_2base_8hpp.html" title="source/sim/base.hpp" alt="" coords="1202,195,1344,221"/><area shape="rect" id="node28" href="baby__cl_8hpp.html" title="source/sim/determ/baby\l_cl.hpp" alt="" coords="2072,187,2235,229"/><area shape="rect" id="node29" href="baby__cl__cuda_8hpp.html" title="source/sim/determ/baby\l_cl_cuda.hpp" alt="" coords="2385,278,2548,319"/><area shape="rect" id="node30" href="dense__cl_8hpp.html" title="source/sim/determ/dense\l_cl.hpp" alt="" coords="2259,187,2428,229"/><area shape="rect" id="node31" href="common__utils_8cpp.html" title="source/utility/common\l_utils.cpp" alt="" coords="2505,97,2655,138"/><area shape="rect" id="node5" href="set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="1895,467,2063,493"/><area shape="rect" id="node19" href="stoch_8hpp.html" title="source/sim/stoch/stoch.hpp" alt="" coords="1639,285,1821,312"/><area shape="rect" id="node20" href="stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="1642,376,1824,403"/><area shape="rect" id="node21" href="determ_8hpp.html" title="source/sim/determ/determ.hpp" alt="" coords="1897,285,2095,312"/><area shape="rect" id="node25" href="determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="2453,369,2627,410"/><area shape="rect" id="node26" href="determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="2515,459,2689,501"/><area shape="rect" id="node27" href="sim_2base_8cpp.html" title="source/sim/base.cpp" alt="" coords="1421,285,1563,312"/><area shape="rect" id="node8" href="csvr__sim_8hpp.html" title="source/io/csvr_sim.hpp" alt="" coords="408,285,565,312"/><area shape="rect" id="node10" href="csvw__sim_8hpp.html" title="source/io/csvw_sim.hpp" alt="" coords="643,285,805,312"/><area shape="rect" id="node12" href="measurement_2base_8hpp.html" title="source/measurement\l/base.hpp" alt="" coords="1097,278,1241,319"/><area shape="rect" id="node14" href="oscillation_8cpp.html" title="source/measurement\l/oscillation.cpp" alt="" coords="1320,459,1464,501"/><area shape="rect" id="node16" href="basic_8cpp.html" title="source/measurement\l/basic.cpp" alt="" coords="479,459,623,501"/><area shape="rect" id="node17" href="measurement_2base_8cpp.html" title="source/measurement\l/base.cpp" alt="" coords="761,369,905,410"/><area shape="rect" id="node9" href="csvr__sim_8cpp.html" title="source/io/csvr_sim.cpp" alt="" coords="292,376,449,403"/><area shape="rect" id="node11" href="csvw__sim_8cpp.html" title="source/io/csvw_sim.cpp" alt="" coords="524,376,687,403"/><area shape="rect" id="node13" href="oscillation_8hpp.html" title="source/measurement\l/oscillation.hpp" alt="" coords="1265,369,1409,410"/><area shape="rect" id="node15" href="basic_8hpp.html" title="source/measurement\l/basic.hpp" alt="" coords="929,369,1073,410"/><area shape="rect" id="node18" href="conccheck_8hpp.html" title="source/measurement\l/conccheck.hpp" alt="" coords="1097,369,1241,410"/><area shape="rect" id="node22" href="baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="2072,369,2235,410"/><area shape="rect" id="node23" href="dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="2259,369,2428,410"/><area shape="rect" id="node24" href="determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="1849,376,2047,403"/></map>
+<area shape="rect" id="node2" href="csvw_8hpp.html" title="source/io/csvw.hpp" alt="" coords="217,104,351,131"/><area shape="rect" id="node4" href="csvw_8cpp.html" title="source/io/csvw.cpp" alt="" coords="5,195,139,221"/><area shape="rect" id="node7" href="main_8cpp.html" title="source/main.cpp" alt="" coords="598,467,716,493"/><area shape="rect" id="node13" href="arg__parse_8cpp.html" title="source/io/arg_parse.cpp" alt="" coords="922,104,1083,131"/><area shape="rect" id="node14" href="csvr_8cpp.html" title="source/io/csvr.cpp" alt="" coords="1107,104,1236,131"/><area shape="rect" id="node15" href="set_8hpp.html" title="source/sim/set.hpp" alt="" coords="1237,376,1371,403"/><area shape="rect" id="node17" href="cell__param_8hpp.html" title="source/sim/cell_param.hpp" alt="" coords="1416,104,1595,131"/><area shape="rect" id="node18" href="sim_2base_8hpp.html" title="source/sim/base.hpp" alt="" coords="1050,195,1192,221"/><area shape="rect" id="node30" href="baby__cl_8hpp.html" title="source/sim/determ/baby\l_cl.hpp" alt="" coords="1975,187,2137,229"/><area shape="rect" id="node31" href="baby__cl__cuda_8hpp.html" title="source/sim/determ/baby\l_cl_cuda.hpp" alt="" coords="2019,278,2181,319"/><area shape="rect" id="node32" href="dense__cl_8hpp.html" title="source/sim/determ/dense\l_cl.hpp" alt="" coords="2263,187,2432,229"/><area shape="rect" id="node33" href="common__utils_8cpp.html" title="source/utility/common\l_utils.cpp" alt="" coords="2314,97,2464,138"/><area shape="rect" id="node3" href="csv__gen_8cpp.html" title="source/csv_gen.cpp" alt="" coords="215,195,353,221"/><area shape="rect" id="node5" href="csvw__sim_8hpp.html" title="source/io/csvw_sim.hpp" alt="" coords="96,376,259,403"/><area shape="rect" id="node8" href="measurement_2base_8hpp.html" title="source/measurement\l/base.hpp" alt="" coords="585,278,729,319"/><area shape="rect" id="node6" href="csvw__sim_8ipp.html" title="source/io/csvw_sim.ipp" alt="" coords="98,467,256,493"/><area shape="rect" id="node9" href="oscillation_8hpp.html" title="source/measurement\l/oscillation.hpp" alt="" coords="501,369,645,410"/><area shape="rect" id="node10" href="base_8ipp.html" title="source/measurement\l/base.ipp" alt="" coords="837,369,981,410"/><area shape="rect" id="node11" href="basic_8hpp.html" title="source/measurement\l/basic.hpp" alt="" coords="669,369,813,410"/><area shape="rect" id="node12" href="conccheck_8hpp.html" title="source/measurement\l/conccheck.hpp" alt="" coords="333,369,477,410"/><area shape="rect" id="node16" href="set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="1551,467,1719,493"/><area shape="rect" id="node21" href="stoch_8hpp.html" title="source/sim/stoch/stoch.hpp" alt="" coords="1414,285,1596,312"/><area shape="rect" id="node22" href="stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="1395,376,1577,403"/><area shape="rect" id="node23" href="determ_8hpp.html" title="source/sim/determ/determ.hpp" alt="" coords="1671,285,1869,312"/><area shape="rect" id="node27" href="determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="2013,369,2187,410"/><area shape="rect" id="node28" href="determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="2075,459,2249,501"/><area shape="rect" id="node29" href="base_8cpp.html" title="source/sim/base.cpp" alt="" coords="1145,285,1287,312"/><area shape="rect" id="node19" href="csvr__sim_8hpp.html" title="source/io/csvr_sim.hpp" alt="" coords="912,285,1069,312"/><area shape="rect" id="node20" href="csvr__sim_8cpp.html" title="source/io/csvr_sim.cpp" alt="" coords="1056,376,1213,403"/><area shape="rect" id="node24" href="baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="1825,369,1988,410"/><area shape="rect" id="node25" href="dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="2263,369,2432,410"/><area shape="rect" id="node26" href="determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="1602,376,1800,403"/></map>
 </div>
 </div>
 <p><a href="common__utils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacestd14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd14.html">std14</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf836323f9adb8abb48bc3366e5e9ffc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8hpp.html#abf836323f9adb8abb48bc3366e5e9ffc">str_to_species</a> (std::string pcfSpecies)</td></tr>
-<tr class="separator:abf836323f9adb8abb48bc3366e5e9ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a0b0baf2937e9580a420d459636f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8hpp.html#a51a0b0baf2937e9580a420d459636f1c">get_species_by_name</a> (std::string const &amp;name)</td></tr>
+<tr class="separator:a51a0b0baf2937e9580a420d459636f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd2efb32809b318b54dcddd3119e48a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8hpp.html#a9cd2efb32809b318b54dcddd3119e48a">str_to_species</a> (std::string pcfSpecies)</td></tr>
+<tr class="separator:a9cd2efb32809b318b54dcddd3119e48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a072fbb035d15022e604f4deab5fc22e2"><td class="memItemLeft" align="right" valign="top">Real *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8hpp.html#a072fbb035d15022e604f4deab5fc22e2">parse_perturbations</a> (std::string const &amp;file_name)</td></tr>
 <tr class="separator:a072fbb035d15022e604f4deab5fc22e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae524338282730a17e257a8ec31191fd3"><td class="memItemLeft" align="right" valign="top">Real **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8hpp.html#ae524338282730a17e257a8ec31191fd3">parse_gradients</a> (std::string const &amp;file_name, int width)</td></tr>
 <tr class="separator:ae524338282730a17e257a8ec31191fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33323340512df3d37c1f95f2a338a9a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aa33323340512df3d37c1f95f2a338a9a"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd14.html#aa33323340512df3d37c1f95f2a338a9a">std14::make_unique</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:aa33323340512df3d37c1f95f2a338a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a51a0b0baf2937e9580a420d459636f1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a> get_species_by_name </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae524338282730a17e257a8ec31191fd3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -168,12 +196,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abf836323f9adb8abb48bc3366e5e9ffc"></a>
+<a class="anchor" id="a9cd2efb32809b318b54dcddd3119e48a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> str_to_species </td>
+          <td class="memname">std::vector&lt;<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a>&gt; str_to_species </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>pcfSpecies</em></td><td>)</td>
@@ -187,7 +215,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:11 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['emplace',['emplace',['../classdense_1_1_simulation___set.html#ae228286da0f540ee8371ac3d097bf13c',1,'dense::Simulation_Set::emplace()'],['../class_simulation___set.html#a46fd4edf15caa5dad1dd06ed16635910',1,'Simulation_Set::emplace()']]],
+  ['emplace',['emplace',['../classdense_1_1_simulation___set.html#ae228286da0f540ee8371ac3d097bf13c',1,'dense::Simulation_Set']]],
   ['end',['end',['../class_parameter___set.html#acadc313207e8b3e4325f2ec662a69fda',1,'Parameter_Set::end()'],['../class_c_u_d_a___array.html#a5efa86970fcafb70f418b46ecc6b7641',1,'CUDA_Array::end()'],['../class_c_u_d_a___array.html#a635a6d90d6856b31db5b245b932b99a1',1,'CUDA_Array::end() const '],['../classpreprocessor_1_1_text.html#af89e0546ffbd8c3ddc3888f31a8e905e',1,'preprocessor::Text::end()'],['../class_range.html#a30113cf3f364906d54199c32e163d787',1,'Range::end()']]],
   ['enqueue',['enqueue',['../class_queue.html#a312e607478ee2e7bcca93aa549dc9b57',1,'Queue']]],
   ['error_5fcategory',['error_category',['../namespacecuda.html#ad36c42481cc9015fdefabb2111245a4a',1,'cuda']]],

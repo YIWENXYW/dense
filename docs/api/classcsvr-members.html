@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -78,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,15 +96,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classcsvr.html">csvr</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#a7219ddd5e1b08af57cc0791aab055a2d">csvr</a>(std::string const &amp;file_name, bool suppress_file_not_found=false)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcsvr.html#aaa58282699ecf3f9b9e54e4a1aea3bd5">get_next</a>(Real *pnRate)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#a809595db1b0c2dc7a956dee2039887ae">get_next</a>(int *pnRate)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcsvr.html#a2d2668940e16a910e4454b5eff10e7b5">is_open</a>() const </td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcsvr.html#a9dc663b83686f96b6c71691757f781c3">csvr</a>(csvr &amp;&amp;)=default</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#aaa58282699ecf3f9b9e54e4a1aea3bd5">get_next</a>(Real *pnRate)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcsvr.html#a809595db1b0c2dc7a956dee2039887ae">get_next</a>(int *pnRate)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#a7d2f508446a0d84df6785828866acbb9">get_real</a>(std::istream &amp;in, Real *out)</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classcsvr.html#ad3c5e0f516db1f26636cfb06b8e79e3b">has_stream</a>() const </td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#a61828177afc996f684b8504bc9d08c8d">next</a>()</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classcsvr.html#ad63fb0bcc3bd8e6bcb60ed516e8fb96b">skip_next</a>()</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classcsvr.html#a3567844d85389fd946be90dd61e6351f">operator=</a>(csvr &amp;&amp;)=default</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcsvr.html#ad63fb0bcc3bd8e6bcb60ed516e8fb96b">skip_next</a>()</td><td class="entry"><a class="el" href="classcsvr.html">csvr</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:12 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

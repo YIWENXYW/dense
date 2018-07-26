@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -131,74 +130,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_r_e_s.html">SRES</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">   40</a></span>&#160;  <span class="keyword">typedef</span> std::vector&lt;double&gt; (*SRES_Scorer) (<span class="keyword">const</span> std::vector&lt;Parameter_Set&gt;&amp;);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">//SRES interface members</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="struct_e_s_parameter.html">ESParameter</a>* param;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="struct_e_s_population.html">ESPopulation</a>* population;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="struct_e_s_statistics.html">ESStatistics</a>* stats;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> pf;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; lowerBounds;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; upperBounds;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> popsize, parentsize, ngenerations;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> lb[<a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">double</span> ub[<a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>];</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">//DDESim interface members</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES_Scorer</a> score_fcn;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">   57</a></span>&#160;    <a class="code" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">SRES</a> (<span class="keywordtype">int</span> population_size, <span class="keywordtype">int</span> num_parents, <span class="keywordtype">int</span> num_generations,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; lBounds, <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; uBounds, <a class="code" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES_Scorer</a> scorer,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keywordtype">int</span> seed = 0) :</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        param(nullptr), population(nullptr), stats(nullptr), pf(0),</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        lowerBounds(lBounds), upperBounds(uBounds), popsize(population_size),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        parentsize(num_parents), ngenerations(num_generations), score_fcn(scorer)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    assert(popsize &gt; parentsize &amp;&amp; <span class="stringliteral">&quot;ERROR: sres parent size must be smaller than the population size.&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="comment">//Create array of double-precision parameters from the Real parameter sets</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>; ++i) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      lb[i] = lowerBounds.<a class="code" href="class_parameter___set.html#a398e946c7632e9e5ce5cfc3575419ff2">getArray</a>()[i];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      ub[i] = upperBounds.<a class="code" href="class_parameter___set.html#a398e946c7632e9e5ce5cfc3575419ff2">getArray</a>()[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="_e_s_e_s_8cpp.html#ae8abeca6bbabcfe0848c97075d54e3c8">ESInitial</a>(seed, <span class="comment">//random seed</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        &amp;param, <span class="comment">//Parameter set to be filled</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">nullptr</span>, <span class="comment">//Optional transform function</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        [<span class="keyword">this</span>](<span class="keywordtype">double</span>** pop, <span class="keywordtype">double</span>* scores, <span class="keywordtype">double</span>** constr, <span class="keywordtype">int</span> popc) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          <a class="code" href="class_s_r_e_s.html#a66617505b53d74d7ab958c8f6a5dc22e">simulate_population</a>(popc, pop, scores);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }, <span class="comment">//Fitness evaluation callback</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a61ddd50f44a8da8ba1aa1a4e3e1f9dfb">esDefESSlash</a>, <span class="comment">//ES process, esDefESPlus/esDefESSlash</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        0, <span class="comment">//constraint</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>, <span class="comment">//dim : number of parameters</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ub, <span class="comment">//upper search bounds</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        lb, <span class="comment">//lower search bounds</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        parentsize, <span class="comment">//Number of parents for next generation</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        popsize, <span class="comment">//Population size</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ngenerations, <span class="comment">//Number of generations</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a6fe8632520252c98d37e03b9c94c30ad">esDefGamma</a>, <span class="comment">//Default gamma value</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#acd1991c838a523bd859c24886bae8eef">esDefAlpha</a>, <span class="comment">//Default alpha value</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a4734543f396f8f5079847a646f555483">esDefVarphi</a>, <span class="comment">//Default expected rate of convergence</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        0, <span class="comment">//retry</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        &amp;population, <span class="comment">//Population to fill</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        &amp;stats); <span class="comment">//Statistics</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">   93</a></span>&#160;    <a class="code" href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">~SRES</a>() {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="_e_s_e_s_8cpp.html#ae3ac5674c15cfa363f8393b89813e199">ESDeInitial</a>(param, population, stats);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">//Retrieve the parameter sets of the current population</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_s_r_e_s.html#af6a6416ab87c5799557e05430db5d871">nextGeneration</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_s_r_e_s.html#a66617505b53d74d7ab958c8f6a5dc22e">simulate_population</a>(<span class="keywordtype">int</span> popc, <span class="keywordtype">double</span>** population, <span class="keywordtype">double</span>* scores);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_s_r_e_s_html"><div class="ttname"><a href="class_s_r_e_s.html">SRES</a></div><div class="ttdef"><b>Definition:</b> sres.hpp:38</div></div>
-<div class="ttc" id="class_s_r_e_s_html_ae9efb72967e97b38b513427066122db5"><div class="ttname"><a href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES::SRES_Scorer</a></div><div class="ttdeci">std::vector&lt; double &gt;(* SRES_Scorer)(const std::vector&lt; Parameter_Set &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> sres.hpp:40</div></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_r_e_s.html">SRES</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">   41</a></span>&#160;  <span class="keyword">typedef</span> std::vector&lt;double&gt; (*SRES_Scorer) (<span class="keyword">const</span> std::vector&lt;Parameter_Set&gt;&amp;);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">//SRES interface members</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="struct_e_s_parameter.html">ESParameter</a>* param;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="struct_e_s_population.html">ESPopulation</a>* population;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="struct_e_s_statistics.html">ESStatistics</a>* stats;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> pf;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; lowerBounds;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; upperBounds;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> popsize, parentsize, ngenerations;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">double</span> lb[<a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> ub[<a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">//DDESim interface members</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES_Scorer</a> score_fcn;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">   58</a></span>&#160;    <a class="code" href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">SRES</a> (<span class="keywordtype">int</span> population_size, <span class="keywordtype">int</span> num_parents, <span class="keywordtype">int</span> num_generations,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; lBounds, <span class="keyword">const</span> <a class="code" href="class_parameter___set.html">Parameter_Set</a>&amp; uBounds, <a class="code" href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES_Scorer</a> scorer,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          <span class="keywordtype">int</span> seed = 0) :</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        param(nullptr), population(nullptr), stats(nullptr), pf(0),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        lowerBounds(lBounds), upperBounds(uBounds), popsize(population_size),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        parentsize(num_parents), ngenerations(num_generations), score_fcn(scorer)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    assert(popsize &gt; parentsize &amp;&amp; <span class="stringliteral">&quot;ERROR: sres parent size must be smaller than the population size.&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">//Create array of double-precision parameters from the Real parameter sets</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>; ++i) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      lb[i] = lowerBounds.<a class="code" href="class_parameter___set.html#a398e946c7632e9e5ce5cfc3575419ff2">getArray</a>()[i];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      ub[i] = upperBounds.<a class="code" href="class_parameter___set.html#a398e946c7632e9e5ce5cfc3575419ff2">getArray</a>()[i];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="_e_s_e_s_8cpp.html#ae8abeca6bbabcfe0848c97075d54e3c8">ESInitial</a>(seed, <span class="comment">//random seed</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        &amp;param, <span class="comment">//Parameter set to be filled</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">nullptr</span>, <span class="comment">//Optional transform function</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        [<span class="keyword">this</span>](<span class="keywordtype">double</span>** pop, <span class="keywordtype">double</span>* scores, <span class="keywordtype">double</span>** constr, <span class="keywordtype">int</span> popc) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          <a class="code" href="class_s_r_e_s.html#a66617505b53d74d7ab958c8f6a5dc22e">simulate_population</a>(popc, pop, scores);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }, <span class="comment">//Fitness evaluation callback</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a61ddd50f44a8da8ba1aa1a4e3e1f9dfb">esDefESSlash</a>, <span class="comment">//ES process, esDefESPlus/esDefESSlash</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        0, <span class="comment">//constraint</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="parameter__set_8hpp.html#a10d94afe31412e9dfc68cb834fc1325d">NUM_PARAMS</a>, <span class="comment">//dim : number of parameters</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        ub, <span class="comment">//upper search bounds</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        lb, <span class="comment">//lower search bounds</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        parentsize, <span class="comment">//Number of parents for next generation</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        popsize, <span class="comment">//Population size</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        ngenerations, <span class="comment">//Number of generations</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a6fe8632520252c98d37e03b9c94c30ad">esDefGamma</a>, <span class="comment">//Default gamma value</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#acd1991c838a523bd859c24886bae8eef">esDefAlpha</a>, <span class="comment">//Default alpha value</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="_e_s_e_s_8hpp.html#a4734543f396f8f5079847a646f555483">esDefVarphi</a>, <span class="comment">//Default expected rate of convergence</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        0, <span class="comment">//retry</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        &amp;population, <span class="comment">//Population to fill</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        &amp;stats); <span class="comment">//Statistics</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">   94</a></span>&#160;    <a class="code" href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">~SRES</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="_e_s_e_s_8cpp.html#ae3ac5674c15cfa363f8393b89813e199">ESDeInitial</a>(param, population, stats);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">//Retrieve the parameter sets of the current population</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_s_r_e_s.html#af6a6416ab87c5799557e05430db5d871">nextGeneration</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_s_r_e_s.html#a66617505b53d74d7ab958c8f6a5dc22e">simulate_population</a>(<span class="keywordtype">int</span> popc, <span class="keywordtype">double</span>** population, <span class="keywordtype">double</span>* scores);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_s_r_e_s_html"><div class="ttname"><a href="class_s_r_e_s.html">SRES</a></div><div class="ttdef"><b>Definition:</b> sres.hpp:39</div></div>
+<div class="ttc" id="class_s_r_e_s_html_ae9efb72967e97b38b513427066122db5"><div class="ttname"><a href="class_s_r_e_s.html#ae9efb72967e97b38b513427066122db5">SRES::SRES_Scorer</a></div><div class="ttdeci">std::vector&lt; double &gt;(* SRES_Scorer)(const std::vector&lt; Parameter_Set &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> sres.hpp:41</div></div>
 <div class="ttc" id="struct_e_s_parameter_html"><div class="ttname"><a href="struct_e_s_parameter.html">ESParameter</a></div><div class="ttdef"><b>Definition:</b> ESES.hpp:86</div></div>
 <div class="ttc" id="struct_e_s_statistics_html"><div class="ttname"><a href="struct_e_s_statistics.html">ESStatistics</a></div><div class="ttdef"><b>Definition:</b> ESES.hpp:145</div></div>
 <div class="ttc" id="_e_s_e_s_8hpp_html_acd1991c838a523bd859c24886bae8eef"><div class="ttname"><a href="_e_s_e_s_8hpp.html#acd1991c838a523bd859c24886bae8eef">esDefAlpha</a></div><div class="ttdeci">#define esDefAlpha</div><div class="ttdef"><b>Definition:</b> ESES.hpp:42</div></div>
@@ -206,9 +206,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_parameter___set_html_a398e946c7632e9e5ce5cfc3575419ff2"><div class="ttname"><a href="class_parameter___set.html#a398e946c7632e9e5ce5cfc3575419ff2">Parameter_Set::getArray</a></div><div class="ttdeci">Real * getArray()</div><div class="ttdef"><b>Definition:</b> parameter_set.hpp:42</div></div>
 <div class="ttc" id="_e_s_e_s_8hpp_html"><div class="ttname"><a href="_e_s_e_s_8hpp.html">ESES.hpp</a></div></div>
 <div class="ttc" id="sharefunc_8hpp_html"><div class="ttname"><a href="sharefunc_8hpp.html">sharefunc.hpp</a></div></div>
-<div class="ttc" id="class_s_r_e_s_html_aee40a7ee89502807e62aa7a39ae16572"><div class="ttname"><a href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">SRES::~SRES</a></div><div class="ttdeci">~SRES()</div><div class="ttdef"><b>Definition:</b> sres.hpp:93</div></div>
+<div class="ttc" id="class_s_r_e_s_html_aee40a7ee89502807e62aa7a39ae16572"><div class="ttname"><a href="class_s_r_e_s.html#aee40a7ee89502807e62aa7a39ae16572">SRES::~SRES</a></div><div class="ttdeci">~SRES()</div><div class="ttdef"><b>Definition:</b> sres.hpp:94</div></div>
 <div class="ttc" id="parameter__set_8hpp_html"><div class="ttname"><a href="parameter__set_8hpp.html">parameter_set.hpp</a></div></div>
-<div class="ttc" id="class_s_r_e_s_html_a57c5f917aaaa4f308c4035fa9e4a0903"><div class="ttname"><a href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">SRES::SRES</a></div><div class="ttdeci">SRES(int population_size, int num_parents, int num_generations, const Parameter_Set &amp;lBounds, const Parameter_Set &amp;uBounds, SRES_Scorer scorer, int seed=0)</div><div class="ttdef"><b>Definition:</b> sres.hpp:57</div></div>
+<div class="ttc" id="class_s_r_e_s_html_a57c5f917aaaa4f308c4035fa9e4a0903"><div class="ttname"><a href="class_s_r_e_s.html#a57c5f917aaaa4f308c4035fa9e4a0903">SRES::SRES</a></div><div class="ttdeci">SRES(int population_size, int num_parents, int num_generations, const Parameter_Set &amp;lBounds, const Parameter_Set &amp;uBounds, SRES_Scorer scorer, int seed=0)</div><div class="ttdef"><b>Definition:</b> sres.hpp:58</div></div>
 <div class="ttc" id="struct_e_s_population_html"><div class="ttname"><a href="struct_e_s_population.html">ESPopulation</a></div><div class="ttdef"><b>Definition:</b> ESES.hpp:127</div></div>
 <div class="ttc" id="mpi_2sharefunc_8hpp_html"><div class="ttname"><a href="mpi_2sharefunc_8hpp.html">sharefunc.hpp</a></div></div>
 <div class="ttc" id="_e_s_e_s_8hpp_html_a61ddd50f44a8da8ba1aa1a4e3e1f9dfb"><div class="ttname"><a href="_e_s_e_s_8hpp.html#a61ddd50f44a8da8ba1aa1a4e3e1f9dfb">esDefESSlash</a></div><div class="ttdeci">#define esDefESSlash</div><div class="ttdef"><b>Definition:</b> ESES.hpp:46</div></div>
@@ -223,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:09 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:45 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

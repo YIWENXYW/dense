@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_e_s_individual.html" title="ESIndividual" alt="" coords="6,5,101,32"/>
+<area shape="rect" id="node1" href="$classcsvr.html" title="csvr" alt="" coords="46,12,93,39"/>
+<area shape="rect" id="node2" href="$classdense_1_1_c_s_v___streamed___simulation.html" title="dense::CSV_Streamed\l_Simulation" alt="" coords="201,5,357,46"/>
+<area shape="rect" id="node3" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="6,77,133,104"/>
+<area shape="rect" id="node4" href="$classdense_1_1_deterministic___simulation.html" title="dense::Deterministic\l_Simulation" alt="" coords="207,70,350,111"/>
+<area shape="rect" id="node5" href="$classdense_1_1_stochastic___simulation.html" title="dense::Stochastic_Simulation" alt="" coords="181,136,376,163"/>
 </map>

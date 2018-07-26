@@ -1,9 +1,8 @@
 <map id="dense::baby_cl" name="dense::baby_cl">
-<area shape="rect" id="node2" href="$classdense_1_1_deterministic___simulation.html" title="dense::Deterministic\l_Simulation" alt="" coords="926,65,1069,106"/>
-<area shape="rect" id="node3" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="323,243,450,269"/>
-<area shape="rect" id="node7" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_REACTIONS+NUM_DELAY\l_REACTIONS+NUM_CRITICAL\l_SPECIES \&gt;" alt="" coords="577,134,810,205"/>
-<area shape="rect" id="node9" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_DELAY_REACTIONS,\l int \&gt;" alt="" coords="594,229,793,285"/>
-<area shape="rect" id="node4" href="$class_observable.html" title="Observable\&lt; Simulation \&gt;" alt="" coords="5,199,179,225"/>
-<area shape="rect" id="node5" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="37,249,147,276"/>
-<area shape="rect" id="node8" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="16,300,168,327"/>
+<area shape="rect" id="node2" href="$classdense_1_1_deterministic___simulation.html" title="dense::Deterministic\l_Simulation" alt="" coords="841,114,983,155"/>
+<area shape="rect" id="node3" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="562,205,689,232"/>
+<area shape="rect" id="node4" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="209,172,319,199"/>
+<area shape="rect" id="node6" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_REACTIONS+NUM_DELAY\l_REACTIONS+NUM_CRITICAL\l_SPECIES \&gt;" alt="" coords="147,301,381,371"/>
+<area shape="rect" id="node7" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="188,396,340,423"/>
+<area shape="rect" id="node8" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_DELAY_REACTIONS,\l int \&gt;" alt="" coords="526,256,725,312"/>
 </map>

@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">common_utils.cpp File Reference</div>  </div>
@@ -101,27 +101,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="style_8hpp_source.html">utility/style.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="csvr_8hpp_source.html">io/csvr.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="reaction_8hpp_source.html">core/reaction.hpp</a>&quot;</code><br/>
-<code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
 <code>#include &lt;cmath&gt;</code><br/>
+<code>#include &lt;unordered_map&gt;</code><br/>
+<code>#include &quot;specie_list.hpp&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for common_utils.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="common__utils_8cpp__incl.png" border="0" usemap="#source_2utility_2common__utils_8cpp" alt=""/></div>
 <map name="source_2utility_2common__utils_8cpp" id="source_2utility_2common__utils_8cpp">
-<area shape="rect" id="node2" href="common__utils_8hpp.html" title="common_utils.hpp" alt="" coords="340,96,468,123"/><area shape="rect" id="node13" href="style_8hpp.html" title="utility/style.hpp" alt="" coords="761,171,871,197"/><area shape="rect" id="node14" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="773,96,859,123"/><area shape="rect" id="node16" href="reaction_8hpp.html" title="core/reaction.hpp" alt="" coords="492,96,615,123"/><area shape="rect" id="node3" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="51,171,165,197"/><area shape="rect" id="node7" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="338,171,472,197"/><area shape="rect" id="node8" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="339,245,491,272"/><area shape="rect" id="node9" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="321,320,479,347"/><area shape="rect" id="node17" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="497,171,607,197"/></map>
+<area shape="rect" id="node2" href="common__utils_8hpp.html" title="common_utils.hpp" alt="" coords="693,96,821,123"/><area shape="rect" id="node14" href="style_8hpp.html" title="utility/style.hpp" alt="" coords="166,96,276,123"/><area shape="rect" id="node15" href="csvr_8hpp.html" title="io/csvr.hpp" alt="" coords="913,96,999,123"/><area shape="rect" id="node17" href="reaction_8hpp.html" title="core/reaction.hpp" alt="" coords="369,96,492,123"/><area shape="rect" id="node3" href="specie_8hpp.html" title="core/specie.hpp" alt="" coords="468,171,583,197"/><area shape="rect" id="node6" href="numerics_8hpp.html" title="utility/numerics.hpp" alt="" coords="690,171,824,197"/><area shape="rect" id="node7" href="configurable_8hpp.html" title="utility/configurable.hpp" alt="" coords="707,245,859,272"/><area shape="rect" id="node8" href="preprocessor_8hpp.html" title="utility/preprocessor.hpp" alt="" coords="704,320,861,347"/><area shape="rect" id="node18" href="cuda_8hpp.html" title="utility/cuda.hpp" alt="" coords="5,171,115,197"/></map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:add869421f39b1779eaa0546b8b2dad77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#add869421f39b1779eaa0546b8b2dad77">SPECIE</a>(NAME)&#160;&#160;&#160;{ #NAME, Species::NAME },</td></tr>
+<tr class="separator:add869421f39b1779eaa0546b8b2dad77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab7fe8b399b9edf6e6e26b894d4f34997"><td class="memItemLeft" align="right" valign="top"><a class="el" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#ab7fe8b399b9edf6e6e26b894d4f34997">str_to_species</a> (std::string pSpecies)</td></tr>
-<tr class="separator:ab7fe8b399b9edf6e6e26b894d4f34997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a0b0baf2937e9580a420d459636f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#a51a0b0baf2937e9580a420d459636f1c">get_species_by_name</a> (std::string const &amp;name)</td></tr>
+<tr class="separator:a51a0b0baf2937e9580a420d459636f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8302f069640c729e91240af330f4c1d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#a8302f069640c729e91240af330f4c1d9">str_to_species</a> (std::string pSpecies)</td></tr>
+<tr class="separator:a8302f069640c729e91240af330f4c1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6beb287e8082b6c2eb2c141d747d5bf6"><td class="memItemLeft" align="right" valign="top">Real *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#a6beb287e8082b6c2eb2c141d747d5bf6">parse_perturbations</a> (std::string const &amp;pcfPertFileName)</td></tr>
 <tr class="separator:a6beb287e8082b6c2eb2c141d747d5bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabbff5c8210db3a586c58bba468e0a5"><td class="memItemLeft" align="right" valign="top">Real **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__utils_8cpp.html#aeabbff5c8210db3a586c58bba468e0a5">parse_gradients</a> (std::string const &amp;pcfGradFileName, int total_width)</td></tr>
 <tr class="separator:aeabbff5c8210db3a586c58bba468e0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="add869421f39b1779eaa0546b8b2dad77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPECIE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME</td><td>)</td>
+          <td>&#160;&#160;&#160;{ #NAME, Species::NAME },</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a51a0b0baf2937e9580a420d459636f1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a> get_species_by_name </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aeabbff5c8210db3a586c58bba468e0a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,12 +206,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab7fe8b399b9edf6e6e26b894d4f34997"></a>
+<a class="anchor" id="a8302f069640c729e91240af330f4c1d9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="specie_8hpp.html#a5cf24c08e534e9052761a7496b324292">specie_vec</a> str_to_species </td>
+          <td class="memname">std::vector&lt;<a class="el" href="specie_8hpp.html#a13c7f2b53faa23c03489d6e9f71d7cd4">Species</a>&gt; str_to_species </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>pSpecies</em></td><td>)</td>
@@ -183,7 +225,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:11 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:47 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

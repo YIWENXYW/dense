@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['model',['model',['../classdense_1_1model.html',1,'dense']]]
+  ['oscillationanalysis',['OscillationAnalysis',['../class_oscillation_analysis.html',1,'']]]
 ];

@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classdense_1_1_simulation___set.html#ab427e9cf8ccb9076ca15278e2ef9b021">   33</a></span>&#160;    <a class="code" href="classdense_1_1_simulation___set.html#ab427e9cf8ccb9076ca15278e2ef9b021">Simulation_Set</a>(std::vector&lt;Parameter_Set&gt; parameter_sets,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      Real** gradient_factors,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      Real* perturbation_factors,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordtype">int</span> cell_total, <span class="keywordtype">int</span> total_width,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a8340c8543836b403409e3fdc21343704">cell_total</a>, <span class="keywordtype">int</span> total_width,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      Real step_size, <span class="keywordtype">int</span> seed)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="comment">// For each set, load data to _ps and _sim_set</span></div>
@@ -139,10 +138,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          <span class="comment">// When init&#39;ing a sim_set&lt;sim_base&gt;, have step_size be = to 0.0 so that sim_set can emplace_back correctly</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          <span class="keywordflow">if</span> (step_size == 0.0) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            emplace&lt;Stochastic_Simulation&gt;(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              parameter_set, perturbation_factors, gradient_factors, cell_total, total_width, seed);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              parameter_set, perturbation_factors, gradient_factors, <a class="code" href="main_8cpp.html#a8340c8543836b403409e3fdc21343704">cell_total</a>, total_width, seed);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            emplace&lt;Deterministic_Simulation&gt;(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              parameter_set, perturbation_factors, gradient_factors, cell_total, total_width, step_size);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              parameter_set, perturbation_factors, gradient_factors, <a class="code" href="main_8cpp.html#a8340c8543836b403409e3fdc21343704">cell_total</a>, total_width, step_size);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
@@ -158,30 +157,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="classdense_1_1_simulation___set.html#a70de2f729cb293a49c4394088c732e86">_sim_set</a>.push_back(<span class="keyword">new</span> T(std::forward&lt;Args&gt;(args)...));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classdense_1_1_simulation___set.html#adc13d64e7c1c70afd61db2bf3b97a10e">   64</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdense_1_1_simulation___set.html#adc13d64e7c1c70afd61db2bf3b97a10e">simulate_sets</a>(Real total_time, Real analysis_interval) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; set : <a class="code" href="classdense_1_1_simulation___set.html#a70de2f729cb293a49c4394088c732e86">_sim_set</a>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            set-&gt;simulate(total_time, analysis_interval);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            set-&gt;finalize();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">   71</a></span>&#160;    <a class="code" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">Natural</a> <a class="code" href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">size</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdense_1_1_simulation___set.html#a70de2f729cb293a49c4394088c732e86">_sim_set</a>.size();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">   64</a></span>&#160;    <a class="code" href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">Natural</a> <a class="code" href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdense_1_1_simulation___set.html#a70de2f729cb293a49c4394088c732e86">_sim_set</a>.size();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html_a09b77d242d24fb766823812b450c0d7a"><div class="ttname"><a href="classdense_1_1_simulation___set.html#a09b77d242d24fb766823812b450c0d7a">dense::Simulation_Set::reserve</a></div><div class="ttdeci">void reserve(std::ptrdiff_t new_capacity)</div><div class="ttdef"><b>Definition:</b> set.hpp:55</div></div>
 <div class="ttc" id="reaction_8hpp_html"><div class="ttname"><a href="reaction_8hpp.html">reaction.hpp</a></div></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html_a161eb4fbe838dc605ad3f10c0753f980"><div class="ttname"><a href="classdense_1_1_simulation___set.html#a161eb4fbe838dc605ad3f10c0753f980">dense::Simulation_Set::Simulation_Set</a></div><div class="ttdeci">Simulation_Set()=default</div></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html_a70de2f729cb293a49c4394088c732e86"><div class="ttname"><a href="classdense_1_1_simulation___set.html#a70de2f729cb293a49c4394088c732e86">dense::Simulation_Set::_sim_set</a></div><div class="ttdeci">std::vector&lt; Simulation * &gt; _sim_set</div><div class="ttdef"><b>Definition:</b> set.hpp:31</div></div>
+<div class="ttc" id="main_8cpp_html_a8340c8543836b403409e3fdc21343704"><div class="ttname"><a href="main_8cpp.html#a8340c8543836b403409e3fdc21343704">cell_total</a></div><div class="ttdeci">int cell_total</div><div class="ttdef"><b>Definition:</b> main.cpp:130</div></div>
 <div class="ttc" id="style_8hpp_html"><div class="ttname"><a href="style_8hpp.html">style.hpp</a></div></div>
 <div class="ttc" id="determ_8hpp_html"><div class="ttname"><a href="determ_8hpp.html">determ.hpp</a></div></div>
 <div class="ttc" id="parameter__set_8hpp_html"><div class="ttname"><a href="parameter__set_8hpp.html">parameter_set.hpp</a></div></div>
-<div class="ttc" id="classdense_1_1_simulation___set_html_adc13d64e7c1c70afd61db2bf3b97a10e"><div class="ttname"><a href="classdense_1_1_simulation___set.html#adc13d64e7c1c70afd61db2bf3b97a10e">dense::Simulation_Set::simulate_sets</a></div><div class="ttdeci">void simulate_sets(Real total_time, Real analysis_interval)</div><div class="ttdef"><b>Definition:</b> set.hpp:64</div></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html"><div class="ttname"><a href="classdense_1_1_simulation___set.html">dense::Simulation_Set</a></div><div class="ttdef"><b>Definition:</b> set.hpp:27</div></div>
 <div class="ttc" id="cell__param_8hpp_html"><div class="ttname"><a href="cell__param_8hpp.html">cell_param.hpp</a></div></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html_ab427e9cf8ccb9076ca15278e2ef9b021"><div class="ttname"><a href="classdense_1_1_simulation___set.html#ab427e9cf8ccb9076ca15278e2ef9b021">dense::Simulation_Set::Simulation_Set</a></div><div class="ttdeci">Simulation_Set(std::vector&lt; Parameter_Set &gt; parameter_sets, Real **gradient_factors, Real *perturbation_factors, int cell_total, int total_width, Real step_size, int seed)</div><div class="ttdef"><b>Definition:</b> set.hpp:33</div></div>
@@ -190,14 +182,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="csvr_8hpp_html"><div class="ttname"><a href="csvr_8hpp.html">csvr.hpp</a></div></div>
 <div class="ttc" id="class_parameter___set_html"><div class="ttname"><a href="class_parameter___set.html">Parameter_Set</a></div><div class="ttdef"><b>Definition:</b> parameter_set.hpp:13</div></div>
 <div class="ttc" id="stoch_8hpp_html"><div class="ttname"><a href="stoch_8hpp.html">stoch.hpp</a></div></div>
-<div class="ttc" id="classdense_1_1_simulation___set_html_a44c4a79bc96a0b852b0850f1c1ab9ba5"><div class="ttname"><a href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">dense::Simulation_Set::size</a></div><div class="ttdeci">Natural size() const </div><div class="ttdef"><b>Definition:</b> set.hpp:71</div></div>
+<div class="ttc" id="classdense_1_1_simulation___set_html_a44c4a79bc96a0b852b0850f1c1ab9ba5"><div class="ttname"><a href="classdense_1_1_simulation___set.html#a44c4a79bc96a0b852b0850f1c1ab9ba5">dense::Simulation_Set::size</a></div><div class="ttdeci">Natural size() const </div><div class="ttdef"><b>Definition:</b> set.hpp:64</div></div>
 <div class="ttc" id="classdense_1_1_simulation___set_html_ae228286da0f540ee8371ac3d097bf13c"><div class="ttname"><a href="classdense_1_1_simulation___set.html#ae228286da0f540ee8371ac3d097bf13c">dense::Simulation_Set::emplace</a></div><div class="ttdeci">void emplace(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> set.hpp:60</div></div>
 <div class="ttc" id="model_8hpp_html"><div class="ttname"><a href="model_8hpp.html">model.hpp</a></div></div>
 <div class="ttc" id="namespacedense_html_a640f19567ce911a9d30143002a1887a2"><div class="ttname"><a href="namespacedense.html#a640f19567ce911a9d30143002a1887a2">dense::Natural</a></div><div class="ttdeci">int Natural</div><div class="ttdoc">A signed integral type used to represent natural (non-negative) numbers. </div><div class="ttdef"><b>Definition:</b> numerics.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:09 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:45 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

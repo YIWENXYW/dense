@@ -43,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -76,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,41 +98,89 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define IO_CSVW_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="numerics_8hpp.html">utility/numerics.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classcsvw.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcsvw.html">csvw</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classcsvw.html#a05f9703ee8ccc35c9e0d9471ef5cbf63">csvw</a>(std::string <span class="keyword">const</span>&amp; pcfFileName, <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; pcfWriteDoc = <span class="keyword">true</span>, std::string <span class="keyword">const</span>&amp; pcfChildDoc = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">add_data</a>(Real <span class="keyword">const</span>&amp; pcfRate);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">add_div</a>(std::string <span class="keyword">const</span>&amp; pcfDiv);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">   40</a></span>&#160;    <a class="code" href="classcsvw.html">csvw</a> &amp; <a class="code" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">operator&lt;&lt; </a>(T <span class="keyword">const</span>&amp; value) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      iFile &lt;&lt; value;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Output file of CSV</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::ofstream iFile;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classcsvw_html"><div class="ttname"><a href="classcsvw.html">csvw</a></div><div class="ttdef"><b>Definition:</b> csvw.hpp:10</div></div>
-<div class="ttc" id="classcsvw_html_a93bc62304745bfdbd0a330e1da614054"><div class="ttname"><a href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">csvw::add_div</a></div><div class="ttdeci">void add_div(std::string const &amp;pcfDiv)</div><div class="ttdef"><b>Definition:</b> csvw.cpp:52</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__utils_8hpp.html">utility/common_utils.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classcsvw.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcsvw.html">csvw</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classcsvw.html#a3b12421e907a16d6a486565a803d7221">csvw</a>(std::string <span class="keyword">const</span>&amp; pcfFileName);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">add_data</a>(Real <span class="keyword">const</span>&amp; pcfRate);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">add_div</a>(std::string <span class="keyword">const</span>&amp; pcfDiv);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">   43</a></span>&#160;    <a class="code" href="classcsvw.html">csvw</a> &amp; <a class="code" href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">operator&lt;&lt; </a>(T <span class="keyword">const</span>&amp; value) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">stream</a>() &lt;&lt; value;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classcsvw.html#a3b12421e907a16d6a486565a803d7221">csvw</a>(<a class="code" href="classcsvw.html">csvw</a>&amp;&amp;) noexcept = default;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classcsvw.html">csvw</a>&amp; operator=(<a class="code" href="classcsvw.html">csvw</a>&amp;&amp;) noexcept = default;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classcsvw.html#ab4b17d82a9558c2a14a0b113cd97b489">   52</a></span>&#160;    <a class="code" href="classcsvw.html">csvw</a>(std::unique_ptr&lt;std::ostream&gt; <a class="code" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">stream</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    : stream_{std::move(<a class="code" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">stream</a>)}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    , is_owner_{<span class="keyword">true</span>} {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classcsvw.html#a7be9b325e7b8431b9f8fef3cabe76018">   57</a></span>&#160;    <a class="code" href="classcsvw.html#a7be9b325e7b8431b9f8fef3cabe76018">csvw</a>(std::ostream&amp; <a class="code" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">stream</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    : stream_{&amp;stream}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    , is_owner_{<span class="keyword">false</span>} {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classcsvw.html#a938d459483a0664e2cbaf46007950c42">   62</a></span>&#160;    <a class="code" href="classcsvw.html#a938d459483a0664e2cbaf46007950c42">~csvw</a>() {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (!is_owner_) stream_.release();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">   66</a></span>&#160;    std::ostream&amp; <a class="code" href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">stream</a>() {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span> *stream_;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classcsvw.html#af8b68ab9bd74206375a3683019b8d206">   70</a></span>&#160;    std::ostream <span class="keyword">const</span>&amp; <a class="code" href="classcsvw.html#af8b68ab9bd74206375a3683019b8d206">stream</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> *stream_;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classcsvw.html#a5b8e0742099b5195e5e9b8b4bc462b16">   74</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classcsvw.html#a5b8e0742099b5195e5e9b8b4bc462b16">is_owner</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> is_owner_;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classcsvw.html#a3b12421e907a16d6a486565a803d7221">   80</a></span>&#160;    <a class="code" href="classcsvw.html#a3b12421e907a16d6a486565a803d7221">csvw</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    : <a class="code" href="classcsvw.html">csvw</a>(std14::<a class="code" href="namespacestd14.html#aa33323340512df3d37c1f95f2a338a9a">make_unique</a>&lt;std::ofstream&gt;()) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unique_ptr&lt;std::ostream&gt; stream_;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> is_owner_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classcsvw_html"><div class="ttname"><a href="classcsvw.html">csvw</a></div><div class="ttdef"><b>Definition:</b> csvw.hpp:13</div></div>
+<div class="ttc" id="classcsvw_html_a93bc62304745bfdbd0a330e1da614054"><div class="ttname"><a href="classcsvw.html#a93bc62304745bfdbd0a330e1da614054">csvw::add_div</a></div><div class="ttdeci">void add_div(std::string const &amp;pcfDiv)</div><div class="ttdef"><b>Definition:</b> csvw.cpp:23</div></div>
+<div class="ttc" id="classcsvw_html_a938d459483a0664e2cbaf46007950c42"><div class="ttname"><a href="classcsvw.html#a938d459483a0664e2cbaf46007950c42">csvw::~csvw</a></div><div class="ttdeci">~csvw()</div><div class="ttdef"><b>Definition:</b> csvw.hpp:62</div></div>
+<div class="ttc" id="classcsvw_html_af8b68ab9bd74206375a3683019b8d206"><div class="ttname"><a href="classcsvw.html#af8b68ab9bd74206375a3683019b8d206">csvw::stream</a></div><div class="ttdeci">std::ostream const &amp; stream() const </div><div class="ttdef"><b>Definition:</b> csvw.hpp:70</div></div>
+<div class="ttc" id="classcsvw_html_a5b8e0742099b5195e5e9b8b4bc462b16"><div class="ttname"><a href="classcsvw.html#a5b8e0742099b5195e5e9b8b4bc462b16">csvw::is_owner</a></div><div class="ttdeci">bool is_owner() const </div><div class="ttdef"><b>Definition:</b> csvw.hpp:74</div></div>
+<div class="ttc" id="classcsvw_html_a7be9b325e7b8431b9f8fef3cabe76018"><div class="ttname"><a href="classcsvw.html#a7be9b325e7b8431b9f8fef3cabe76018">csvw::csvw</a></div><div class="ttdeci">csvw(std::ostream &amp;stream)</div><div class="ttdef"><b>Definition:</b> csvw.hpp:57</div></div>
+<div class="ttc" id="common__utils_8hpp_html"><div class="ttname"><a href="common__utils_8hpp.html">common_utils.hpp</a></div></div>
+<div class="ttc" id="classcsvw_html_a1fd16f065b4b5bcae7ccd236a841b6d1"><div class="ttname"><a href="classcsvw.html#a1fd16f065b4b5bcae7ccd236a841b6d1">csvw::stream</a></div><div class="ttdeci">std::ostream &amp; stream()</div><div class="ttdef"><b>Definition:</b> csvw.hpp:66</div></div>
 <div class="ttc" id="numerics_8hpp_html"><div class="ttname"><a href="numerics_8hpp.html">numerics.hpp</a></div></div>
-<div class="ttc" id="classcsvw_html_a6608370c3172929ba698976c0a2a6d60"><div class="ttname"><a href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">csvw::add_data</a></div><div class="ttdeci">void add_data(Real const &amp;pcfRate)</div><div class="ttdoc">Add Data Add Data Divider (Seperator) </div><div class="ttdef"><b>Definition:</b> csvw.cpp:58</div></div>
-<div class="ttc" id="classcsvw_html_a339262564c3cf06a1b6c8fd931e0fcfc"><div class="ttname"><a href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">csvw::operator&lt;&lt;</a></div><div class="ttdeci">csvw &amp; operator&lt;&lt;(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> csvw.hpp:40</div></div>
-<div class="ttc" id="classcsvw_html_a05f9703ee8ccc35c9e0d9471ef5cbf63"><div class="ttname"><a href="classcsvw.html#a05f9703ee8ccc35c9e0d9471ef5cbf63">csvw::csvw</a></div><div class="ttdeci">csvw(std::string const &amp;pcfFileName, bool const &amp;pcfWriteDoc=true, std::string const &amp;pcfChildDoc=&quot;&quot;)</div><div class="ttdoc">CSVWriter ctor. </div><div class="ttdef"><b>Definition:</b> csvw.cpp:10</div></div>
+<div class="ttc" id="classcsvw_html_a6608370c3172929ba698976c0a2a6d60"><div class="ttname"><a href="classcsvw.html#a6608370c3172929ba698976c0a2a6d60">csvw::add_data</a></div><div class="ttdeci">void add_data(Real const &amp;pcfRate)</div><div class="ttdoc">Add Data Add Data Divider (Separator) </div><div class="ttdef"><b>Definition:</b> csvw.cpp:27</div></div>
+<div class="ttc" id="classcsvw_html_a3b12421e907a16d6a486565a803d7221"><div class="ttname"><a href="classcsvw.html#a3b12421e907a16d6a486565a803d7221">csvw::csvw</a></div><div class="ttdeci">csvw()</div><div class="ttdef"><b>Definition:</b> csvw.hpp:80</div></div>
+<div class="ttc" id="namespacestd14_html_aa33323340512df3d37c1f95f2a338a9a"><div class="ttname"><a href="namespacestd14.html#aa33323340512df3d37c1f95f2a338a9a">std14::make_unique</a></div><div class="ttdeci">std::unique_ptr&lt; T &gt; make_unique(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> common_utils.hpp:19</div></div>
+<div class="ttc" id="classcsvw_html_a339262564c3cf06a1b6c8fd931e0fcfc"><div class="ttname"><a href="classcsvw.html#a339262564c3cf06a1b6c8fd931e0fcfc">csvw::operator&lt;&lt;</a></div><div class="ttdeci">csvw &amp; operator&lt;&lt;(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> csvw.hpp:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 13 2018 11:39:09 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2018 18:43:44 for Differential Equation Network Simulation Engine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

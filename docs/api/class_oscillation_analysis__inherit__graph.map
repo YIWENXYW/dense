@@ -1,4 +1,3 @@
-<map id="OscillationAnalysis" name="OscillationAnalysis">
-<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="48,80,120,107"/>
-<area shape="rect" id="node3" href="$class_observer.html" title="Observer\&lt; Simulation \&gt;" alt="" coords="4,5,163,32"/>
+<map id="OscillationAnalysis&lt; Simulation &gt;" name="OscillationAnalysis&lt; Simulation &gt;">
+<area shape="rect" id="node2" href="$class_analysis.html" title="Superclass for Analysis Objects. " alt="" coords="5,5,163,32"/>
 </map>
