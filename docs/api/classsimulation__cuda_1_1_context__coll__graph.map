@@ -1,6 +1,6 @@
 <map id="simulation_cuda::Context" name="simulation_cuda::Context">
-<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context\&lt; Simulation_T \&gt;" alt="" coords="5,187,215,213"/>
-<area shape="rect" id="node3" href="$classsimulation__cuda.html" title="simulation_cuda" alt="" coords="241,187,356,213"/>
-<area shape="rect" id="node6" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="287,83,439,109"/>
-<area shape="rect" id="node7" href="$classbaby__cl__cuda.html" title="baby_cl_cuda" alt="" coords="463,83,565,109"/>
+<area shape="rect" id="node2" href="$classdense_1_1_context.html" title="dense::Context\&lt; Simulation_T \&gt;" alt="" coords="5,185,216,212"/>
+<area shape="rect" id="node3" href="$classsimulation__cuda.html" title="simulation_cuda" alt="" coords="241,185,357,212"/>
+<area shape="rect" id="node6" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="287,81,439,108"/>
+<area shape="rect" id="node7" href="$classbaby__cl__cuda.html" title="baby_cl_cuda" alt="" coords="463,81,566,108"/>
 </map>

@@ -1,10 +1,9 @@
 <map id="source/sim/determ/determ.hpp" name="source/sim/determ/determ.hpp">
-<area shape="rect" id="node2" href="$set_8hpp.html" title="source/sim/set.hpp" alt="" coords="5,88,139,115"/>
-<area shape="rect" id="node5" href="$baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="163,81,325,122"/>
-<area shape="rect" id="node6" href="$dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="350,81,519,122"/>
-<area shape="rect" id="node7" href="$determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="543,88,741,115"/>
-<area shape="rect" id="node8" href="$determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="766,81,940,122"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="13,179,131,205"/>
-<area shape="rect" id="node4" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="364,179,532,205"/>
-<area shape="rect" id="node9" href="$determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="766,171,940,213"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="5,87,124,114"/>
+<area shape="rect" id="node3" href="$baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="149,80,311,121"/>
+<area shape="rect" id="node4" href="$dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="336,80,505,121"/>
+<area shape="rect" id="node5" href="$determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="529,87,728,114"/>
+<area shape="rect" id="node6" href="$determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="752,80,927,121"/>
+<area shape="rect" id="node7" href="$determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="653,169,828,211"/>
+<area shape="rect" id="node8" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="853,177,1021,203"/>
 </map>

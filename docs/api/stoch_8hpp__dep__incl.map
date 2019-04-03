@@ -1,6 +1,4 @@
 <map id="source/sim/stoch/stoch.hpp" name="source/sim/stoch/stoch.hpp">
-<area shape="rect" id="node2" href="$set_8hpp.html" title="source/sim/set.hpp" alt="" coords="81,80,215,107"/>
-<area shape="rect" id="node5" href="$stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="239,80,421,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="5,155,123,181"/>
-<area shape="rect" id="node4" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="148,155,316,181"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$stoch_8cpp.html" title="source/sim/stoch/stoch.cpp" alt="" coords="148,80,331,107"/>
 </map>

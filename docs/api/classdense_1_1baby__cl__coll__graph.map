@@ -1,8 +1,7 @@
 <map id="dense::baby_cl" name="dense::baby_cl">
-<area shape="rect" id="node2" href="$classdense_1_1_deterministic___simulation.html" title="dense::Deterministic\l_Simulation" alt="" coords="841,114,983,155"/>
-<area shape="rect" id="node3" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="562,205,689,232"/>
-<area shape="rect" id="node4" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="209,172,319,199"/>
-<area shape="rect" id="node6" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_REACTIONS+NUM_DELAY\l_REACTIONS+NUM_CRITICAL\l_SPECIES \&gt;" alt="" coords="147,301,381,371"/>
-<area shape="rect" id="node7" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="188,396,340,423"/>
-<area shape="rect" id="node8" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_DELAY_REACTIONS,\l int \&gt;" alt="" coords="526,256,725,312"/>
+<area shape="rect" id="node2" href="$classdense_1_1_deterministic___simulation.html" title="dense::Deterministic\l_Simulation" alt="" coords="83,317,225,359"/>
+<area shape="rect" id="node3" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="192,213,319,240"/>
+<area shape="rect" id="node4" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_PARAMS \&gt;" alt="" coords="327,95,463,136"/>
+<area shape="rect" id="node6" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="487,102,639,129"/>
+<area shape="rect" id="node7" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_DELAY_REACTIONS,\l int \&gt;" alt="" coords="343,199,541,255"/>
 </map>

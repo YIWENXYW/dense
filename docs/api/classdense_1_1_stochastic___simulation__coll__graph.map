@@ -1,6 +1,5 @@
 <map id="dense::Stochastic_Simulation" name="dense::Stochastic_Simulation">
-<area shape="rect" id="node2" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="526,103,653,129"/>
-<area shape="rect" id="node3" href="$class_parameter___set.html" title="Parameter_Set" alt="" coords="209,5,319,32"/>
-<area shape="rect" id="node5" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_REACTIONS+NUM_DELAY\l_REACTIONS+NUM_CRITICAL\l_SPECIES \&gt;" alt="" coords="147,134,381,205"/>
-<area shape="rect" id="node6" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="188,229,340,256"/>
+<area shape="rect" id="node2" href="$classdense_1_1_simulation.html" title="dense::Simulation" alt="" coords="112,199,239,225"/>
+<area shape="rect" id="node3" href="$classdense_1_1cell__param.html" title="dense::cell_param\&lt;\l NUM_PARAMS \&gt;" alt="" coords="107,95,243,136"/>
+<area shape="rect" id="node5" href="$class_c_u_d_a___array.html" title="CUDA_Array\&lt; int, 6 \&gt;" alt="" coords="267,102,419,129"/>
 </map>

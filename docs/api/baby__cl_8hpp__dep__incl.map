@@ -1,12 +1,11 @@
 <map id="source/sim/determ/baby_cl.hpp" name="source/sim/determ/baby_cl.hpp">
-<area shape="rect" id="node2" href="$determ_8hpp.html" title="source/sim/determ/determ.hpp" alt="" coords="335,104,533,131"/>
-<area shape="rect" id="node6" href="$baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="5,187,168,229"/>
-<area shape="rect" id="node11" href="$baby__cl__cuda_8hpp.html" title="source/sim/determ/baby\l_cl_cuda.hpp" alt="" coords="665,97,828,138"/>
-<area shape="rect" id="node3" href="$set_8hpp.html" title="source/sim/set.hpp" alt="" coords="192,195,325,221"/>
-<area shape="rect" id="node7" href="$dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="350,187,519,229"/>
-<area shape="rect" id="node8" href="$determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="543,195,741,221"/>
-<area shape="rect" id="node9" href="$determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="766,187,940,229"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="199,285,317,312"/>
-<area shape="rect" id="node5" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="459,285,627,312"/>
-<area shape="rect" id="node10" href="$determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="766,278,940,319"/>
+<area shape="rect" id="node2" href="$determ_8hpp.html" title="source/sim/determ/determ.hpp" alt="" coords="321,102,519,129"/>
+<area shape="rect" id="node4" href="$baby__cl_8cpp.html" title="source/sim/determ/baby\l_cl.cpp" alt="" coords="5,184,168,225"/>
+<area shape="rect" id="node10" href="$baby__cl__cuda_8hpp.html" title="source/sim/determ/baby\l_cl_cuda.hpp" alt="" coords="651,95,813,136"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="source/main.cpp" alt="" coords="193,191,311,218"/>
+<area shape="rect" id="node5" href="$dense__cl_8cpp.html" title="source/sim/determ/dense\l_cl.cpp" alt="" coords="335,184,505,225"/>
+<area shape="rect" id="node6" href="$determ_8cpp.html" title="source/sim/determ/determ.cpp" alt="" coords="529,191,727,218"/>
+<area shape="rect" id="node7" href="$determ__cuda_8hpp.html" title="source/sim/determ/determ\l_cuda.hpp" alt="" coords="751,184,926,225"/>
+<area shape="rect" id="node8" href="$determ__cuda__context_8hpp.html" title="source/sim/determ/determ\l_cuda_context.hpp" alt="" coords="654,273,829,315"/>
+<area shape="rect" id="node9" href="$set__cuda_8hpp.html" title="source/sim/set_cuda.hpp" alt="" coords="853,281,1021,307"/>
 </map>

@@ -2,6 +2,8 @@ var searchData=
 [
   ['name',['name',['../structezxml.html#a4be40cc8ef640bd6fbe27e8ceabdfa29',1,'ezxml']]],
   ['natural',['Natural',['../namespacedense.html#a640f19567ce911a9d30143002a1887a2',1,'dense']]],
+  ['neighbor_5fcount_5fby_5fcell_5f',['neighbor_count_by_cell_',['../classdense_1_1_simulation.html#a8901f15587fac2d07fc29fd1c9a5f009',1,'dense::Simulation']]],
+  ['neighbors_5fby_5fcell_5f',['neighbors_by_cell_',['../classdense_1_1_simulation.html#acaa64b1c0338405caaa3f18ae7a18b53',1,'dense::Simulation']]],
   ['next',['next',['../structezxml.html#a73d275833778e391ed0962bc19ebebd3',1,'ezxml::next()'],['../classcsvr.html#a61828177afc996f684b8504bc9d08c8d',1,'csvr::next()']]],
   ['nextgeneration',['nextGeneration',['../class_s_r_e_s.html#af6a6416ab87c5799557e05430db5d871',1,'SRES']]],
   ['nowtime',['nowtime',['../struct_e_s_statistics.html#ae17798ca1ad250876a53927b90564ea7',1,'ESStatistics']]],
